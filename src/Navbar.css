@@ -1,0 +1,11 @@
+.nav{
+    position:fixed;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+
+}
+.nav a{
+    color:#00d2ff;
+    text-decoration: none;
+}
