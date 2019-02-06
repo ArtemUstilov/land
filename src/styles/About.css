@@ -1,0 +1,37 @@
+.about-img{
+    size: 20px 20px;
+}
+.adv-img{
+    display:inline;
+
+}
+.advantage{
+
+    padding:0 !important;
+
+}
+.advantage-text{
+    vertical-align: center;
+}
+.adv-cell{
+    margin:20px 0;
+}
+
+.advantages{
+    padding-bottom:30px;
+}
+blockquote {
+    background: #f9f0de; /* Цвет фона */
+    border-left: 2px solid #0083ca; /* Линия слева */
+    padding: 1em; /* Поля вокруг текста */
+}
+blockquote::before,
+blockquote::after {
+    content: "“"; /* Левая кавычка */
+    font-size: 40px; /* Размер текста кавычек */
+    color: #c1172c; /* Цвет кавычек */
+    line-height: 0; /* Текст не занимает место */
+}
+blockquote::after {
+    content: "”"; /* Правая кавычка */
+}

@@ -1,0 +1,55 @@
+.design{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+#section1{
+    width:100%;
+    padding-top: 200px;
+    padding-bottom: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+}
+.white-text{
+    color:#fff;
+}
+.title1{
+    font-size: 60px;
+    margin-top:15px;
+}
+.title-box{
+    width:700px;
+    max-width: 90%;
+    padding-top: 50px;
+}
+.title-btn{
+    margin: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 20px 20px 15px 20px;
+    border:none;
+}
+.ps-top-to-bottom {
+    position: relative;
+    border-top: 2px solid #fff;
+}
+.ps-top-to-bottom:before, .ps-top-to-bottom:after {
+    content: "";
+    position: absolute;
+    background-image: -webkit-gradient(linear, 0 0, 0 50%, from(#fff), to(transparent));
+    background-image: -webkit-linear-gradient(#fff, transparent, transparent);
+    background-image: -moz-linear-gradient(#fff, transparent, transparent);
+    background-image: -o-linear-gradient(#fff, transparent, transparent);
+    background-image: linear-gradient(#fff, transparent,transparent);
+    top: -2px;
+    bottom: -2px;
+    width: 2px;
+}
+.ps-top-to-bottom:before {
+    left: -2px;
+}
+.ps-top-to-bottom:after {
+    right: -2px;
+}

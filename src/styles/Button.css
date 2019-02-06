@@ -1,0 +1,13 @@
+.white{
+    background-color: #fff;
+    border: 1px solid black;
+}
+.black{
+    background-color: #000;
+    border: 1px solid white;
+    color: #fff;
+}
+.btn{
+    width: 150px;
+    height: 70px;
+}
