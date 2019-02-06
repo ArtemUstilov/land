@@ -16,6 +16,14 @@
     vertical-align: middle;
     background: black;
 }
+.title-white{
+    color:white !important;
+    background-color:black;
+}
+.title-white:before,
+.title-white:after{
+    background: white;
+}
 .title:before {
     left: -8px;
     margin-left: -10%;

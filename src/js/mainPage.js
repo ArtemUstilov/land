@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../styles/designPage.css'
+import '../styles/mainPage.css'
 import '../styles/settings.css'
 import Button from './Button'
 import logo from '../img/bg.jpg'

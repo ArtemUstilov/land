@@ -3,6 +3,8 @@ import logo from '../img/bg.jpg';
 import clock from '../img/clock.png';
 import '../styles/About.css'
 import classNames from 'classnames'
+import YouTube from 'react-youtube';
+import Button from './Button'
 
 
 class About extends Component {
@@ -10,8 +12,16 @@ class About extends Component {
         let classes = classNames({
             'box': true,
         })
+        const opts = {
+            playerVars: {
+                autoplay: 0,
+
+            }
+        };
         return (
+
             <section id="about">
+
                 <div className="container-fluid ">
                     <div className="row d-flex justify-content-center">
                         <div className="col-md-8 col-xs-12">
@@ -139,13 +149,13 @@ class About extends Component {
                         <div className="col-md-8 col-xs-12">
                             <p>На півдні країни існує таке рідкісне явище, як біфуркація річок: від Оріноко у верхній
                                 течії відгалужується річка Касік'яре, що несе свої води в Ріу-Негру, притоку Амазонки.
-                                </p>
+                            </p>
                             <p>На півдні країни існує таке рідкісне явище, як біфуркація річок: від Оріноко у верхній
                                 течії відгалужується річка Касік'яре, що несе свої води в Ріу-Негру, притоку Амазонки.
                             </p>
                             <ul>
                                 <li>
-Что-то
+                                    Что-то
                                 </li>
                                 <li>
                                     Что-то
@@ -161,12 +171,32 @@ class About extends Component {
                                 течії відгалужується річка Касік'яре, що несе свої води в Ріу-Негру, притоку Амазонки.
                             </p>
                             <figure className="quote">
-                            <p className="curly-quotes">На півдні країни існує таке рідкісне явище, як біфуркація річок: від Оріноко у верхній
-                                течії відгалужується річка Касік'яре, що несе свої води в Ріу-Негру, притоку Амазонки
-                            </p>
+                                <p className="curly-quotes">На півдні країни існує таке рідкісне явище, як біфуркація річок: від Оріноко у верхній
+                                    течії відгалужується річка Касік'яре, що несе свої води в Ріу-Негру, притоку Амазонки
+                                </p>
                             </figure>
 
                         </div>
+
+                    </div>
+                    <br/>
+                    <div className="row title-white d-flex justify-content-center">
+                        <div className="col-12">
+                            <h3 className="text-center about-logo title title-white">
+                               Как мы работаем
+                            </h3>
+                        </div>
+                        <div className="col-7 title-white ">
+                            <YouTube
+                                videoId="2g811Eo7K8U"
+                                opts={opts}
+                                onReady={this._onReady}
+                                className={'video white-border'}
+                            />
+                        </div>
+                        <div className="col-8 d-flex justify-content-center">
+                        <Button white={true} value="ЗАПИСАТЬСЯ СЕЙЧАС" classes='proj-btn'/>
+                    </div>
                     </div>
 
                 </div>

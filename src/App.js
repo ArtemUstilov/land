@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
-import Page from './js/designPage.js'
-import Page2 from './js/About.js'
+import mainPage from './js/mainPage.js'
+import About from './js/About.js'
+import Portfolio from './js/Portfolio.js'
+import Footer from './js/Footer.js'
 
 class App extends Component {
   render() {
       return (
       <div className="App">
-          <Page/>
+          <Footer/>
       </div>
     );
   }
