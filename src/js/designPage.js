@@ -19,7 +19,7 @@ class Member extends Component {
         return (<div>
                 <div className='mem-bg'/>
                 <img src={this.props.icon} alt="" className="mem-icon"/>
-                <h5 className="mem-name">{this.props.name}</h5>
+                <p className="mem-name">{this.props.name}</p>
                 <p className='mem-position'>{this.props.position}</p>
             </div>
         )
@@ -92,32 +92,32 @@ class Design extends Component {
                             Венесуели.
                         </p>
                         <div className="row">
-                            <div className="col-sm-6 about-row">
-                                <img src={logo} alt="" className="about-icon"/>
+                            <div className="col-xs-6 about-row">
+                                <img src={logo} alt="" className="about-icon img-fluid"/>
                                 <p className="about-adv">ПРЕИМУЩЕСТВО 1</p>
                             </div>
-                            <div className="col-sm-6 about-row">
-                                <img src={logo} alt="" className="about-icon"/>
+                            <div className="col-xs-6 about-row">
+                                <img src={logo} alt="" className="about-icon img-fluid"/>
                                 <p className="about-adv">ПРЕИМУЩЕСТВО 2</p>
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-sm-6 about-row">
-                                <img src={logo} alt="" className="about-icon"/>
+                            <div className="col-xs-6 about-row">
+                                <img src={logo} alt="" className="about-icon img-fluid"/>
                                 <p className="about-adv">ПРЕИМУЩЕСТВО 3</p>
                             </div>
-                            <div className="col-sm-6 about-row">
-                                <img src={logo} alt="" className="about-icon"/>
+                            <div className="col-xs-6 about-row">
+                                <img src={logo} alt="" className="about-icon img-fluid"/>
                                 <p className="about-adv">ПРЕИМУЩЕСТВО 4</p>
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-sm-6 about-row">
-                                <img src={logo} alt="" className="about-icon"/>
+                            <div className="col-xs-6 about-row">
+                                <img src={logo} alt="" className="about-icon img-fluid"/>
                                 <p className="about-adv">ПРЕИМУЩЕСТВО 5</p>
                             </div>
-                            <div className="col-sm-6 about-row">
-                                <img src={logo} alt="" className="about-icon"/>
+                            <div className="col-xs-6 about-row">
+                                <img src={logo} alt="" className="about-icon img-fluid"/>
                                 <p className="about-adv">ПРЕИМУЩЕСТВО 6</p>
                             </div>
                         </div>
@@ -158,7 +158,7 @@ class Design extends Component {
                 </div>
             </section>
             <section id={'section7'} className={'section'}>
-                <h1 className='white-text white-title title'>Наша команда</h1>
+                <h1 className='white-text white-title title' style={{marginBottom: '20px'}}>Наша команда</h1>
                 <div className="row">
                     <div className="col-md-3 col-xs-6 team-memb">
                         <Member name="ИРИНА ОКОЛИТА" position="Главный дизайнер" icon={logo}/>
