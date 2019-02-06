@@ -13,25 +13,49 @@
 .advantage-text{
     vertical-align: center;
 }
-.adv-cell{
-    margin:20px 0;
+.adv-cell .row{
+    margin:20px 10px;
+
+
 }
 
 .advantages{
     padding-bottom:30px;
 }
-blockquote {
-    background: #f9f0de; /* Цвет фона */
-    border-left: 2px solid #0083ca; /* Линия слева */
-    padding: 1em; /* Поля вокруг текста */
+.adv-img-container{
+    padding:0 5px 0 0 !important;
 }
-blockquote::before,
-blockquote::after {
-    content: "“"; /* Левая кавычка */
-    font-size: 40px; /* Размер текста кавычек */
-    color: #c1172c; /* Цвет кавычек */
-    line-height: 0; /* Текст не занимает место */
+.curly-quotes:before, .curly-quotes:after {
+    display: inline-block;
+    vertical-align: top;
+    height: 20px;
+    line-height: 10px;
+    font-size: 50px;
 }
-blockquote::after {
-    content: "”"; /* Правая кавычка */
+
+.curly-quotes:before {
+    content: '\201C';
+    padding-right: 4px;
+    padding-left: -8px;
+    padding-top:5px;
 }
+
+.curly-quotes:after {
+    content: '\201D';
+    padding-left: 4px;
+   padding-right: -8px;
+    padding-top:25px;
+}
+
+
+
+.quote {
+    font-family: Georgia, serif;
+    font-size: 14px;
+}
+
+
+
+
+
+

@@ -125,10 +125,10 @@
 }
 .box{
     position: absolute;
-    top:100px;
+    top:calc(50% - 15vw);
     left:0;
-    width: 400px;
-    height: 400px;
+    width: 30vw;
+    height: 30vw;
     background: lightgrey;
     display: flex;
     flex-direction: column;
@@ -154,10 +154,11 @@
     text-align: left;
 }
 .box-behind{
-    width: calc(100% - 320px);
-    height:600px;
+    width: calc(100% - 25vw);
+    height:auto;
     z-index: 1;
 }
+
 .float1{
     display:flex;
     justify-content: flex-end;
@@ -165,13 +166,14 @@
 .float0{
     display:flex;
 }
+
 #section7{
     padding-left:10%;
     padding-right: 10%;
     padding-bottom: 150px;
 }
 .team-memb{
-    width:100px;
+    width:40%;
     height: 200px;
 }
 .mem-bg{
@@ -185,7 +187,7 @@
 }
 .mem-icon{
     width:100%;
-    height: 200px;
+    height:240px;
     position: relative;
     z-index: 1;
 }
@@ -219,4 +221,46 @@
 }
 .ps-top-to-bottom:after {
     right: -2px;
+}
+@media(max-width: 576px){
+    .box-behind{
+        width:100%;
+    }
+    .team-memb{
+        margin-bottom: 135px;
+    }
+    .mem-bg{
+        height: 330px;
+        width: 98%;
+        left:0;
+    }
+    .mem-name{
+        font-size: 12px;
+        padding:10px 0 0 0;
+    }
+    .box{
+        width: 85%;
+        height:auto;
+        display:grid;
+        grid-template-areas:'icon titl' 'text text';
+        position: relative;
+    }
+    .box-icon{
+        grid-area: icon;
+    }
+    .box-title{
+        grid-area: titl;
+        margin-top: 10px;
+    }
+    .box-text{
+        grid-area: text;
+    }
+    .float1, .float0{
+        display:block;
+    }
+    .work-box{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import logo from '../img/bg.jpg';
+import clock from '../img/clock.png';
 import '../styles/About.css'
 import classNames from 'classnames'
 
@@ -39,89 +40,96 @@ class About extends Component {
                             <br/>
                         </div>
                     </div>
-                    <div className="d-flex justify-content-center advantages">
+                    <div className="d-flex justify-content-center advantages ">
                         <div className="col-md-8 col-xs-12">
                             <div className="row">
-                                <div className="col-md-3 col-6 adv-cell">
+                                <div className="col-md-6 col-sm-6 col-lg-3 adv-cell">
                                     <div className="row">
-                                        <div className="col-6">
-                                            <img className="img-fluid adv-img" src={logo}/>
+                                        <div className="col-6 adv-img-container">
+                                            <img className="img-fluid adv-img" src={clock}/>
                                         </div>
                                         <div className="col-6 advantage">
                                             <span className="advantage-text">Примущество</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-3 col-6 adv-cell">
+
+                                <div className="col-md-6 col-sm-6 col-lg-3 adv-cell">
                                     <div className="row">
-                                        <div className="col-6">
-                                            <img className="img-fluid adv-img" src={logo}/>
+                                        <div className="col-6 adv-img-container">
+                                            <img className="img-fluid adv-img" src={clock}/>
                                         </div>
                                         <div className="col-6 advantage">
                                             <span className="advantage-text">Примущество</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-3 col-6 adv-cell">
+                                <div className="col-md-6 col-sm-6 col-lg-3 adv-cell">
                                     <div className="row">
-                                        <div className="col-6">
-                                            <img className="img-fluid adv-img" src={logo}/>
+                                        <div className="col-6 adv-img-container">
+                                            <img className="img-fluid adv-img" src={clock}/>
                                         </div>
                                         <div className="col-6 advantage">
                                             <span className="advantage-text">Примущество</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-3 col-6 adv-cell">
+
+                                <div className="col-md-6 col-sm-6 col-lg-3 adv-cell">
                                     <div className="row">
-                                        <div className="col-6">
-                                            <img className="img-fluid adv-img" src={logo}/>
+                                        <div className="col-6 adv-img-container">
+                                            <img className="img-fluid adv-img" src={clock}/>
                                         </div>
                                         <div className="col-6 advantage">
                                             <span className="advantage-text">Примущество</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-3 col-6 adv-cell">
+                                <div className="col-md-6 col-sm-6 col-lg-3 adv-cell">
                                     <div className="row">
-                                        <div className="col-6">
-                                            <img className="img-fluid adv-img" src={logo}/>
+                                        <div className="col-6 adv-img-container">
+                                            <img className="img-fluid adv-img" src={clock}/>
                                         </div>
                                         <div className="col-6 advantage">
                                             <span className="advantage-text">Примущество</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-3 col-6 adv-cell">
+
+                                <div className="col-md-6 col-sm-6 col-lg-3 adv-cell">
                                     <div className="row">
-                                        <div className="col-6">
-                                            <img className="img-fluid adv-img" src={logo}/>
+                                        <div className="col-6 adv-img-container">
+                                            <img className="img-fluid adv-img" src={clock}/>
                                         </div>
                                         <div className="col-6 advantage">
                                             <span className="advantage-text">Примущество</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-3 col-6 adv-cell">
+                                <div className="col-md-6 col-sm-6 col-lg-3 adv-cell">
                                     <div className="row">
-                                        <div className="col-6">
-                                            <img className="img-fluid adv-img" src={logo}/>
+                                        <div className="col-6 adv-img-container">
+                                            <img className="img-fluid adv-img" src={clock}/>
                                         </div>
                                         <div className="col-6 advantage">
                                             <span className="advantage-text">Примущество</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-3 col-6 adv-cell">
+
+                                <div className="col-md-6 col-sm-6 col-lg-3 adv-cell">
                                     <div className="row">
-                                        <div className="col-6">
-                                            <img className="img-fluid adv-img" src={logo}/>
+                                        <div className="col-6 adv-img-container">
+                                            <img className="img-fluid adv-img" src={clock}/>
                                         </div>
                                         <div className="col-6 advantage">
                                             <span className="advantage-text">Примущество</span>
                                         </div>
                                     </div>
                                 </div>
+
+
+
 
 
                             </div>
@@ -152,9 +160,11 @@ class About extends Component {
                             <p>На півдні країни існує таке рідкісне явище, як біфуркація річок: від Оріноко у верхній
                                 течії відгалужується річка Касік'яре, що несе свої води в Ріу-Негру, притоку Амазонки.
                             </p>
-                            <blockquote className="my-blockquote">На півдні країни існує таке рідкісне явище, як біфуркація річок: від Оріноко у верхній
-                                течії відгалужується річка Касік'яре, що несе свої води в Ріу-Негру, притоку Амазонки.
-                            </blockquote>
+                            <figure className="quote">
+                            <p className="curly-quotes">На півдні країни існує таке рідкісне явище, як біфуркація річок: від Оріноко у верхній
+                                течії відгалужується річка Касік'яре, що несе свої води в Ріу-Негру, притоку Амазонки
+                            </p>
+                            </figure>
 
                         </div>
                     </div>

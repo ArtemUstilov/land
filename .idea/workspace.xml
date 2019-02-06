@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff63b587-7344-417c-8c50-63524c71d42a" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/img/clock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/download.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/About.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/designPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/designPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/About.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/About.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/designPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/designPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/settings.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/settings.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+              <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -33,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="designPage.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="designPage.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/styles/designPage.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="757">
-              <caret line="130" column="18" lean-forward="true" selection-start-line="130" selection-start-column="18" selection-end-line="130" selection-end-column="18" />
+            <state relative-caret-position="401">
+              <caret line="229" column="26" selection-start-line="229" selection-start-column="26" selection-end-line="229" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -45,20 +46,8 @@
       <file leaf-file-name="designPage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/designPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="89" selection-start-line="89" selection-end-line="89" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="About.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/About.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="16" column="72" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
+            <state relative-caret-position="592">
+              <caret line="175" column="93" selection-start-line="175" selection-start-column="93" selection-end-line="175" selection-end-column="93" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -112,11 +101,11 @@
         <option value="$PROJECT_DIR$/src/styles/Button.css" />
         <option value="$PROJECT_DIR$/src/js/Button.js" />
         <option value="$PROJECT_DIR$/src/js/About.js" />
-        <option value="$PROJECT_DIR$/src/js/designPage.js" />
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/styles/settings.css" />
-        <option value="$PROJECT_DIR$/src/styles/designPage.css" />
+        <option value="$PROJECT_DIR$/src/js/designPage.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/styles/designPage.css" />
       </list>
     </option>
   </component>
@@ -181,6 +170,12 @@
               <item name="land" type="b2602c69:ProjectViewProjectNode" />
               <item name="land" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="land" type="b2602c69:ProjectViewProjectNode" />
+              <item name="land" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="trash" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -202,9 +197,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\artem\Documents\Предмети 2 курсу\projects\landing\land\src\img" />
       <recent name="C:\Users\artem\Documents\Предмети 2 курсу\projects\landing\land\src\styles" />
-      <recent name="C:\Users\artem\Documents\Предмети 2 курсу\projects\landing\land\public\img" />
       <recent name="C:\Users\artem\Documents\Предмети 2 курсу\projects\landing\land\src\js" />
+      <recent name="C:\Users\artem\Documents\Предмети 2 курсу\projects\landing\land\public\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\artem\Documents\Предмети 2 курсу\projects\landing\land\src\img" />
@@ -237,12 +233,12 @@
       <option name="presentableId" value="Default" />
       <updated>1548762229369</updated>
       <workItem from="1548762232613" duration="8525000" />
-      <workItem from="1549459983267" duration="18904000" />
+      <workItem from="1549459983267" duration="22711000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27429000" />
+    <option name="totallyTimeSpent" value="31236000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1592" y="-8" width="1936" height="1056" extended-state="6" />
@@ -540,19 +536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/About.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/About.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="72" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -565,28 +548,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/designPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        <state relative-caret-position="592">
+          <caret line="175" column="93" selection-start-line="175" selection-start-column="93" selection-end-line="175" selection-end-column="93" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/designPage.css">
+    <entry file="file://$PROJECT_DIR$/src/js/About.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="757">
-          <caret line="130" column="18" lean-forward="true" selection-start-line="130" selection-start-column="18" selection-end-line="130" selection-end-column="18" />
+        <state relative-caret-position="17">
+          <caret line="16" column="60" lean-forward="true" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/About.css">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/designPage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="229" column="26" selection-start-line="229" selection-start-column="26" selection-end-line="229" selection-end-column="26" />
         </state>
       </provider>
     </entry>

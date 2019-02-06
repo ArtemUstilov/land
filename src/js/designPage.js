@@ -3,6 +3,7 @@ import '../styles/designPage.css'
 import '../styles/settings.css'
 import Button from './Button'
 import logo from '../img/bg.jpg'
+import makaka from '../img/download.jpg'
 
 class Describe extends Component {
     render() {
@@ -160,19 +161,19 @@ class Design extends Component {
             <section id={'section7'} className={'section'}>
                 <h1 className='white-text white-title title' style={{marginBottom: '20px'}}>Наша команда</h1>
                 <div className="row">
-                    <div className="col-md-3 col-xs-6 team-memb">
-                        <Member name="ИРИНА ОКОЛИТА" position="Главный дизайнер" icon={logo}/>
+                    <div className="col-6 col-md-3 team-memb">
+                        <Member name="ИРИНА ОКОЛИТА" position="Главный дизайнер" icon={makaka}/>
                     </div>
-                    <div className="col-md-3 col-xs-6 team-memb">
-                        <Member name="ИРИНА ОКОЛИТА" position="Главный дизайнер" icon={logo}/>
+                    <div className="col-6 col-md-3 team-memb">
+                        <Member name="ИРИНА ОКОЛИТА" position="Главный дизайнер" icon={makaka}/>
 
                     </div>
-                    <div className="col-md-3 col-xs-6 team-memb">
-                        <Member name="ИРИНА ОКОЛИТА" position="Главный дизайнер" icon={logo}/>
+                    <div className="col-6 col-md-3 team-memb">
+                        <Member name="ИРИНА ОКОЛИТА" position="Главный дизайнер" icon={makaka}/>
 
                     </div>
-                    <div className="col-md-3 col-xs-6 team-memb">
-                        <Member name="ИРИНА ОКОЛИТА" position="Главный дизайнер" icon={logo}/>
+                    <div className="col-6 col-md-3 team-memb">
+                        <Member name="ИРИНА ОКОЛИТА" position="Главный дизайнер" icon={makaka}/>
 
                     </div>
                 </div>
