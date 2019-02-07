@@ -1,19 +1,32 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './App.css';
 import MainPage from './js/mainPage.js'
 import About from './js/About.js'
 import Portfolio from './js/Portfolio.js'
 import Footer from './js/Footer.js'
 import Contacts from './js/Contacts.js'
-
+import { renderToStaticMarkup } from "react-dom/server";
+import { withLocalize } from "react-localize-redux";
+import LanguageToggle from "./js/LanguageToggle.js";
 class App extends Component {
-  render() {
-      return (
-      <div className="App">
-          <Contacts/>
-      </div>
-    );
-  }
+    constructor(props) {
+        super(props);
+        this.props.initialize({
+            languages: [
+                { name: "Русский", code: "ru" },
+                { name: "Українська", code: "ua" }
+            ],
+            options: { renderToStaticMarkup}
+        });
+    }
+    render() {
+        return (
+                <div className="App">
+                    <LanguageToggle/>
+                    <Contacts/>
+                </div>
+        );
+    }
 }
 
-export default App;
+export default withLocalize(App);

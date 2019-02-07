@@ -4,16 +4,22 @@ import '../styles/settings.css'
 import Tel from '../img/tel.PNG'
 import Map from '../img/map.PNG'
 import Mail from '../img/mail.PNG'
+import {Translate, withLocalize} from 'react-localize-redux'
+import contactsTranslations from '../translations/contacts.json'
 
 import Button from './Button'
 import logo from '../img/bg.jpg'
 import makaka from '../img/download.jpg'
 
 class Contacts extends Component {
+    constructor(props) {
+        super(props);
+        this.props.addTranslation(contactsTranslations);
+    }
     render() {
         return <div className="contacts">
             <section id={'contacts-section1'}>
-                <h1 className='title'>Контакты</h1>
+                <h1 className='title'><Translate id="contacts.title"/></h1>
                 <div className='map-responsive'>
                     <iframe width="1000" height="300"
                             src="https://maps.google.com/maps?width=800&amp;height=440&amp;hl=en&amp;q=Khmelnytskyi%2C%20Podylska%2010%2F3+(Office)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
@@ -51,4 +57,4 @@ class Contacts extends Component {
     }
 }
 
-export default Contacts;
+export default withLocalize(Contacts);

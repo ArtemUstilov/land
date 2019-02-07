@@ -5,9 +5,10 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.css';
 import * as serviceWorker from './serviceWorker';
 import $ from 'jquery'
+import {LocalizeProvider} from "react-localize-redux";
 
 let t = $('root').width;
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<LocalizeProvider><App /></LocalizeProvider>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
