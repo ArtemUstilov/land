@@ -1,21 +1,24 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import '../styles/Portfolio.css'
 import '../styles/settings.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-class Portfolio extends Component {
+import clock from '../img/clock.png';
+
+class Footer extends Component {
     render() {
         var settings = {
-            dots: true,
+            dots: false,
             infinite: true,
             speed: 500,
-            slidesToShow: 2,
+            slidesToShow: 4,
             slidesToScroll: 1,
             initialSlide: 0,
-            arrows: true,
-            autoplay:true,
-            rows:2,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed:2000,
+            rows: 1,
             responsive: [
                 {
                     breakpoint: 1024,
@@ -50,29 +53,34 @@ class Portfolio extends Component {
 
                             <Slider className={'text-center '} {...settings}>
                                 <div>
-                                    <h3>1</h3>
+                                    <img className="img-fluid" src={clock}/>
                                 </div>
                                 <div>
-                                    <h3>2</h3>
+                                    <img className="img-fluid" src={clock}/>
                                 </div>
                                 <div>
-                                    <h3>3</h3>
+                                    <img className="img-fluid" src={clock}/>
                                 </div>
                                 <div>
-                                    <h3>4</h3>
+                                    <img className="img-fluid" src={clock}/>
                                 </div>
                                 <div>
-                                    <h3>5</h3>
+                                    <img className="img-fluid" src={clock}/>
                                 </div>
                                 <div>
-                                    <h3>6</h3>
+                                    <img className="img-fluid" src={clock}/>
                                 </div>
                                 <div>
-                                    <h3>7</h3>
+                                    <img className="img-fluid" src={clock}/>
                                 </div>
                                 <div>
-                                    <h3>8</h3>
+                                    <img className="img-fluid" src={clock}/>
                                 </div>
+                                <div>
+                                    <img className="img-fluid" src={clock}/>
+                                </div>
+
+
                             </Slider>
                         </div>
 
@@ -83,4 +91,4 @@ class Portfolio extends Component {
     }
 }
 
-export default Portfolio;
+export default Footer;

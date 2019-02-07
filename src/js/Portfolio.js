@@ -4,17 +4,22 @@ import '../styles/settings.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import clock from "../img/clock.png";
 class Portfolio extends Component {
     render() {
         var settings = {
+            className:"d-flex justify-content-center",
             dots: false,
             infinite: true,
             speed: 500,
-            slidesToShow: 4,
+            slidesToShow: 2,
             slidesToScroll: 1,
             initialSlide: 0,
-            arrows: false,
             autoplay:true,
+            autoplaySpeed:2000,
+            rows:2,
+            arrows:false,
+
             responsive: [
                 {
                     breakpoint: 1024,
@@ -43,59 +48,38 @@ class Portfolio extends Component {
         return (
             <section id={'portfolio'}>
                 <div className="container-fluid ">
-                    <div className="row d-flex justify-content-center">
+                    <div className="row d-flex text-center justify-content-center">
                         <div className="col-md-8 col-xs-12">
                             <h3 className="text-center about-logo title">
                            Портфолио
                         </h3>
-                            <Slider {...settings}>
+                            <Slider  {...settings}>
                                 <div>
-                                    <h3>1</h3>
+                                    <img className="img-fluid" src={clock}/>
                                 </div>
                                 <div>
-                                    <h3>2</h3>
+                                    <img className="img-fluid" src={clock}/>
                                 </div>
                                 <div>
-                                    <h3>3</h3>
+                                    <img className="img-fluid" src={clock}/>
                                 </div>
                                 <div>
-                                    <h3>4</h3>
+                                    <img className="img-fluid" src={clock}/>
                                 </div>
                                 <div>
-                                    <h3>5</h3>
+                                    <img className="img-fluid" src={clock}/>
                                 </div>
                                 <div>
-                                    <h3>6</h3>
+                                    <img className="img-fluid" src={clock}/>
                                 </div>
                                 <div>
-                                    <h3>7</h3>
+                                    <img className="img-fluid" src={clock}/>
                                 </div>
                                 <div>
-                                    <h3>8</h3>
+                                    <img className="img-fluid" src={clock}/>
                                 </div>
                                 <div>
-                                    <h3>9</h3>
-                                </div>
-                                <div>
-                                    <h3>10</h3>
-                                </div>
-                                <div>
-                                    <h3>11</h3>
-                                </div>
-                                <div>
-                                    <h3>12</h3>
-                                </div>
-                                <div>
-                                    <h3>13</h3>
-                                </div>
-                                <div>
-                                    <h3>14</h3>
-                                </div>
-                                <div>
-                                    <h3>15</h3>
-                                </div>
-                                <div>
-                                    <h3>16</h3>
+                                    <img className="img-fluid" src={clock}/>
                                 </div>
                             </Slider>
                         </div>
