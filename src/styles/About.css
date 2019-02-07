@@ -49,27 +49,7 @@
 .adv-img-container{
     padding:0 5px 0 0 !important;
 }
-.curly-quotes:before, .curly-quotes:after {
-    display: inline-block;
-    vertical-align: top;
-    height: 20px;
-    line-height: 10px;
-    font-size: 50px;
-}
 
-.curly-quotes:before {
-    content: '\201C';
-    padding-right: 4px;
-    padding-left: -8px;
-    padding-top:5px;
-}
-
-.curly-quotes:after {
-    content: '\201D';
-    padding-left: 4px;
-   padding-right: -8px;
-    padding-top:25px;
-}
 
 
 

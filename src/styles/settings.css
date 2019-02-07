@@ -32,3 +32,35 @@
     left: 8px;
     margin-right: -10%;
 }
+
+.curly-quotes:before, .curly-quotes:after {
+    display: inline-block;
+    vertical-align: top;
+    height: 20px;
+    line-height: 10px;
+    font-size: 50px;
+}
+
+.curly-quotes:before {
+    content: '\201C';
+    padding-right: 4px;
+    padding-left: -8px;
+    padding-top:5px;
+}
+
+.curly-quotes:after {
+    content: '\201D';
+    padding-left: 4px;
+    padding-right: -8px;
+    padding-top:25px;
+}
+.gray-background{
+    background-color: #E8E8E8;
+}
+
+.no-padding{
+    padding:0 !important;
+}
+.black-background{
+    background-color: black;
+}

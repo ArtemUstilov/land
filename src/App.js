@@ -23,8 +23,8 @@ class App extends Component {
     render() {
         return (
                 <div className="App">
-                    <LanguageToggle/>
-                    <Services/>
+                    <Portfolio/>
+                    <Footer/>
                 </div>
         );
     }

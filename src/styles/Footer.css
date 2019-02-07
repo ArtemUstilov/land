@@ -1,4 +1,65 @@
 #footer .slick-next:before, #footer .slick-prev:before{
     color:black !important;
 }
+.me-photo{
+    height:250px;
+    width:200px;
+    float:left;
+    padding-right:25px;
+}
+.footer-form{
+max-height:380px !important;
+}
+.footer-form-section{
+    padding-bottom:10vw;
+}
+.form-footer-box{
+    background-color: black;
+    color:white;
+    padding:40px calc(10px + 1vw);
+    padding-bottom:0;
+}
+.wait{
+    font-size:15px;
+}
+.footer-form input{
+    background-color: black;
+    border:1px solid white;
+    padding:10px;
+    color:white;
+}
+.footer-form input::placeholder{
+    color:white;
+}
+.footer-slider{
+    width:100% !important;
+    height: auto !important;
+    background-color: black;
+}
+.footer-slider div {
+
+}
+.small{
+  padding:calc(1vw + 20px);
+}
+.footer-privacy p{
+    margin:0 !important;
+    color:rgba(256,256,256,0.2);
+}
+.footer-info-cell a{
+   color:black !important;
+
+}
+.footer-info-cell .phone{
+    color:black !important;
+    font-weight: 600;
+}
+
+.footer-info-cell p{
+    margin-top:1em;
+}
+.footer-logo{
+    width:100px;
+    height: auto;
+}
 
