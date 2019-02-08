@@ -191,7 +191,7 @@
 }
 
 #section7{
-    padding-bottom: 150px;
+    padding-bottom: 40px;
     width: 100%;
 }
 .upper-block{
@@ -273,7 +273,39 @@
 
 
 
+.main-slider{
 
+    width:100%;
+}
+.main-slider .slick-prev, .main-slider .slick-next{
+    background-color: white !important;
+    border-radius: 50%;
+    padding-top:2.5px;
+    width: 50px!important;
+    height: 50px!important;
+    margin:0 -50px;
+}
+.main-slider .slick-prev::before, .main-slider .slick-next::before{
+    font-size: 50px!important;
+
+}
+.main-slider .rev{
+    background-color: white;
+    padding:10px;
+    margin-bottom:20px;
+}
+.main-slider .rev .rev-text{
+    text-align: left;
+}
+.rev-name{
+    margin-bottom:0 !important;
+}
+.rev-date{
+    font-weight: 300;
+}
+.rev-img{
+    border-radius: 50%;
+}
 
 .wrapper {
     position: absolute;
