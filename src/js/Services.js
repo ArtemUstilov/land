@@ -6,8 +6,10 @@ import contactsTranslations from '../translations/services.json'
 import Button from "./Button.js";
 import logo from '../img/bg.jpg'
 import design2 from '../img/design2.jpg'
+import {renderToStaticMarkup} from "react-dom/server";
 
 class Describe extends Component {
+
     render() {
         return (<div className={`box box${this.props.num % 2}`}>
                 <img src={this.props.icon} alt="" className="box-icon"/>
@@ -21,6 +23,13 @@ class Describe extends Component {
 class Services extends Component {
     constructor(props) {
         super(props);
+        this.props.initialize({
+            languages: [
+                {name: "Русский", code: "ru"},
+                {name: "Українська", code: "ua"}
+            ],
+            options: {renderToStaticMarkup}
+        });
         this.props.addTranslation(contactsTranslations);
     }
 

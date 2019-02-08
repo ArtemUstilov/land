@@ -29,8 +29,22 @@ import Img4_3 from '../img/portfolio/fourth/3.jpg';
 import Img4_4 from '../img/portfolio/fourth/4.jpg';
 import Img4_5 from '../img/portfolio/fourth/5.jpg';
 import Img4_6 from '../img/portfolio/fourth/6.jpg';
+import {renderToStaticMarkup} from "react-dom/server";
+import contactsTranslations from '../translations/main.json'
+import {withLocalize} from 'react-localize-redux'
 
 class Portfolio extends Component {
+    constructor(props) {
+        super(props);
+        this.props.initialize({
+            languages: [
+                {name: "Русский", code: "ru"},
+                {name: "Українська", code: "ua"}
+            ],
+            options: {renderToStaticMarkup}
+        });
+        this.props.addTranslation(contactsTranslations);
+    }
     render() {
         const settings = {
             className:'portfolio-slider',
@@ -152,4 +166,4 @@ class Portfolio extends Component {
     }
 }
 
-export default Portfolio;
+export default withLocalize(Portfolio);

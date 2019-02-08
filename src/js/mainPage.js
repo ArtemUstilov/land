@@ -3,9 +3,36 @@ import '../styles/mainPage.css'
 import '../styles/settings.css'
 import Button from './Button'
 import logo from '../img/bg.jpg'
+import contactsTranslations from '../translations/main.json'
 import design1 from '../img/design1.jpg'
-
+import design3 from '../img/design3.jpg'
+import {withLocalize} from 'react-localize-redux'
+import Img1_1 from '../img/portfolio/first/1.jpg';
+import Img1_2 from '../img/portfolio/first/2.jpg';
+import Img1_3 from '../img/portfolio/first/3.jpg';
+import Img1_4 from '../img/portfolio/first/4.jpg';
+import Img1_5 from '../img/portfolio/first/5.jpg';
+import Img1_6 from '../img/portfolio/first/6.jpg';
+import Img2_1 from '../img/portfolio/second/1.jpg';
+import Img2_2 from '../img/portfolio/second/2.jpg';
+import Img2_3 from '../img/portfolio/second/3.jpg';
+import Img2_4 from '../img/portfolio/second/4.jpg';
+import Img2_5 from '../img/portfolio/second/5.jpg';
+import Img2_6 from '../img/portfolio/second/6.jpg';
+import Img3_1 from '../img/portfolio/third/1.jpg';
+import Img3_2 from '../img/portfolio/third/2.jpg';
+import Img3_3 from '../img/portfolio/third/3.jpg';
+import Img3_4 from '../img/portfolio/third/4.jpg';
+import Img3_5 from '../img/portfolio/third/5.jpg';
+import Img3_6 from '../img/portfolio/third/6.jpg';
+import Img4_1 from '../img/portfolio/fourth/1.jpg';
+import Img4_2 from '../img/portfolio/fourth/2.jpg';
+import Img4_3 from '../img/portfolio/fourth/3.jpg';
+import Img4_4 from '../img/portfolio/fourth/4.jpg';
+import Img4_5 from '../img/portfolio/fourth/5.jpg';
+import Img4_6 from '../img/portfolio/fourth/6.jpg';
 import makaka from '../img/unicorn.jpg'
+import {renderToStaticMarkup} from "react-dom/server";
 
 class Describe extends Component {
     render() {
@@ -33,8 +60,16 @@ class Member extends Component {
 }
 
 class Design extends Component {
-    constructor(){
-        super();
+    constructor(props) {
+        super(props);
+        this.props.initialize({
+            languages: [
+                {name: "Русский", code: "ru"},
+                {name: "Українська", code: "ua"}
+            ],
+            options: {renderToStaticMarkup}
+        });
+        this.props.addTranslation(contactsTranslations);
     }
     render() {
         let no_pad = {
@@ -59,6 +94,7 @@ class Design extends Component {
         //         }(i));
         //     }
         // }
+        let imgs = [Img1_1, Img1_5, Img2_1, Img2_5, Img3_5, Img4_6];
         return <div className="design">
             <section id={'section1'} className={'section'}>
                 <div className="title-box ps-top-to-bottom">
@@ -79,7 +115,7 @@ class Design extends Component {
                                     <div key={x} className="row">
                                         {[1, 2, 3].map(x =>
                                             <div key={x} className="col-sm-4 greeny" style={no_pad}>
-                                                <img src={logo} alt="" className={'proj-img'}/>
+                                                <img src={imgs.pop()} alt="" className={'proj-img'}/>
                                             </div>
                                         )}
                                     </div>
@@ -148,7 +184,7 @@ class Design extends Component {
                             <h1 className='title'> Что мы еще предлагаем</h1>
                             <div className="row">
                                 <div className="col-sm-6 no-padding">
-                                    <img src={logo} alt="" className='img-fluid mb-5'/>
+                                    <img src={design3} alt="" className='img-fluid mb-5'/>
                                 </div>
                                 <br/>
                                 <div className="col-sm-6">
@@ -217,4 +253,4 @@ class Design extends Component {
     }
 }
 
-export default Design;
+export default withLocalize(Design);

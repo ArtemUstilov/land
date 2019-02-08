@@ -4,6 +4,7 @@ import MainPage from './js/mainPage.js'
 import About from './js/About.js'
 import Portfolio from './js/Portfolio.js'
 import Footer from './js/Footer.js'
+
 import Contacts from './js/Contacts.js'
 import Services from './js/Services.js'
 import { renderToStaticMarkup } from "react-dom/server";
@@ -23,7 +24,7 @@ class App extends Component {
     render() {
         return (
                 <div className="App">
-                    <Portfolio/>
+                    <MainPage/>
                     <Footer/>
                 </div>
         );

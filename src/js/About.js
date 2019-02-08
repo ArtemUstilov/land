@@ -10,9 +10,23 @@ import '../styles/About.css'
 import classNames from 'classnames'
 import YouTube from 'react-youtube';
 import Button from './Button'
+import {renderToStaticMarkup} from "react-dom/server";
+import contactsTranslations from '../translations/main.json'
+import {withLocalize} from 'react-localize-redux'
 
 
 class About extends Component {
+    constructor(props) {
+        super(props);
+        this.props.initialize({
+            languages: [
+                {name: "Русский", code: "ru"},
+                {name: "Українська", code: "ua"}
+            ],
+            options: {renderToStaticMarkup}
+        });
+        this.props.addTranslation(contactsTranslations);
+    }
     render() {
         let classes = classNames({
             'box': true,
@@ -181,4 +195,4 @@ class About extends Component {
     }
 }
 
-export default About;
+export default withLocalize(About);

@@ -20,6 +20,10 @@ import Img06 from '../img/footer/Insta/6.jpg';
 import Img07 from '../img/footer/Insta/7.jpg';
 import Img08 from '../img/footer/Insta/8.jpg';
 import Img09 from '../img/footer/Insta/9.jpg';
+import {renderToStaticMarkup} from "react-dom/server";
+import contactsTranslations from '../translations/main.json'
+import {withLocalize} from 'react-localize-redux'
+
 
 class SliderFooter extends Component {
     render() {
@@ -126,6 +130,17 @@ class SliderFooter extends Component {
 }
 
 class Footer extends Component {
+    constructor(props) {
+        super(props);
+        this.props.initialize({
+            languages: [
+                {name: "Русский", code: "ru"},
+                {name: "Українська", code: "ua"}
+            ],
+            options: {renderToStaticMarkup}
+        });
+        this.props.addTranslation(contactsTranslations);
+    }
     render() {
 
         return (
@@ -233,4 +248,4 @@ class Footer extends Component {
     }
 }
 
-export default Footer;
+export default withLocalize(Footer);

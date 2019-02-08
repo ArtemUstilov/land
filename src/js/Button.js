@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
 import '../styles/Button.css'
 import classNames from 'classnames'
+import {Translate, withLocalize} from 'react-localize-redux'
+import contactsTranslations from '../translations/navbar.json'
+
 class Button extends Component {
+    constructor(props) {
+        super(props);
+        this.props.addTranslation(contactsTranslations);
+    }
     render() {
         let classes = classNames({
             'white': this.props.white,
@@ -10,10 +17,10 @@ class Button extends Component {
             [this.props.classes]: true,
         })
         return (
-            <button className={classes}>
-                {this.props.value}
+            <button className={classes} >
+                <Translate id={this.props.value}/>
             </button>
         );
     }
 }
-export default Button;
+export default withLocalize(Button);
