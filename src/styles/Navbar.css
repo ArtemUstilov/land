@@ -3,7 +3,7 @@
     background-color: #000;
     height: 100px;
     width: 100%;
-    z-index: 1;
+    z-index: 501;
 }
 .header-m{
     height: 50px;

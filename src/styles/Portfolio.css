@@ -5,3 +5,6 @@
 .portfolio-slider div{
     padding:0 1px;
 }
+.sm-border-black{
+    border:1px solid black;
+}

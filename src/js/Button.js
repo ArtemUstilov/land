@@ -14,7 +14,8 @@ class Button extends Component {
     render() {
         let classes = classNames({
             'white': this.props.white,
-            'black': !this.props.white,
+            'black': this.props.black || (!this.props.green&&!this.props.white),
+            'green': this.props.green,
             'button':true,
             [this.props.classes]: true,
         })

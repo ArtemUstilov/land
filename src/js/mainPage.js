@@ -48,6 +48,44 @@ class Describe extends Component {
         )
     }
 }
+class MiniPortfolio extends Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        const settings = {
+            className:'portfolio-slider-mini',
+            dots: true,
+            arrows:true,
+            infinite: true,
+            slidesToShow: 3,
+            autoplay:true,
+            autoplaySpeed:3000,
+            speed: 800,
+            rows: 2,
+            slidesToScroll: 3,
+            adaptiveHeight:true,
+            responsive: [
+                {
+                    breakpoint: 756,
+                    settings: {
+                        arrows:false
+
+                    }
+                }
+            ]
+        };
+        let images = [Img1_1, Img1_2, Img1_3, Img1_4, Img1_5, Img1_6, Img2_1, Img2_2, Img2_3, Img2_4,
+            Img2_5, Img2_6, Img3_1, Img3_2, Img3_3, Img3_4, Img3_5, Img3_6, Img4_1, Img4_2,
+            Img4_3, Img4_4, Img4_5, Img4_6];
+        return (
+
+                            <Slider  {...settings}>
+                                {images.map(im=>{return <div key={im}><img className="img-fluid sm-border-black" src={im} /></div>})}
+                            </Slider>
+        );
+    }
+}
 
 class SliderFooter extends Component {
     render() {
@@ -188,7 +226,6 @@ class SliderFooter extends Component {
         //         }(i));
         //     }
         // }
-        let imgs = [Img1_1, Img1_5, Img2_1, Img2_5, Img3_5, Img4_6];
         return <div className="design">
         <section id={'section1'} className={'section'}>
         <div className="title-box ps-top-to-bottom">
@@ -196,30 +233,24 @@ class SliderFooter extends Component {
         <div id='wrapper'>
         <p className='white-text' id='text'>Сделам Ваш интерьер стильным и уютным</p>
         </div>
-        <Button white={true} value="ПОЛУЧИТЕ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ" classes={'title-btn'}/>
+        <Button green={true} value={'des.btn-first'} classes={'title-btn'}/>
         </div>
         </section>
-        <section>
+        <section id={'section0'}>
         <div className="container-fluid ">
         <div className="row d-flex justify-content-center">
-        <div className="col-md-8 col-12 d-flex flex-column justify-content-center align-items-center">
+        <div className="col-md-9 col-12 d-flex flex-column justify-content-center align-items-center">
         <h1 className={'title'}>Наши работы</h1>
-        <div className={'proj-box'}>
-        {[1, 2].map(x =>
-            <div key={x} className="row">
-                {[1, 2, 3].map(x =>
-                    <div key={x} className="col-sm-4 greeny" style={no_pad}>
-                        <img src={imgs.pop()} alt="" className={'proj-img'}/>
-                    </div>
-                )}
-            </div>
-        )}
-        </div>
-        <Button white={false} value="СМОТРЕТЬ ВСЕ РАБОТЫ" classes='proj-btn'/>
+
+            <MiniPortfolio/>
+        <br/>
+        <Button green={true} value={'des.btn-all'} classes='black-green'/>
+
         </div>
         </div>
         </div>
         </section>
+
         {/*<section id={'section3'} className={'section'}>*/}
         {/*<div className="title-box ps-top-to-bottom">*/}
         {/*<h1 className='white-text title white-title' style={{padding: '10px'}}>С чего начать*/}
@@ -306,7 +337,7 @@ class SliderFooter extends Component {
         <div className="col-md-9 col-12 d-flex flex-column align-items-center">
         <h1 className='white-text white-title title'>Отзывы клиентов</h1>
         <SliderFooter/>
-        <Button white={true} value='Показать все отзывы' classes='mt-5 p-3'/>
+        <Button white={true} value='des.revs' classes='mt-5 p-3'/>
         </div>
         </div>
         </div>

@@ -4,7 +4,7 @@ import '../styles/settings.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import clock from '../img/clock.png';
+import {Translate, withLocalize} from 'react-localize-redux'
 import me from '../img/download.jpg';
 import logo from '../img/logo.png';
 import Button from './Button'
@@ -21,13 +21,11 @@ import Img07 from '../img/footer/Insta/7.jpg';
 import Img08 from '../img/footer/Insta/8.jpg';
 import Img09 from '../img/footer/Insta/9.jpg';
 import {renderToStaticMarkup} from "react-dom/server";
-import contactsTranslations from '../translations/main.json'
-import {withLocalize} from 'react-localize-redux'
+import contactsTranslations from '../translations/footer.json'
 
 
 class SliderFooter extends Component {
     render() {
-
 
 
         var settings = {
@@ -66,63 +64,16 @@ class SliderFooter extends Component {
                 }
             ]
         };
+        let images =[Img00,Img01,Img02,Img03,Img04,Img05,Img06,Img07,Img08,Img09]
         return (
 
 
             <Slider className={'text-center footer-slider'} {...settings}>
-                <div>
-                    <a href={'https://www.instagram.com/okolitadesign/'}>
-                    <img className="img-fluid" src={Img00} />
+                {images.map((x,i)=>{return <div key={i}>
+                    <a target={'_blank'} href={'https://www.instagram.com/okolitadesign/'}>
+                        <img className="img-fluid" src={x}/>
                     </a>
-                </div>
-                <div>
-                    <a href={'https://www.instagram.com/okolitadesign/'}>
-                    <img className="img-fluid" src={Img01}/>
-                    </a>
-                </div>
-                <div>
-                    <a href={'https://www.instagram.com/okolitadesign/'}>
-                    <img className="img-fluid" src={Img02}/>
-                    </a>
-                </div>
-                <div>
-                    <a href={'https://www.instagram.com/okolitadesign/'}>
-                    <img className="img-fluid" src={Img03}/>
-                    </a>
-                </div>
-                <div>
-                    <a href={'https://www.instagram.com/okolitadesign/'}>
-                    <img className="img-fluid" src={Img04}/>
-                    </a>
-                </div>
-                <div>
-                    <a href={'https://www.instagram.com/okolitadesign/'}>
-                    <img className="img-fluid" src={Img05}/>
-                    </a>
-                </div>
-                <div>
-                    <a href={'https://www.instagram.com/okolitadesign/'}>
-                    <img className="img-fluid" src={Img06}/>
-                    </a>
-                </div>
-                <div>
-                    <a href={'https://www.instagram.com/okolitadesign/'}>
-                    <img className="img-fluid" src={Img07}/>
-                    </a>
-                </div>
-                <div>
-                    <a href={'https://www.instagram.com/okolitadesign/'}>
-                    <img className="img-fluid" src={Img08}/>
-                    </a>
-                </div>
-                <div>
-                    <a href={'https://www.instagram.com/okolitadesign/'}>
-                    <img className="img-fluid" src={Img09}/>
-                    </a>
-                </div>
-
-
-
+                </div>})}
             </Slider>
 
         );
@@ -141,15 +92,17 @@ class Footer extends Component {
         });
         this.props.addTranslation(contactsTranslations);
     }
-    render() {
 
+
+    render() {
         return (
             <section id={'footer'}>
                 <div className="container-fluid ">
                     <div className="footer-form-section gray-background row d-flex justify-content-center">
                         <div className="col-12">
                             <h3 className="text-center about-logo title">
-                                Консультация с дизайнером
+                                <Translate id={'footer.title-1'}/>
+
                             </h3>
 
 
@@ -185,15 +138,20 @@ class Footer extends Component {
                                             <p className={'wait'}>Закажите консультацию и мы свяжемся с Вами через
                                                 несколько минут</p>
                                             <br/>
-                                            <input name={'name'} placeholder={'Ваше имя'}/>
+                                            <input name={'name'}
+                                                   placeholder={'Ваше имя'}/>
                                             <br/>
                                             <br/>
                                             <div className={'row'}>
                                                 <div className={'col-12'}>
                                                     <input name={'phone'} placeholder={'Ваш телефон'}/>
                                                 </div>
+                                                <br/>
+                                                <br/>
+                                                <br/>
+                                                <br/>
                                                 <div className={'col-12'}>
-                                                    <Button white={true} value="ЗАПИСАТЬСЯ СЕЙЧАС" classes='proj-btn'/>
+                                                    <Button green="true" classes={'form-btn'}value={'footer.consultation'}/>
                                                 </div>
                                             </div>
                                         </form>
@@ -219,17 +177,22 @@ class Footer extends Component {
                                 <div className={'col-12 col-md-10 col-lg-9'}>
                                     <div className={'row d-flex  justify-content-between footer-info-cell'}>
                                         <div className={'col-6 col-md-3 col-lg-3 text-center'}>
-                                    <p><img className=" footer-logo" src={logo}/></p>
+                                            <p><img className=" footer-logo" src={logo}/></p>
                                         </div>
                                         <div className={'col-6 col-md-3 col-lg-3 text-center'}>
-                                    <p><a className={'phone'} href="tel:+380971234567"><img className={'img-fluid'} src={phone}/> +38 (097) 12 34 567</ a></p>
+                                            <p><a className={'phone'} href="tel:+380971234567"><img
+                                                className={'img-fluid'} src={phone}/> +38 (097) 12 34 567</ a></p>
                                         </div>
                                         <div className={'col-6 col-md-3 col-lg-3 text-center'}>
-                                    <p><a className={'mail'} href="mailto:okolitadesign@gmail.com"><img src={mail}/> okolitadesign@gmail.com</a></p>
-                                            </div>
+                                            <p><a className={'mail'} href="mailto:okolitadesign@gmail.com"><img
+                                                src={mail}/> okolitadesign@gmail.com</a></p>
+                                        </div>
                                         <div className={'col-6 col-md-3 col-lg-3 text-center'}>
-                                    <p className={"footer-button-box"}><Button white={true} value="Заказать звонок" classes='black-background footer-button '/></p>
-                                                </div>
+                                            <p className={"footer-button-box"}><Button white={true}
+                                                                                       value={'footer.recall'}
+                                                                                       classes='black-background footer-button '/>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

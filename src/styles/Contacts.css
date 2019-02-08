@@ -23,6 +23,12 @@
 .icon-c{
     height:67px;
     margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.contacts-map{
+    border-radius: 10px;
+    border: 1px solid black;
 }
 .icons{
     margin-top: 40px;
