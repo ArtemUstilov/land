@@ -68,6 +68,9 @@ class Portfolio extends Component {
                 }
             ]
         };
+        let images = [Img1_2, Img1_3, Img1_4, Img1_5, Img1_6, Img2_1, Img2_2, Img2_3, Img2_4,
+            Img2_5, Img2_6, Img3_1, Img3_2, Img3_3, Img3_4, Img3_5, Img3_6, Img4_1, Img4_2,
+            Img4_3, Img4_5, Img4_6];
         return (
             <section id={'portfolio'}>
                 <div className="container-fluid ">
@@ -79,80 +82,7 @@ class Portfolio extends Component {
                         </div>
                         <div className="col-md-9 col-lg-8 col-xs-12">
                             <Slider  {...settings}>
-
-                                <div>
-                                    <img className="img-fluid" src={Img1_1}/>
-                                </div>
-                                <div>
-                                    <img className="img-fluid" src={Img1_2}/>
-                                </div>
-                                <div>
-                                    <img className="img-fluid" src={Img1_3}/>
-                                </div>
-                                <div>
-                                    <img className="img-fluid" src={Img1_4}/>
-                                </div>
-                                <div>
-                                    <img className="img-fluid" src={Img1_5}/>
-                                </div>
-                                <div>
-                                    <img className="img-fluid" src={Img1_6}/>
-                                </div>
-                                <div>
-                                    <img className="img-fluid" src={Img2_1}/>
-                                </div>
-                                <div>
-                                    <img className="img-fluid" src={Img2_2}/>
-                                </div>
-                                <div>
-                                    <img className="img-fluid" src={Img2_3}/>
-                                </div>
-                                <div>
-                                    <img className="img-fluid" src={Img2_4}/>
-                                </div>
-                                <div>
-                                    <img className="img-fluid" src={Img2_5}/>
-                                </div>
-                                <div>
-                                    <img className="img-fluid" src={Img2_6}/>
-                                </div>
-                                <div>
-                                    <img className="img-fluid" src={Img3_1}/>
-                                </div>
-                                <div>
-                                    <img className="img-fluid" src={Img3_2}/>
-                                </div>
-                                <div>
-                                    <img className="img-fluid" src={Img3_3}/>
-                                </div>
-                                <div>
-                                    <img className="img-fluid" src={Img3_4}/>
-                                </div>
-                                <div>
-                                    <img className="img-fluid" src={Img3_5}/>
-                                </div>
-                                <div>
-                                    <img className="img-fluid" src={Img3_6}/>
-                                </div>
-                                <div>
-                                    <img className="img-fluid" src={Img4_1}/>
-                                </div>
-                                <div>
-                                    <img className="img-fluid" src={Img4_2}/>
-                                </div>
-                                <div>
-                                    <img className="img-fluid" src={Img4_3}/>
-                                </div>
-                                <div>
-                                    <img className="img-fluid" src={Img4_4}/>
-                                </div>
-                                <div>
-                                    <img className="img-fluid" src={Img4_5}/>
-                                </div>
-                                <div>
-                                    <img className="img-fluid" src={Img4_6}/>
-                                </div>
-
+        {images.map(im=>{return <div ><img className="img-fluid" src={im} /></div>})}
                             </Slider>
                         </div>
 
