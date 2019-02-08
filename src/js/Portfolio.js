@@ -5,23 +5,37 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import clock from "../img/clock.png";
-import Img00 from '../img/footer/0.jpg';
-import Img01 from '../img/footer/1.jpg';
-import Img02 from '../img/footer/2.jpg';
-import Img03 from '../img/footer/3.jpg';
-import Img04 from '../img/footer/4.jpg';
-import Img05 from '../img/footer/5.jpg';
-import Img06 from '../img/footer/6.jpg';
-import Img07 from '../img/footer/7.jpg';
-import Img08 from '../img/footer/8.jpg';
-import Img09 from '../img/footer/9.jpg';
+import Img1_1 from '../img/portfolio/first/1.jpg';
+import Img1_2 from '../img/portfolio/first/2.jpg';
+import Img1_3 from '../img/portfolio/first/3.jpg';
+import Img1_4 from '../img/portfolio/first/4.jpg';
+import Img1_5 from '../img/portfolio/first/5.jpg';
+import Img1_6 from '../img/portfolio/first/6.jpg';
+import Img2_1 from '../img/portfolio/second/1.jpg';
+import Img2_2 from '../img/portfolio/second/2.jpg';
+import Img2_3 from '../img/portfolio/second/3.jpg';
+import Img2_4 from '../img/portfolio/second/4.jpg';
+import Img2_5 from '../img/portfolio/second/5.jpg';
+import Img2_6 from '../img/portfolio/second/6.jpg';
+import Img3_1 from '../img/portfolio/third/1.jpg';
+import Img3_2 from '../img/portfolio/third/2.jpg';
+import Img3_3 from '../img/portfolio/third/3.jpg';
+import Img3_4 from '../img/portfolio/third/4.jpg';
+import Img3_5 from '../img/portfolio/third/5.jpg';
+import Img3_6 from '../img/portfolio/third/6.jpg';
+import Img4_1 from '../img/portfolio/fourth/1.jpg';
+import Img4_2 from '../img/portfolio/fourth/2.jpg';
+import Img4_3 from '../img/portfolio/fourth/3.jpg';
+import Img4_4 from '../img/portfolio/fourth/4.jpg';
+import Img4_5 from '../img/portfolio/fourth/5.jpg';
+import Img4_6 from '../img/portfolio/fourth/6.jpg';
 
 class Portfolio extends Component {
     render() {
         const settings = {
             className:'portfolio-slider',
             dots: true,
-            arrows:false,
+            arrows:true,
             infinite: true,
             slidesToShow: 3,
             autoplay:true,
@@ -30,6 +44,15 @@ class Portfolio extends Component {
             rows: 2,
             slidesToScroll: 3,
             adaptiveHeight:true,
+            responsive: [
+                {
+                    breakpoint: 756,
+                    settings: {
+                        arrows:false
+
+                    }
+                }
+            ]
         };
         return (
             <section id={'portfolio'}>
@@ -42,36 +65,80 @@ class Portfolio extends Component {
                         </div>
                         <div className="col-md-9 col-lg-8 col-xs-12">
                             <Slider  {...settings}>
+
                                 <div>
-                                    <img className="img-fluid" src={Img00}/>
+                                    <img className="img-fluid" src={Img1_1}/>
                                 </div>
                                 <div>
-                                    <img className="img-fluid" src={Img01}/>
+                                    <img className="img-fluid" src={Img1_2}/>
                                 </div>
                                 <div>
-                                    <img className="img-fluid" src={Img02}/>
+                                    <img className="img-fluid" src={Img1_3}/>
                                 </div>
                                 <div>
-                                    <img className="img-fluid" src={Img03}/>
+                                    <img className="img-fluid" src={Img1_4}/>
                                 </div>
                                 <div>
-                                    <img className="img-fluid" src={Img04}/>
+                                    <img className="img-fluid" src={Img1_5}/>
                                 </div>
                                 <div>
-                                    <img className="img-fluid" src={Img05}/>
+                                    <img className="img-fluid" src={Img1_6}/>
                                 </div>
                                 <div>
-                                    <img className="img-fluid" src={Img06}/>
+                                    <img className="img-fluid" src={Img2_1}/>
                                 </div>
                                 <div>
-                                    <img className="img-fluid" src={Img07}/>
+                                    <img className="img-fluid" src={Img2_2}/>
                                 </div>
                                 <div>
-                                    <img className="img-fluid" src={Img08}/>
+                                    <img className="img-fluid" src={Img2_3}/>
                                 </div>
                                 <div>
-                                    <img className="img-fluid" src={Img09}/>
+                                    <img className="img-fluid" src={Img2_4}/>
                                 </div>
+                                <div>
+                                    <img className="img-fluid" src={Img2_5}/>
+                                </div>
+                                <div>
+                                    <img className="img-fluid" src={Img2_6}/>
+                                </div>
+                                <div>
+                                    <img className="img-fluid" src={Img3_1}/>
+                                </div>
+                                <div>
+                                    <img className="img-fluid" src={Img3_2}/>
+                                </div>
+                                <div>
+                                    <img className="img-fluid" src={Img3_3}/>
+                                </div>
+                                <div>
+                                    <img className="img-fluid" src={Img3_4}/>
+                                </div>
+                                <div>
+                                    <img className="img-fluid" src={Img3_5}/>
+                                </div>
+                                <div>
+                                    <img className="img-fluid" src={Img3_6}/>
+                                </div>
+                                <div>
+                                    <img className="img-fluid" src={Img4_1}/>
+                                </div>
+                                <div>
+                                    <img className="img-fluid" src={Img4_2}/>
+                                </div>
+                                <div>
+                                    <img className="img-fluid" src={Img4_3}/>
+                                </div>
+                                <div>
+                                    <img className="img-fluid" src={Img4_4}/>
+                                </div>
+                                <div>
+                                    <img className="img-fluid" src={Img4_5}/>
+                                </div>
+                                <div>
+                                    <img className="img-fluid" src={Img4_6}/>
+                                </div>
+
                             </Slider>
                         </div>
 

@@ -47,12 +47,16 @@
     padding-left: -8px;
     padding-top:5px;
 }
-
+.curly-quotes{
+    text-align: center;
+    font-size:calc(15px + 0.5vw);
+    font-weight: 700;
+}
 .curly-quotes:after {
     content: '\201D';
     padding-left: 4px;
     padding-right: -8px;
-    padding-top:25px;
+    padding-top:36px;
 }
 .gray-background{
     background-color: #E8E8E8;

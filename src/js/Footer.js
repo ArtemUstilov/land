@@ -8,16 +8,18 @@ import clock from '../img/clock.png';
 import me from '../img/download.jpg';
 import logo from '../img/logo.png';
 import Button from './Button'
-import Img00 from '../img/footer/0.jpg';
-import Img01 from '../img/footer/1.jpg';
-import Img02 from '../img/footer/2.jpg';
-import Img03 from '../img/footer/3.jpg';
-import Img04 from '../img/footer/4.jpg';
-import Img05 from '../img/footer/5.jpg';
-import Img06 from '../img/footer/6.jpg';
-import Img07 from '../img/footer/7.jpg';
-import Img08 from '../img/footer/8.jpg';
-import Img09 from '../img/footer/9.jpg';
+import phone from '../img/footer/phone.jpg';
+import mail from '../img/footer/mail.jpg';
+import Img00 from '../img/footer/Insta/0.jpg';
+import Img01 from '../img/footer/Insta/1.jpg';
+import Img02 from '../img/footer/Insta/2.jpg';
+import Img03 from '../img/footer/Insta/3.jpg';
+import Img04 from '../img/footer/Insta/4.jpg';
+import Img05 from '../img/footer/Insta/5.jpg';
+import Img06 from '../img/footer/Insta/6.jpg';
+import Img07 from '../img/footer/Insta/7.jpg';
+import Img08 from '../img/footer/Insta/8.jpg';
+import Img09 from '../img/footer/Insta/9.jpg';
 
 class SliderFooter extends Component {
     render() {
@@ -205,13 +207,13 @@ class Footer extends Component {
                                     <p><img className=" footer-logo" src={logo}/></p>
                                         </div>
                                         <div className={'col-6 col-md-3 col-lg-3 text-center'}>
-                                    <p><a className={'phone'} href="tel:+380971234567">+38 (097) 12 34 567</ a></p>
+                                    <p><a className={'phone'} href="tel:+380971234567"><img className={'img-fluid'} src={phone}/> +38 (097) 12 34 567</ a></p>
                                         </div>
                                         <div className={'col-6 col-md-3 col-lg-3 text-center'}>
-                                    <p><a className={'mail'} href="mailto:okolitadesign@gmail.com">okolitadesign@gmail.com</a></p>
+                                    <p><a className={'mail'} href="mailto:okolitadesign@gmail.com"><img src={mail}/> okolitadesign@gmail.com</a></p>
                                             </div>
                                         <div className={'col-6 col-md-3 col-lg-3 text-center'}>
-                                    <p>dasdsa</p>
+                                    <p className={"footer-button-box"}><Button white={true} value="Заказать звонок" classes='black-background footer-button '/></p>
                                                 </div>
                                     </div>
                                 </div>

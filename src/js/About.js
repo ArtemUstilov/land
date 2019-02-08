@@ -1,6 +1,11 @@
 import React, {Component} from 'react';
 import logo from '../img/bg.jpg';
-import clock from '../img/clock.png';
+import item1 from '../img/footer/item1.png';
+import item2 from '../img/footer/item2.png';
+import item3 from '../img/footer/item3.png';
+import item4 from '../img/footer/item4.png';
+import item5 from '../img/footer/item5.png';
+import item6 from '../img/footer/item6.png';
 import '../styles/About.css'
 import classNames from 'classnames'
 import YouTube from 'react-youtube';
@@ -36,108 +41,104 @@ class About extends Component {
                         <div className="col-md-8 col-xs-12">
                             <h6>OKOLITA DESIGN</h6>
                             <br/>
-                            <p>Венесуела — країна гір, рівнин і лісів. Основні природні райони: гірська область Анд,
-                                западина Маракайбо, Льянос і Гвіанське плоскогір'я. Гори Анди й озеро Маракайбо на
-                                північному-заході, рівнини в центрі, дельта річки Оріноко на сході, Гаянська височина на
-                                південному-сході.</p>
-                            <p>Густа річкова мережа Венесуели має вкрай нерівномірні витрати впродовж року і бурхливі
-                                літні
-                                повені. Велика частина території належить басейну Оріноко, яка практично на всій своїй
-                                течії
-                                в межах Венесуели приймає численні притоки. Ліві притоки (Апуре, Араука, Капанапара)
-                                мають
-                                рівнинний характер течії з можливістю судноплавства.</p>
-                            <br/>
+                            <p>Добро пожаловать в студию дизайна интерьеров <b>Okolita Design!</b> <br/>
+                                Мы создаем не просто дизайн, а настроение и атмосферу Вашего интерьера. Для нас главное
+                                — это индивидуальный характер каждого проекта.</p>
+                            <p> Мы работаем для того, чтобы именно ваши мечты об идеальном интерьере воплотились в
+                                реальность, потому что… мы все разные. </p>
                         </div>
+
+                        <div className="col-md-8 col-xs-12">
+                            <p><b>Нас многое отличает друг от дуга:</b>
+                            </p>
+                            <ul>
+                                <li>
+                                    привычки и образ жизни;
+                                </li>
+                                <li>
+                                    дизайнерские вкусы и предпочтения;
+                                </li>
+                                <li>
+                                    финансовые возможности…
+                                </li>
+                            </ul>
+                            <p>Но стремление к прекрасному, желание проводить время в красивых и функциональных
+                                помещениях — общее.
+                                При этом понимание красоты и функциональности тоже у каждого свое.
+                                Мы стараемся всегда быть в курсе последних тенденций в сфере
+                                дизайна интерьеров.
+                            </p>
+
+
+                        </div>
+
                     </div>
                     <div className="d-flex justify-content-center advantages ">
-                        <div className="col-md-8 col-xs-12">
+                        <div className="col-md-10 col-sm-10">
                             <div className="row">
-                                <div className="col-md-6 col-sm-6 col-lg-3 adv-cell">
+                                <div className="col-md-6 col-sm-12 col-lg-4 adv-cell">
+                                <div className="row">
+                                    <div className="col-4 adv-img-container">
+                                        <img className="img-fluid adv-img" src={item1}/>
+                                    </div>
+                                    <div className="col-8 advantage">
+                                        <span className="advantage-text">Начало ремонта еще до полного окончания работы над дизайн-проектом</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                                <div className="col-md-6 col-sm-12 col-lg-4 adv-cell">
                                     <div className="row">
-                                        <div className="col-6 adv-img-container">
-                                            <img className="img-fluid adv-img" src={clock}/>
+                                        <div className="col-4 adv-img-container">
+                                            <img className="img-fluid adv-img" src={item2}/>
                                         </div>
-                                        <div className="col-6 advantage">
-                                            <span className="advantage-text">Примущество</span>
+                                        <div className="col-8 advantage">
+                                            <span className="advantage-text">Подбор чистовых отделочных материалов, сантехники, светильников и мебели</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-6 col-sm-12 col-lg-4 adv-cell">
+                                    <div className="row">
+                                        <div className="col-4 adv-img-container">
+                                            <img className="img-fluid adv-img" src={item3}/>
+                                        </div>
+                                        <div className="col-8 advantage">
+                                            <span className="advantage-text">Применение лучших и реальных материалов, которые можно приобрести в магазинах</span>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div className="col-md-6 col-sm-6 col-lg-3 adv-cell">
+                                <div className="col-md-6 col-sm-12 col-lg-4 adv-cell">
                                     <div className="row">
-                                        <div className="col-6 adv-img-container">
-                                            <img className="img-fluid adv-img" src={clock}/>
+                                        <div className="col-4 adv-img-container">
+                                            <img className="img-fluid adv-img" src={item4}/>
                                         </div>
-                                        <div className="col-6 advantage">
-                                            <span className="advantage-text">Примущество</span>
+                                        <div className="col-8 advantage">
+                                            <span className="advantage-text">Воплощение проекта, исходя из заданого бюджета</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-6 col-sm-6 col-lg-3 adv-cell">
+                                <div className="col-md-6 col-sm-12 col-lg-4 adv-cell">
                                     <div className="row">
-                                        <div className="col-6 adv-img-container">
-                                            <img className="img-fluid adv-img" src={clock}/>
+                                        <div className="col-4 adv-img-container">
+                                            <img className="img-fluid adv-img" src={item5}/>
                                         </div>
-                                        <div className="col-6 advantage">
-                                            <span className="advantage-text">Примущество</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="col-md-6 col-sm-6 col-lg-3 adv-cell">
-                                    <div className="row">
-                                        <div className="col-6 adv-img-container">
-                                            <img className="img-fluid adv-img" src={clock}/>
-                                        </div>
-                                        <div className="col-6 advantage">
-                                            <span className="advantage-text">Примущество</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-6 col-sm-6 col-lg-3 adv-cell">
-                                    <div className="row">
-                                        <div className="col-6 adv-img-container">
-                                            <img className="img-fluid adv-img" src={clock}/>
-                                        </div>
-                                        <div className="col-6 advantage">
-                                            <span className="advantage-text">Примущество</span>
+                                        <div className="col-8 advantage">
+                                            <span className="advantage-text">Система гибкой оплаты по мере выполнения проекта</span>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div className="col-md-6 col-sm-6 col-lg-3 adv-cell">
+                                <div className="col-md-6 col-sm-12 col-lg-4 adv-cell">
                                     <div className="row">
-                                        <div className="col-6 adv-img-container">
-                                            <img className="img-fluid adv-img" src={clock}/>
+                                        <div className="col-4 adv-img-container">
+                                            <img className="img-fluid adv-img" src={item6}/>
                                         </div>
-                                        <div className="col-6 advantage">
-                                            <span className="advantage-text">Примущество</span>
+                                        <div className="col-8 advantage">
+                                            <span className="advantage-text">Возможность работать удаленно - в онлайн режиме</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-6 col-sm-6 col-lg-3 adv-cell">
-                                    <div className="row">
-                                        <div className="col-6 adv-img-container">
-                                            <img className="img-fluid adv-img" src={clock}/>
-                                        </div>
-                                        <div className="col-6 advantage">
-                                            <span className="advantage-text">Примущество</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="col-md-6 col-sm-6 col-lg-3 adv-cell">
-                                    <div className="row">
-                                        <div className="col-6 adv-img-container">
-                                            <img className="img-fluid adv-img" src={clock}/>
-                                        </div>
-                                        <div className="col-6 advantage">
-                                            <span className="advantage-text">Примущество</span>
-                                        </div>
-                                    </div>
-                                </div>
-
 
 
 
@@ -147,43 +148,18 @@ class About extends Component {
                     </div>
                     <div className="row d-flex justify-content-center">
                         <div className="col-md-8 col-xs-12">
-                            <p>На півдні країни існує таке рідкісне явище, як біфуркація річок: від Оріноко у верхній
-                                течії відгалужується річка Касік'яре, що несе свої води в Ріу-Негру, притоку Амазонки.
-                            </p>
-                            <p>На півдні країни існує таке рідкісне явище, як біфуркація річок: від Оріноко у верхній
-                                течії відгалужується річка Касік'яре, що несе свої води в Ріу-Негру, притоку Амазонки.
-                            </p>
-                            <ul>
-                                <li>
-                                    Что-то
-                                </li>
-                                <li>
-                                    Что-то
-                                </li>
-                                <li>
-                                    Что-то
-                                </li>
-                                <li>
-                                    Что-то
-                                </li>
-                            </ul>
-                            <p>На півдні країни існує таке рідкісне явище, як біфуркація річок: від Оріноко у верхній
-                                течії відгалужується річка Касік'яре, що несе свої води в Ріу-Негру, притоку Амазонки.
-                            </p>
-                            <figure className="quote">
-                                <p className="curly-quotes">На півдні країни існує таке рідкісне явище, як біфуркація річок: від Оріноко у верхній
-                                    течії відгалужується річка Касік'яре, що несе свої води в Ріу-Негру, притоку Амазонки
-                                </p>
-                            </figure>
-
+                    <figure className="quote">
+                        <p className="curly-quotes">Какой бы красивый не был проект , он останется только
+                            визуализацией без качественной реализации
+                        </p>
+                    </figure>
                         </div>
-
                     </div>
                     <br/>
                     <div className="row title-white d-flex justify-content-center">
                         <div className="col-12">
                             <h3 className="text-center about-logo title title-white">
-                               Как мы работаем
+                                Как мы работаем
                             </h3>
                         </div>
                         <div className="col-7 title-white ">
@@ -195,8 +171,8 @@ class About extends Component {
                             />
                         </div>
                         <div className="col-8 d-flex justify-content-center">
-                        <Button white={true} value="ЗАПИСАТЬСЯ СЕЙЧАС" classes='proj-btn'/>
-                    </div>
+                            <Button white={true} value="ЗАПИСАТЬСЯ СЕЙЧАС" classes='proj-btn'/>
+                        </div>
                     </div>
 
                 </div>
