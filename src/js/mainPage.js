@@ -6,6 +6,9 @@ import logo from '../img/bg.jpg'
 import contactsTranslations from '../translations/main.json'
 import design1 from '../img/design1.jpg'
 import design3 from '../img/design3.jpg'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import {withLocalize} from 'react-localize-redux'
 import Img1_1 from '../img/portfolio/first/1.jpg';
 import Img1_2 from '../img/portfolio/first/2.jpg';
@@ -32,6 +35,16 @@ import Img4_4 from '../img/portfolio/fourth/4.jpg';
 import Img4_5 from '../img/portfolio/fourth/5.jpg';
 import Img4_6 from '../img/portfolio/fourth/6.jpg';
 import makaka from '../img/unicorn.jpg'
+import Img00 from '../img/footer/Insta/0.jpg';
+import Img01 from '../img/footer/Insta/1.jpg';
+import Img02 from '../img/footer/Insta/2.jpg';
+import Img03 from '../img/footer/Insta/3.jpg';
+import Img04 from '../img/footer/Insta/4.jpg';
+import Img05 from '../img/footer/Insta/5.jpg';
+import Img06 from '../img/footer/Insta/6.jpg';
+import Img07 from '../img/footer/Insta/7.jpg';
+import Img08 from '../img/footer/Insta/8.jpg';
+import Img09 from '../img/footer/Insta/9.jpg';
 import {renderToStaticMarkup} from "react-dom/server";
 
 class Describe extends Component {
@@ -44,7 +57,109 @@ class Describe extends Component {
         )
     }
 }
+class SliderFooter extends Component {
+    render() {
 
+
+
+        var settings = {
+            dots: false,
+            infinite: true,
+            speed: 900,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            initialSlide: 0,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            rows: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        };
+        return (
+
+
+            <Slider className={'text-center footer-slider'} {...settings}>
+                <div>
+                    <a href={'https://www.instagram.com/okolitadesign/'}>
+                        <img className="img-fluid" src={Img00} />
+                    </a>
+                </div>
+                <div>
+                    <a href={'https://www.instagram.com/okolitadesign/'}>
+                        <img className="img-fluid" src={Img01}/>
+                    </a>
+                </div>
+                <div>
+                    <a href={'https://www.instagram.com/okolitadesign/'}>
+                        <img className="img-fluid" src={Img02}/>
+                    </a>
+                </div>
+                <div>
+                    <a href={'https://www.instagram.com/okolitadesign/'}>
+                        <img className="img-fluid" src={Img03}/>
+                    </a>
+                </div>
+                <div>
+                    <a href={'https://www.instagram.com/okolitadesign/'}>
+                        <img className="img-fluid" src={Img04}/>
+                    </a>
+                </div>
+                <div>
+                    <a href={'https://www.instagram.com/okolitadesign/'}>
+                        <img className="img-fluid" src={Img05}/>
+                    </a>
+                </div>
+                <div>
+                    <a href={'https://www.instagram.com/okolitadesign/'}>
+                        <img className="img-fluid" src={Img06}/>
+                    </a>
+                </div>
+                <div>
+                    <a href={'https://www.instagram.com/okolitadesign/'}>
+                        <img className="img-fluid" src={Img07}/>
+                    </a>
+                </div>
+                <div>
+                    <a href={'https://www.instagram.com/okolitadesign/'}>
+                        <img className="img-fluid" src={Img08}/>
+                    </a>
+                </div>
+                <div>
+                    <a href={'https://www.instagram.com/okolitadesign/'}>
+                        <img className="img-fluid" src={Img09}/>
+                    </a>
+                </div>
+
+
+
+            </Slider>
+
+        );
+    }
+}
 class Member extends Component {
     render() {
         return (<div className='d-flex flex-column justify-content-start align-items-center'>
@@ -211,14 +326,7 @@ class Design extends Component {
                     <div className="row d-flex justify-content-center">
                         <div className="col-md-8 col-12 d-flex flex-column align-items-center">
                             <h1 className='white-text white-title title'>Отзывы клиентов</h1>
-                            /*remove next 7 lines*/
-                            <div className="row">
-                                {[1, 2, 3, 4].map(x =>
-                                    <div key={x} className="col-6 col-md-3 team-memb">
-                                        <Member name="ИРИНА ОКОЛИТА" position="Главный дизайнер" icon={makaka}/>
-                                    </div>
-                                )}
-                            </div>
+                                <SliderFooter/>
                             <Button white={true} value='Показать все отзывы' classes='mt-5 p-3'/>
                         </div>
                     </div>
