@@ -1,4 +1,4 @@
-#services-section1{
+#contacts-section1{
     width: 60%;
     margin: 0 auto;
     display: block;
@@ -48,13 +48,13 @@
     text-decoration: underline darkslategray;
 }
 @media (max-width: 576px){
-    #services-section1{
-        width: calc(100% - 40px);
-    }
     .map-responsive{
         padding-bottom: 25%;
     }
-    #services-section1{
+    #contacts-section1{
+        width: 100%;
+    }
+    #contacts-section1 .icons, #contacts-section1 p {
         margin-left: 20px;
         margin-right: 20px;
     }
