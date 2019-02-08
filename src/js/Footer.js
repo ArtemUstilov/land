@@ -8,20 +8,32 @@ import clock from '../img/clock.png';
 import me from '../img/download.jpg';
 import logo from '../img/logo.png';
 import Button from './Button'
-
+import Img00 from '../img/footer/0.jpg';
+import Img01 from '../img/footer/1.jpg';
+import Img02 from '../img/footer/2.jpg';
+import Img03 from '../img/footer/3.jpg';
+import Img04 from '../img/footer/4.jpg';
+import Img05 from '../img/footer/5.jpg';
+import Img06 from '../img/footer/6.jpg';
+import Img07 from '../img/footer/7.jpg';
+import Img08 from '../img/footer/8.jpg';
+import Img09 from '../img/footer/9.jpg';
 
 class SliderFooter extends Component {
     render() {
+
+
+
         var settings = {
             dots: false,
             infinite: true,
-            speed: 500,
+            speed: 900,
             slidesToShow: 5,
             slidesToScroll: 1,
             initialSlide: 0,
             arrows: false,
             autoplay: true,
-            autoplaySpeed: 2000,
+            autoplaySpeed: 1500,
             rows: 1,
             responsive: [
                 {
@@ -53,32 +65,56 @@ class SliderFooter extends Component {
 
             <Slider className={'text-center footer-slider'} {...settings}>
                 <div>
-                    <img className="img-fluid" src={clock}/>
+                    <a href={'https://www.instagram.com/okolitadesign/'}>
+                    <img className="img-fluid" src={Img00} />
+                    </a>
                 </div>
                 <div>
-                    <img className="img-fluid" src={clock}/>
+                    <a href={'https://www.instagram.com/okolitadesign/'}>
+                    <img className="img-fluid" src={Img01}/>
+                    </a>
                 </div>
                 <div>
-                    <img className="img-fluid" src={clock}/>
+                    <a href={'https://www.instagram.com/okolitadesign/'}>
+                    <img className="img-fluid" src={Img02}/>
+                    </a>
                 </div>
                 <div>
-                    <img className="img-fluid" src={clock}/>
+                    <a href={'https://www.instagram.com/okolitadesign/'}>
+                    <img className="img-fluid" src={Img03}/>
+                    </a>
                 </div>
                 <div>
-                    <img className="img-fluid" src={clock}/>
+                    <a href={'https://www.instagram.com/okolitadesign/'}>
+                    <img className="img-fluid" src={Img04}/>
+                    </a>
                 </div>
                 <div>
-                    <img className="img-fluid" src={clock}/>
+                    <a href={'https://www.instagram.com/okolitadesign/'}>
+                    <img className="img-fluid" src={Img05}/>
+                    </a>
                 </div>
                 <div>
-                    <img className="img-fluid" src={clock}/>
+                    <a href={'https://www.instagram.com/okolitadesign/'}>
+                    <img className="img-fluid" src={Img06}/>
+                    </a>
                 </div>
                 <div>
-                    <img className="img-fluid" src={clock}/>
+                    <a href={'https://www.instagram.com/okolitadesign/'}>
+                    <img className="img-fluid" src={Img07}/>
+                    </a>
                 </div>
                 <div>
-                    <img className="img-fluid" src={clock}/>
+                    <a href={'https://www.instagram.com/okolitadesign/'}>
+                    <img className="img-fluid" src={Img08}/>
+                    </a>
                 </div>
+                <div>
+                    <a href={'https://www.instagram.com/okolitadesign/'}>
+                    <img className="img-fluid" src={Img09}/>
+                    </a>
+                </div>
+
 
 
             </Slider>
@@ -160,12 +196,6 @@ class Footer extends Component {
                         </div>
                         <div className={'col-12 no-padding'}>
                             <SliderFooter/>
-                        </div>
-                        <div className="col-12 no-padding">
-                            <h3 className="text-center about-logo title small black-background">
-                            </h3>
-
-
                         </div>
                         <div className={'footer-info col-12'}>
                             <div className={'row d-flex  justify-content-center'}>

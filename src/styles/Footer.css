@@ -35,6 +35,13 @@ max-height:380px !important;
     width:100% !important;
     height: auto !important;
     background-color: black;
+    height:270px !important;
+}
+.footer-slider .slick-track{
+    height:200px !important;
+}
+.footer-slider .slick-list{
+    height:270px !important;
 }
 .footer-slider div {
 
@@ -61,5 +68,8 @@ max-height:380px !important;
 .footer-logo{
     width:100px;
     height: auto;
+}
+.footer-slider div{
+    border-left:1px solid black;
 }
 

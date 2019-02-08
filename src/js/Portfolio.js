@@ -20,30 +20,7 @@ class Portfolio extends Component {
             rows:2,
             arrows:false,
 
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
 
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                }
-            ]
         };
         return (
             <section id={'portfolio'}>
@@ -53,6 +30,8 @@ class Portfolio extends Component {
                             <h3 className="text-center about-logo title">
                            Портфолио
                         </h3>
+                        </div>
+                        <div className="col-md-5 col-xs-10">
                             <Slider  {...settings}>
                                 <div>
                                     <img className="img-fluid" src={clock}/>
@@ -86,6 +65,7 @@ class Portfolio extends Component {
 
                     </div>
                 </div>
+            <br/>
             </section>
         );
     }
