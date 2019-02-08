@@ -168,37 +168,25 @@
 }
 
 #section7{
-    padding-left:10%;
-    padding-right: 10%;
     padding-bottom: 150px;
+    width: 100%;
 }
-.team-memb{
-    width:40%;
-    height: 200px;
-}
-.mem-bg{
-    position: absolute;
-    top:-20px;
-    left: 15%;
-    width: 70%;
-    height:300px;
+.upper-block{
+    width: 85%;
+    height: 12px;
     background-color: #fff;
-    z-index: 0;
 }
-.mem-icon{
-    width:100%;
-    height:240px;
-    position: relative;
-    z-index: 1;
+.lower-block{
+    width: 85%;
+    height: 60px;
+    background-color: #fff;
 }
 .mem-position, .mem-name{
-    position: relative;
     font-size: 15px;
+    margin:0;
 }
 .mem-name{
-    padding: 20px 20px 0 20px;
     font-weight: bold;
-    margin:0;
 }
 .ps-top-to-bottom {
     position: relative;
@@ -227,16 +215,7 @@
         width:100%;
     }
     .team-memb{
-        margin-bottom: 135px;
-    }
-    .mem-bg{
-        height: 330px;
-        width: 98%;
-        left:0;
-    }
-    .mem-name{
-        font-size: 12px;
-        padding:10px 0 0 0;
+        margin-bottom: 25px;
     }
     .box{
         width: 85%;

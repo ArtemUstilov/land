@@ -1,8 +1,3 @@
-#contacts-section1{
-    width: 60%;
-    margin: 0 auto;
-    display: block;
-}
 .map-responsive{
     overflow:hidden;
     padding-bottom:15%;
@@ -50,12 +45,5 @@
 @media (max-width: 576px){
     .map-responsive{
         padding-bottom: 25%;
-    }
-    #contacts-section1{
-        width: 100%;
-    }
-    #contacts-section1 .icons, #contacts-section1 p {
-        margin-left: 20px;
-        margin-right: 20px;
     }
 }

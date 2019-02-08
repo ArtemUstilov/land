@@ -25,7 +25,10 @@ class Services extends Component {
 
     render() {
         return <div className="services">
-            <section id={'services-section1'}>
+            <section>
+                <div className="container-fluid ">
+                    <div className="row d-flex justify-content-center">
+                        <div className="col-md-8 col-12 no-padding">
                 <h1 className='title'><Translate id="services.title"/></h1>
                 <img src={logo} alt='' className="img-fluid"/>
                 <div className='serv-box'>
@@ -39,8 +42,13 @@ class Services extends Component {
                     опозиція бойкотувала й закликала не визнавати їхніх результатів, посилаючись на численні факти
                     порушень, зокрема масових фальсифікацій.</p>
                 </div>
+                        </div></div></div>
+
             </section>
-            <section id={'services-section2'} className={'section'}>
+            <section>
+                <div className="container-fluid ">
+                    <div className="row d-flex justify-content-center">
+                        <div className="col-md-8 col-12 no-padding">
                 <div className="work-box float1">
                     <Describe num='1'
                               text='5 серпня 2004 року у Венесуелі відбувся референдум щодо можливої
@@ -62,16 +70,21 @@ class Services extends Component {
                               icon={logo}/>
                     <img src={logo} alt='' className="box-behind"/>
                 </div>
+                        </div></div></div>
+
             </section>
             <section id={'services-section3'}>
-                <div className="title-box ps-top-to-bottom">
+                <div className="title-box ps-top-to-bottom no-padding">
                     <h1 className='white-text title white-title' style={{padding: '10px'}}>С чего начать
                         дизайн?</h1>
                     <p className='white-text'>Запишитесь на консультацию дизайнера</p>
                     <Button white={true} value="ЗАПИСАТЬСЯ СЕЙЧАС" classes='proj-btn'/>
                 </div>
             </section>
-            <section id={'services-section4'} className={'section'}>
+            <section>
+                <div className="container-fluid ">
+                    <div className="row d-flex justify-content-center">
+                        <div className="col-md-8 col-12 no-padding">
                 <div className="work-box float0">
                     <Describe num='2'
                               text="2 березня 2006 року одностайним рішенням Національних зборів (парламенту)
@@ -86,6 +99,7 @@ class Services extends Component {
                               icon={logo}/>
                     <img src={logo} alt='' className="box-behind"/>
                 </div>
+                        </div></div></div>
             </section>
         </div>;
     }

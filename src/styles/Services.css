@@ -1,11 +1,3 @@
-.services{
-
-}
-#services-section1, #services-section2,#services-section4{
-    width: 70%;
-    margin: 0 auto;
-    display: block;
-}
 .work-box{
     width:100%;
     position: relative;
@@ -68,9 +60,6 @@
 }
 .white-title:before, .white-title:after{
     background: #FFF !important;
-}
-#services-section2{
-    margin-top: 60px;
 }
 #services-section3{
     padding-top: 50px;
@@ -135,17 +124,11 @@
     .float1, .float0{
         display:block;
     }
-    #services-section2, #services-section1, #services-section4{
-        width:100%;
-    }
     .work-box{
         width: 100vw;
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-    }
-    #services-section1{
-        margin-right: 20px;
     }
     .title{
         padding-left: 0;
