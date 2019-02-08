@@ -1,9 +1,13 @@
 .header{
-    /*position: relative;*/
+    position: fixed;
     background-color: #000;
     height: 100px;
     width: 100%;
+    z-index: 1;
 }
-.col-sm-2 Button{
+.header div{
+    height:100px;
+}
+.col-sm-5 Button{
     border: none;
 }

@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff63b587-7344-417c-8c50-63524c71d42a" name="Default" comment="" />
+    <list default="true" id="ff63b587-7344-417c-8c50-63524c71d42a" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ToggleSwitch/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ToggleSwitch/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ToggleSwitch/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/LanguageToggle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/LanguageToggle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Navbar.css" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -14,18 +23,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Services.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/Services.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -41,8 +38,8 @@
       <file leaf-file-name="Navbar.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/Navbar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
+            <state relative-caret-position="941">
+              <caret line="72" column="18" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -50,34 +47,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_vanilla-js-typing-effect21112017.zip/js/index.js">
+      <file leaf-file-name="Navbar.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/styles/Navbar.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="49" selection-start-column="49" selection-end-column="49" />
+            <state relative-caret-position="119">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mainPage.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mainPage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/mainPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-612">
-              <caret line="89" column="44" lean-forward="true" selection-start-line="89" selection-start-column="44" selection-end-line="89" selection-end-column="44" />
+            <state relative-caret-position="255">
+              <caret line="327" column="18" lean-forward="true" selection-start-line="327" selection-start-column="18" selection-end-line="327" selection-end-column="18" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
-                <marker date="1549640333624" expanded="true" signature="3061:3856" ph="..." />
-                <marker date="1549640333624" expanded="true" signature="11252:12651" ph="..." />
+                <marker date="1549641394440" expanded="true" signature="6926:7721" ph="..." />
+                <marker date="1549641394440" expanded="true" signature="14695:16094" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/translations/main.json">
+      <file leaf-file-name="LanguageToggle.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/LanguageToggle.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+            <state relative-caret-position="153">
+              <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,8 +97,8 @@
       <file leaf-file-name="Footer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/Footer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="754">
-              <caret line="250" column="35" selection-start-line="250" selection-start-column="35" selection-end-line="250" selection-end-column="35" />
+            <state relative-caret-position="612">
+              <caret line="216" column="35" lean-forward="true" selection-start-line="216" selection-start-column="35" selection-end-line="216" selection-end-column="35" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -173,7 +173,6 @@
         <option value="$PROJECT_DIR$/src/styles/designPage.css" />
         <option value="$PROJECT_DIR$/src/styles/Portfolio.css" />
         <option value="$PROJECT_DIR$/src/translations/global.json" />
-        <option value="$PROJECT_DIR$/src/js/LanguageToggle.js" />
         <option value="$PROJECT_DIR$/src/translations/contacts.json" />
         <option value="$PROJECT_DIR$/src/translations/services.json" />
         <option value="$PROJECT_DIR$/src/styles/About.css" />
@@ -183,18 +182,21 @@
         <option value="$PROJECT_DIR$/src/js/Contacts.js" />
         <option value="$PROJECT_DIR$/src/styles/Services.css" />
         <option value="$PROJECT_DIR$/src/styles/mainPage.css" />
-        <option value="$PROJECT_DIR$/src/styles/Navbar.css" />
         <option value="$PROJECT_DIR$/src/translations/navbar.json" />
         <option value="$PROJECT_DIR$/src/js/Button.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/js/Services.js" />
         <option value="$PROJECT_DIR$/src/translations/main.json" />
-        <option value="$PROJECT_DIR$/src/js/mainPage.js" />
         <option value="$PROJECT_DIR$/src/js/Footer.js" />
         <option value="$PROJECT_DIR$/src/js/About.js" />
         <option value="$PROJECT_DIR$/src/js/Portfolio.js" />
-        <option value="$PROJECT_DIR$/src/js/Navbar.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/js/mainPage.js" />
+        <option value="$PROJECT_DIR$/src/components/ToggleSwitch/index.scss" />
+        <option value="$PROJECT_DIR$/src/components/ToggleSwitch/index.css" />
+        <option value="$PROJECT_DIR$/src/js/LanguageToggle.js" />
+        <option value="$PROJECT_DIR$/src/js/Navbar.js" />
+        <option value="$PROJECT_DIR$/src/styles/Navbar.css" />
       </list>
     </option>
   </component>
@@ -242,6 +244,27 @@
               <item name="land" type="b2602c69:ProjectViewProjectNode" />
               <item name="land" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="land" type="b2602c69:ProjectViewProjectNode" />
+              <item name="land" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="ToggleSwitch" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="land" type="b2602c69:ProjectViewProjectNode" />
+              <item name="land" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="ToggleSwitch" type="462c0819:PsiDirectoryNode" />
+              <item name="index.scss" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="land" type="b2602c69:ProjectViewProjectNode" />
+              <item name="land" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -279,14 +302,15 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\artem\Documents\Предмети 2 курсу\projects\landing\land\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\artem\Documents\Предмети 2 курсу\projects\landing\land\src" />
       <recent name="C:\Users\artem\Documents\Предмети 2 курсу\projects\landing\land\src\img" />
       <recent name="C:\Users\artem\Documents\Предмети 2 курсу\projects\landing\land\src\styles" />
       <recent name="C:\Users\artem\Documents\Предмети 2 курсу\projects\landing\land\src\js" />
       <recent name="C:\Users\artem\Documents\Предмети 2 курсу\projects\landing\land\src\translations" />
-      <recent name="C:\Users\artem\Documents\Предмети 2 курсу\projects\landing\land\public\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\artem\Documents\Предмети 2 курсу\projects\landing\land\src\img" />
@@ -327,16 +351,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81500000" />
+    <option name="totallyTimeSpent" value="84110000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.93722945" visible="true" weight="0.20758693" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.93722945" visible="true" weight="0.20758693" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info id="npm" order="2" sideWeight="0.06277056" side_tool="true" weight="0.20758693" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -359,7 +384,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Favorites" order="3" side_tool="true" />
     </layout>
@@ -368,9 +392,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/NIT/Lab02-Ustilov-Artem/src/animations/index.js" />
-    <entry file="file://$USER_HOME$/NIT/Lab02-Ustilov-Artem/src/actions/index.js" />
-    <entry file="file://$USER_HOME$/NIT/Lab02-Ustilov-Artem/src/containers/item/index.js" />
     <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/Navbar.js" />
     <entry file="file://$PROJECT_DIR$/src/trash/Navbar.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -453,16 +474,6 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/translations/global.json" />
-    <entry file="file://$PROJECT_DIR$/src/js/LanguageToggle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/translations/contacts.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -569,13 +580,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/Navbar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_vanilla-js-typing-effect21112017.zip/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -610,16 +614,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/Footer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="250" column="35" selection-start-line="250" selection-start-column="35" selection-end-line="250" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/About.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="754">
@@ -640,16 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/Navbar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="539">
@@ -660,15 +644,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/mainPage.js">
+    <entry file="file://$PROJECT_DIR$/src/js/Footer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-612">
-          <caret line="89" column="44" lean-forward="true" selection-start-line="89" selection-start-column="44" selection-end-line="89" selection-end-column="44" />
+        <state relative-caret-position="612">
+          <caret line="216" column="35" lean-forward="true" selection-start-line="216" selection-start-column="35" selection-end-line="216" selection-end-column="35" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <marker date="1549640333624" expanded="true" signature="3061:3856" ph="..." />
-            <marker date="1549640333624" expanded="true" signature="11252:12651" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ToggleSwitch/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ToggleSwitch/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ToggleSwitch/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-419">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/mainPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="327" column="18" lean-forward="true" selection-start-line="327" selection-start-column="18" selection-end-line="327" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <marker date="1549641394440" expanded="true" signature="6926:7721" ph="..." />
+            <marker date="1549641394440" expanded="true" signature="14695:16094" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/LanguageToggle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/Navbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="941">
+          <caret line="72" column="18" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/Navbar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>

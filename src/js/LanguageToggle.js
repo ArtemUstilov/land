@@ -1,5 +1,6 @@
 import React from 'react';
 import { withLocalize } from 'react-localize-redux';
+import Switch from '../components/ToggleSwitch/index.js';
 
 const LanguageToggle = ({languages, activeLanguage, setActiveLanguage}) => {
     const getClass = (languageCode) => {
@@ -7,14 +8,10 @@ const LanguageToggle = ({languages, activeLanguage, setActiveLanguage}) => {
     };
 
     return (
-        <ul className="selector">
-            {languages.map(lang =>
-                <li key={ lang.code }>
-                    <button className={getClass(lang.code)} onClick={() => setActiveLanguage(lang.code)}>{ lang.name }</button>
-                </li>
-            )}
-        </ul>
+        <Switch theme="default" className="d-flex" enabled={true} onStateChanged={({enabled})=>{
+            setActiveLanguage(enabled? languages[0].code : languages[1].code)
+        }}/>
+
     );
 };
-
 export default withLocalize(LanguageToggle);
