@@ -1,13 +1,28 @@
-.header{
+.header, .header-m{
     position: fixed;
     background-color: #000;
     height: 100px;
     width: 100%;
     z-index: 1;
 }
+.header-m{
+    height: 50px;
+}
+.m-navbar{
+    position: fixed;
+    left: calc(50% - 66px);
+    top: 100px;
+    z-index:1;
+}
 .header div{
     height:100px;
 }
 .col-sm-5 Button{
     border: none;
+}
+.lang{
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 5px 0 5px;
 }
