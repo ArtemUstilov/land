@@ -87,6 +87,9 @@ class About extends Component {
                         </div>
 
                     </div>
+            <br/>
+            <h5 className={'text-center'}>Так что же отличает нас от других?</h5>
+            <br/>
                     <div className="d-flex justify-content-center advantages ">
                         <div className="col-md-10 col-sm-10">
                             <div className="row">
@@ -167,6 +170,7 @@ class About extends Component {
                             визуализацией без качественной реализации
                         </p>
                     </figure>
+
                         </div>
                     </div>
                     <br/>
