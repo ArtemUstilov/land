@@ -217,7 +217,7 @@ class Design extends Component {
                     <div id='wrapper'>
                     <p className='white-text' id='text'>Сделам Ваш интерьер стильным и уютным</p>
                     </div>
-                    <Button white={true} value="ПОЛУЧИТЕ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ" classes={'title-btn'}/>
+                    <Button white={true} value="des.btn" classes={'title-btn'}/>
                 </div>
             </section>
             <section>

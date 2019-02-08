@@ -1,0 +1,9 @@
+.invisible{
+    display:none;
+}
+.visible{
+    display:block;
+}
+.no-border{
+    border:none !important;
+}
