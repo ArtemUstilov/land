@@ -5,6 +5,7 @@ import {Translate, withLocalize} from 'react-localize-redux'
 import contactsTranslations from '../translations/services.json'
 import Button from "./Button.js";
 import logo from '../img/bg.jpg'
+import design2 from '../img/design2.jpg'
 
 class Describe extends Component {
     render() {
@@ -30,7 +31,7 @@ class Services extends Component {
                     <div className="row d-flex justify-content-center">
                         <div className="col-md-8 col-12 no-padding">
                 <h1 className='title'><Translate id="services.title"/></h1>
-                <img src={logo} alt='' className="img-fluid"/>
+                <img src={design2} alt='' className="img-fluid"/>
                 <div className='serv-box'>
                 <h5 className="title" style={{textAlign: 'left', padding: '20px 8%'}}>OKOLITA DESIGN</h5>
                 <p>На тлі різкого погіршення соціально-економічної ситуації у Венесуелі у 2010-х рр. контроль над

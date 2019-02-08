@@ -3,6 +3,8 @@ import '../styles/mainPage.css'
 import '../styles/settings.css'
 import Button from './Button'
 import logo from '../img/bg.jpg'
+import design1 from '../img/design1.jpg'
+
 import makaka from '../img/unicorn.jpg'
 
 class Describe extends Component {
@@ -31,15 +33,39 @@ class Member extends Component {
 }
 
 class Design extends Component {
+    constructor(){
+        super();
+    }
     render() {
         let no_pad = {
             padding: '5px'
         }
+        // let wrapper = document.getElementById("wrapper");
+        // let text = document.getElementById('text')
+        // if(text) {
+        //     const textCont = text.textContent;
+        //     text.style.display = "none";
+        //
+        //     for (let i = 0; i < textCont.length; i++) {
+        //         (function (i) {
+        //             setTimeout(function () {
+        //                 const texts = document.createTextNode(textCont[i]);
+        //                 const span = document.createElement('span');
+        //                 span.appendChild(texts);
+        //                 span.classList.add("wave");
+        //                 wrapper.appendChild(span);
+        //
+        //             }, 30*i);
+        //         }(i));
+        //     }
+        // }
         return <div className="design">
             <section id={'section1'} className={'section'}>
                 <div className="title-box ps-top-to-bottom">
                     <h1 className='white-text title1'>ДИЗАЙН ИНТЕРЬЕРА</h1>
-                    <p className='white-text'>Сделам Ваш интерьер стильным и уютным</p>
+                    <div id='wrapper'>
+                    <p className='white-text' id='text'>Сделам Ваш интерьер стильным и уютным</p>
+                    </div>
                     <Button white={true} value="ПОЛУЧИТЕ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ" classes={'title-btn'}/>
                 </div>
             </section>
@@ -52,7 +78,7 @@ class Design extends Component {
                                 {[1, 2].map(x =>
                                     <div key={x} className="row">
                                         {[1, 2, 3].map(x =>
-                                            <div key={x} className="col-sm-4" style={no_pad}>
+                                            <div key={x} className="col-sm-4 greeny" style={no_pad}>
                                                 <img src={logo} alt="" className={'proj-img'}/>
                                             </div>
                                         )}
