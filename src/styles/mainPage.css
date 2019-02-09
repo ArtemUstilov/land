@@ -244,6 +244,9 @@
         padding-top: 60px;
         padding-bottom: 60px;
     }
+    #section4{
+        margin-bottom: 0;
+    }
     .box-behind{
         width:100%;
     }
@@ -277,8 +280,22 @@
     }
 }
 
-
-
+.adv-cell .row{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.no-before:before{
+    content: '';
+    display: none !important;
+}
+.no-before{
+    padding-left: 0 !important;
+}
+@media screen and (max-width: 576px){
+    .no-img{
+        display: none;
+    }
+}
 .main-slider{
 
     width:100%;
