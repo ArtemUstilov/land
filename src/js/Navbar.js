@@ -5,6 +5,7 @@ import {Translate, withLocalize} from 'react-localize-redux'
 import contactsTranslations from '../translations/navbar.json'
 import Button from "./Button.js";
 import logo from '../img/logoWhite.png'
+import logoBlack from '../img/logo.png'
 import {Link} from 'react-router-dom'
 import design2 from '../img/design2.jpg'
 import MobileBtn from './MobileNavBtn.js'
@@ -24,6 +25,7 @@ class MNavbar extends Component{
         });
         this.props.addTranslation(contactsTranslations);
     }
+
     render() {
         return <section className='m-navbar'>
                 <div className='row  d-flex flex-column justify-content-center align-items-center'>
@@ -50,6 +52,7 @@ class Navbar extends Component {
         this.state = {
             btnClicked: false,
             mobile: window.innerWidth < 576,
+            scroll: false
         }
         this.props.initialize({
             languages: [
@@ -61,8 +64,21 @@ class Navbar extends Component {
         this.props.addTranslation(contactsTranslations);
         this.updateSizeState = this.updateSizeState.bind(this);
         this.updateBtnState = this.updateBtnState.bind(this);
+        this.updateScroll = this.updateScroll.bind(this)
     }
+    updateScroll(){
+        this.setState({
+            scroll: window.pageYOffset > 50
+        })
+        if(!this.state.scroll){
+            document.getElementById('toggle').classList.remove('white')
+            document.getElementById('toggle').classList.add('black')
+        }else{
+            document.getElementById('toggle').classList.remove('black')
+            document.getElementById('toggle').classList.add('white')
+        }
 
+    }
     updateBtnState(value) {
         this.setState({btnClicked: value})
     }
@@ -75,10 +91,12 @@ class Navbar extends Component {
     componentDidMount() {
         window.addEventListener('resize', this.updateSizeState)
         window.addEventListener('mouseup', this.btnFalse.bind(this))
+        window.addEventListener('scroll', this.updateScroll);
     }
     render() {
         let classesBigNav = classNames({
             header: true,
+            'header-opac': this.state.scroll,
             invisible: this.state.mobile,
         })
         return <section>
@@ -95,7 +113,7 @@ class Navbar extends Component {
                                         return <div key={x[0]}
                                                     className="col-sm-4 d-flex justify-content-center align-items-center">
                                             <Link to={x[1]}>
-                                                <Button white={false} value={x[0]}/>
+                                                <Button white={this.state.scroll} classes='nav-text' value={x[0]}/>
                                             </Link>
                                         </div>
                                     })}
@@ -103,27 +121,27 @@ class Navbar extends Component {
                             </div>
                             <div className="col-sm-2 d-flex justify-content-center align-items-center">
                                 <Link to='/'>
-                                    <img alt='' src={logo} className='img-fluid'/>
+                                    <img alt='' src={this.state.scroll ? logoBlack : logo} className='img-fluid nav-text'/>
                                 </Link>
                             </div>
                             <div className="col-sm-5">
                                 <div className='row'>
                                     <div className="col-sm-4 d-flex justify-content-center align-items-center">
                                         <Link to='/contacts'>
-                                            <Button white={false} value={'nav.contacts'}/>
+                                            <Button white={this.state.scroll} classes='nav-text' value={'nav.contacts'}/>
                                         </Link>
                                     </div>
                                     <div className="col-sm-8 d-flex justify-content-center align-items-center">
                                         <Link to='/call'>
-                                            <Button white={false} value={'nav.call'}/>
+                                            <Button white={this.state.scroll} classes='nav-text' value={'nav.call'}/>
                                         </Link>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                <div className='col-sm-2 d-flex align-items-center'>
-                    <LanguageToggle/>
+                <div className='col-sm-2 d-flex align-items-center justify-content-center'>
+                    <LanguageToggle scroll={this.state.scroll}/>
                 </div>
                 </div>
             </div>

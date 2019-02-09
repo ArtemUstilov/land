@@ -21,7 +21,7 @@ class Button extends Component {
         })
         let cb = ()=>this.props.onclick && this.props.onclick()
         return (
-            <button className={classes} onClick={cb} >
+            <button id = {this.props.id} className={classes} onClick={cb} >
                 <Translate id={this.props.value}/>
             </button>
         );

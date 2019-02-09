@@ -21,7 +21,7 @@ let MLanguageToggle = ({languages, activeLanguage, setActiveLanguage}) => {
     };
     let value =  (activeLanguage && activeLanguage.code === languages[0].code) ? 'nav.lan1': 'nav.lan2';
     return (
-        <Button white={false} value={value}onclick={()=>{
+        <Button white={false} id='toggle' classes='no-border nav-text' value={'nav.lan1'}onclick={()=>{
             setActiveLanguage(value === 'nav.lan2' ? languages[0].code : languages[1].code)}
         }/>
     );

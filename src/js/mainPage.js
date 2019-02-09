@@ -7,6 +7,7 @@ import contactsTranslations from '../translations/main.json'
 import design1 from '../img/design1.jpg'
 import design3 from '../img/design3.jpg'
 import design5 from '../img/design5.jpg'
+import team from '../img/team.jpg'
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -276,6 +277,9 @@ class Design extends Component {
                                     </div>
                                 )}
                             </div>
+                            <div className="col-md-12 mt-5 mb-5">
+                                <img src={design3} alt="" className={'img-fluid'} style={{width: "100%"}}/>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -283,123 +287,27 @@ class Design extends Component {
             <section id={'section4'} className={'section'}>
                 <h1 className='title'>О студии</h1>
                 <div className="row">
-                    <div className="col-sm-6">
+                    <div className="col-sm-2"/>
+                    <div className="col-sm-4">
                         <h5 className="title no-before" style={{textAlign: 'left', padding: '0 30px'}}>OKOLITA DESIGN</h5>
                         <p className="about-text">
-                            Існує версія, що назву країні дав італійський картограф Амеріго Веспуччі, який 1499 року
-                            відвідав ці місця у складі експедиції Алонсо де Охеди. Мандрівники побачили оселі
-                            місцевого населення, встановлені на палях над водою біля озера Маракайбо. Це нагадало їм
-                            європейську Венецію, внаслідок чого виникла назва «Венесуела» (Venezuela), тобто «Мала
-                            Венеція».
+                            Добро пожаловать в студию дизайна интерьеров Okolita Design
+                            Мы создаем не просто дизайн, а настроение и атмосферу Вашего интерьера. Для нас главное — это индивидуальный характер каждого проекта
+                            Мы работаем для того, чтобы именно ваши мечты об идеальном интерьере воплотились в реальность, потому что… мы все разные.
+                            Нас многое отличает друг от дуга:
+                            -привычки и образ жизни;
+                            -дизайнерские вкусы и предпочтения;
+                            -финансовые возможности…
+                            Но стремление к прекрасному, желание проводить время в красивых и функциональных помещениях — общее.
+                            При этом понимание красоты и функциональности тоже у каждого свое.
+                            Мы стараемся всегда быть в курсе последних тенденций в сфере
+                            дизайна интерьеров.
+                            Следим за новинками на рынке отделочных материалов и
+                            мебели. Часто посещаем разнообразные тематические международные
+                            выставки и мероприятия в Украине и Европе.
                         </p>
                         <p className="about-text">
-                            Незалежність від Іспанії держава отримала 1830 року після повстання, очолюваного Симоном
-                            Боліваром. Після тривалого періоду диктатур 1961 року було прийнято нову Конституцію
-                            Венесуели.
                         </p>
-                        {/*<div className="row">*/}
-                            {/*<div className="col-xs-6 about-row">*/}
-                                {/*<img src={logo} alt="" className="about-icon img-fluid"/>*/}
-                                {/*<p className="about-adv">ПРЕИМУЩЕСТВО 1</p>*/}
-                            {/*</div>*/}
-                            {/*<div className="col-xs-6 about-row">*/}
-                                {/*<img src={logo} alt="" className="about-icon img-fluid"/>*/}
-                                {/*<p className="about-adv">ПРЕИМУЩЕСТВО 2</p>*/}
-                            {/*</div>*/}
-                        {/*</div>*/}
-                        {/*<div className="row">*/}
-                            {/*<div className="col-xs-6 about-row">*/}
-                                {/*<img src={logo} alt="" className="about-icon img-fluid"/>*/}
-                                {/*<p className="about-adv">ПРЕИМУЩЕСТВО 3</p>*/}
-                            {/*</div>*/}
-                            {/*<div className="col-xs-6 about-row">*/}
-                                {/*<img src={logo} alt="" className="about-icon img-fluid"/>*/}
-                                {/*<p className="about-adv">ПРЕИМУЩЕСТВО 4</p>*/}
-                            {/*</div>*/}
-                        {/*</div>*/}
-                        {/*<div className="row">*/}
-                            {/*<div className="col-xs-6 about-row">*/}
-                                {/*<img src={logo} alt="" className="about-icon img-fluid"/>*/}
-                                {/*<p className="about-adv">ПРЕИМУЩЕСТВО 5</p>*/}
-                            {/*</div>*/}
-                            {/*<div className="col-xs-6 about-row">*/}
-                                {/*<img src={logo} alt="" className="about-icon img-fluid"/>*/}
-                                {/*<p className="about-adv">ПРЕИМУЩЕСТВО 6</p>*/}
-                            {/*</div>*/}
-                        {/*</div>*/}
-                        <div className="d-flex justify-content-center advantages ">
-                            <div className="col-sm-12">
-                                <div className="row">
-                                    <div className="col-md-6 col-sm-12 col-lg-4 adv-cell">
-                                        <div className="row">
-                                            <div className="col-4 adv-img-container">
-                                                <img className="img-fluid adv-img" src={item1}/>
-                                            </div>
-                                            <div className="col-8 advantage">
-                                                <span className="advantage-text">Начало ремонта еще до полного окончания работы над дизайн-проектом</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="col-md-6 col-sm-12 col-lg-4 adv-cell">
-                                        <div className="row">
-                                            <div className="col-4 adv-img-container">
-                                                <img className="img-fluid adv-img" src={item2}/>
-                                            </div>
-                                            <div className="col-8 advantage">
-                                                <span className="advantage-text">Подбор чистовых отделочных материалов, сантехники, светильников и мебели</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6 col-sm-12 col-lg-4 adv-cell">
-                                        <div className="row">
-                                            <div className="col-4 adv-img-container">
-                                                <img className="img-fluid adv-img" src={item3}/>
-                                            </div>
-                                            <div className="col-8 advantage">
-                                                <span className="advantage-text">Применение лучших и реальных материалов, которые можно приобрести в магазинах</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="col-md-6 col-sm-12 col-lg-4 adv-cell">
-                                        <div className="row">
-                                            <div className="col-4 adv-img-container">
-                                                <img className="img-fluid adv-img" src={item4}/>
-                                            </div>
-                                            <div className="col-8 advantage">
-                                                <span className="advantage-text">Воплощение проекта, исходя из заданого бюджета</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6 col-sm-12 col-lg-4 adv-cell">
-                                        <div className="row">
-                                            <div className="col-4 adv-img-container">
-                                                <img className="img-fluid adv-img" src={item5}/>
-                                            </div>
-                                            <div className="col-8 advantage">
-                                                <span className="advantage-text">Система гибкой оплаты по мере выполнения проекта</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="col-md-6 col-sm-12 col-lg-4 adv-cell">
-                                        <div className="row">
-                                            <div className="col-4 adv-img-container">
-                                                <img className="img-fluid adv-img" src={item6}/>
-                                            </div>
-                                            <div className="col-8 advantage">
-                                                <span className="advantage-text">Возможность работать удаленно - в онлайн режиме</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-
-
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <div className="col-sm-6 no-img">
                         <img src={design5} alt="" className={'img-fluid'}/>
