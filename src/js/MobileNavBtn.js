@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import '../styles/MobileBtn.css'
-import Button from './Button.js'
 import classNames from 'classnames'
 import logo from '../img/logoWhite.png'
 import {Link} from 'react-router-dom'
@@ -21,10 +20,6 @@ class MButton extends Component {
     }
 
     render() {
-        let classes = classNames({
-            'visible': true,
-            'no-border': true
-        })
         return (
             <div className='header-m'>
                 <div className='row'>

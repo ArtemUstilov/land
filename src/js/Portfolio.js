@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/Portfolio.css'
 import '../styles/settings.css'
-import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import AnimatedTeg from './Animated'

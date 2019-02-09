@@ -22,7 +22,6 @@ class Button extends Component {
             'button':true,
         }
         Object.assign(classes, obg);
-        console.log(classes)
         classes = classNames(classes)
         let cb = ()=>this.props.onclick && this.props.onclick()
         return (

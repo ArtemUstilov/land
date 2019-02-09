@@ -7,7 +7,7 @@ import Button from "./Button.js";
 import logo from '../img/logoWhite.png'
 import logoBlack from '../img/logo.png'
 import {Link} from 'react-router-dom'
-import design2 from '../img/design2.jpg'
+// import design2 from '../img/design2.jpg'
 import MobileBtn from './MobileNavBtn.js'
 import {LanguageToggle} from './LanguageToggle'
 import {renderToStaticMarkup} from "react-dom/server";
@@ -207,11 +207,11 @@ class Navbar extends Component {
             </div>
             {this.state.mobile && <MobileBtn btnClicked={this.updateBtnState.bind(this)}/>}
             <div style={{paddingBottom: !this.state.mobile ? '100px' : '50px'}}/>
-            {/*{this.state.btnClicked && this.state.mobile && <MNavbar/>}*/}
-            <MNavbar/>
+            {this.state.mobile && <MNavbar/>}
+            {/*<MNavbar/>*/}
         </section>;
     }
 }
 
 export default withLocalize(Navbar);
->>>>>>> be156966fa1c0537e96359c9f5158c0c20cbfd29
+

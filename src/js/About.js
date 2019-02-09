@@ -7,7 +7,6 @@ import item4 from '../img/footer/item4.png';
 import item5 from '../img/footer/item5.png';
 import item6 from '../img/footer/item6.png';
 import '../styles/About.css'
-import classNames from 'classnames'
 import YouTube from 'react-youtube';
 import Button from './Button'
 import {renderToStaticMarkup} from "react-dom/server";
@@ -28,9 +27,7 @@ class About extends Component {
         this.props.addTranslation(contactsTranslations);
     }
     render() {
-        let classes = classNames({
-            'box': true,
-        })
+
         const opts = {
             playerVars: {
                 autoplay: 0,
@@ -96,7 +93,7 @@ class About extends Component {
                                 <div className="col-md-6 col-sm-12 col-lg-4 adv-cell">
                                 <div className="row">
                                     <div className="col-4 adv-img-container">
-                                        <img className="img-fluid adv-img" src={item1}/>
+                                        <img className="img-fluid adv-img" src={item1} alt=''/>
                                     </div>
                                     <div className="col-8 advantage">
                                         <span className="advantage-text">Начало ремонта еще до полного окончания работы над дизайн-проектом</span>
@@ -107,7 +104,7 @@ class About extends Component {
                                 <div className="col-md-6 col-sm-12 col-lg-4 adv-cell">
                                     <div className="row">
                                         <div className="col-4 adv-img-container">
-                                            <img className="img-fluid adv-img" src={item2}/>
+                                            <img className="img-fluid adv-img" src={item2} alt=''/>
                                         </div>
                                         <div className="col-8 advantage">
                                             <span className="advantage-text">Подбор чистовых отделочных материалов, сантехники, светильников и мебели</span>
@@ -117,7 +114,7 @@ class About extends Component {
                                 <div className="col-md-6 col-sm-12 col-lg-4 adv-cell">
                                     <div className="row">
                                         <div className="col-4 adv-img-container">
-                                            <img className="img-fluid adv-img" src={item3}/>
+                                            <img className="img-fluid adv-img" src={item3} alt=''/>
                                         </div>
                                         <div className="col-8 advantage">
                                             <span className="advantage-text">Применение лучших и реальных материалов, которые можно приобрести в магазинах</span>

@@ -2,23 +2,23 @@ import React, {Component} from 'react';
 import '../styles/mainPage.css'
 import '../styles/settings.css'
 import Button from './Button'
-import logo from '../img/bg.jpg'
+// import logo from '../img/bg.jpg'
 import contactsTranslations from '../translations/main.json'
-import design1 from '../img/design1.jpg'
+// import design1 from '../img/design1.jpg'
 import design3 from '../img/design3.jpg'
 import design5 from '../img/design5.jpg'
-import team from '../img/team.jpg'
+// import team from '../img/team.jpg'
 import ReactModal from 'react-modal';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {withLocalize} from 'react-localize-redux'
-import item1 from '../img/footer/item1.png';
-import item2 from '../img/footer/item2.png';
-import item3 from '../img/footer/item3.png';
-import item4 from '../img/footer/item4.png';
-import item5 from '../img/footer/item5.png';
-import item6 from '../img/footer/item6.png';
+// import item1 from '../img/footer/item1.png';
+// import item2 from '../img/footer/item2.png';
+// import item3 from '../img/footer/item3.png';
+// import item4 from '../img/footer/item4.png';
+// import item5 from '../img/footer/item5.png';
+// import item6 from '../img/footer/item6.png';
 import Img1_1 from '../img/portfolio/first/1.jpg';
 import Img1_2 from '../img/portfolio/first/2.jpg';
 import Img1_3 from '../img/portfolio/first/3.jpg';
