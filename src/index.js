@@ -20,7 +20,7 @@ import Contacts from './js/Contacts.js'
 import Services from './js/Services.js'
 import {renderToStaticMarkup} from "react-dom/server";
 import {withLocalize} from "react-localize-redux/lib/index";
-
+import {Cube} from "react-preloaders";
 class MyRouter extends Router {
     constructor(props) {
         super(props);
@@ -32,10 +32,19 @@ class MyRouter extends Router {
             options: {renderToStaticMarkup}
         });
     }
+    componentDidMount() {
+    }
 }
 
 MyRouter = withLocalize(MyRouter);
 ReactDOM.render(
+    <React.Fragment>
+        <Cube
+            color={'white'} //Default #2D2D2D
+            z-index={'1000'}
+            bgColor={'black'} //Default #F7F7F7
+            time={2000} //Default #1300
+        />
     <MyRouter>
         <LocalizeProvider>
         <Navbar/>
@@ -49,6 +58,7 @@ ReactDOM.render(
             <Footer/>
     </LocalizeProvider>
 </MyRouter>
+    </React.Fragment>
 
     , document.getElementById('root'));
 
