@@ -133,7 +133,7 @@ class SliderFooter extends Component {
                                 <div className={'rev-text col-7'}>
                                     <h5 className={'rev-name'}>Борис Борисович</h5>
                                     <p className={'rev-date'}>18.03.2019</p>
-                                    <p>Я ебал твою телку уууу. Я ебал твою телку ааа</p>
+                                    <p>Комментарий комментарный комментарится комментарясь</p>
 
                                 </div>
                             </div>
@@ -146,7 +146,7 @@ class SliderFooter extends Component {
                                 <div className={'rev-text col-7'}>
                                     <h5 className={'rev-name'}>Борис Борисович</h5>
                                     <p className={'rev-date'}>18.03.2019</p>
-                                    <p>Я ебал твою телку уууу. Я ебал твою телку ааа</p>
+                                    <p>Комментарий комментарный комментарится комментарясь</p>
 
                                 </div>
                             </div>
@@ -163,7 +163,7 @@ class SliderFooter extends Component {
                                 <div className={'rev-text col-7'}>
                                     <h5 className={'rev-name'}>Борис Борисович</h5>
                                     <p className={'rev-date'}>18.03.2019</p>
-                                    <p>Я ебал твою телку уууу. Я ебал твою телку ааа</p>
+                                    <p>Комментарий комментарный комментарится комментарясь</p>
 
                                 </div>
                             </div>
@@ -176,7 +176,7 @@ class SliderFooter extends Component {
                                 <div className={'rev-text col-7'}>
                                     <h5 className={'rev-name'}>Борис Борисович</h5>
                                     <p className={'rev-date'}>18.03.2019</p>
-                                    <p>Я ебал твою телку уууу. Я ебал твою телку ааа</p>
+                                    <p>Комментарий комментарный комментарится комментарясь</p>
 
                                 </div>
                             </div>
