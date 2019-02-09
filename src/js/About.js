@@ -191,7 +191,7 @@ class About extends Component {
                                 Как мы работаем
                             </h3>
                         </div>
-                        <div className="col-7 title-white ">
+                        <div className="col-12 col-sm-8 title-white ">
                             <YouTube
                                 videoId="2g811Eo7K8U"
                                 opts={opts}

@@ -33,6 +33,9 @@ import contactsTranslations from '../translations/main.json'
 import {withLocalize} from 'react-localize-redux'
 import ReactModal from 'react-modal';
 
+
+
+ReactModal.setAppElement(document.getElementById("root"));
 class Portfolio extends Component {
     constructor(props) {
         super(props);
