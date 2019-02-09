@@ -49,7 +49,8 @@ class Portfolio extends Component {
             Img4_3, Img4_4, Img4_5, Img4_6];
         this.state={
             ImgMap:[],
-            showModal: false
+            showModal: false,
+            photoToShow:Img1_1,
         }
         this.props.addTranslation(contactsTranslations);
         this.renderImages = this.renderImages.bind(this);
@@ -64,12 +65,15 @@ class Portfolio extends Component {
             this.setState({
                 ImgMap: this.state.ImgMap.concat([imgs.shift()])
             })
-        }, 100);
+        }, 150);
     }
     componentDidMount() {
         this.renderImages(this.images)
     }
-    handleOpenModal () {
+    handleOpenModal (im) {
+        this.setState({
+            photoToShow:im
+        })
         this.setState({ showModal: true });
     }
 
@@ -130,7 +134,7 @@ class Portfolio extends Component {
                         <div className="col-md-10 col-lg-12 col-xs-12">
 <div className={'row'}>
 
-    {this.state.ImgMap.map((im,i)=>{return <div className={'pt-2 pb-2 col-6 col-md-4 col-lg-3'}><AnimatedTeg key={i} value={<div ><img onClick={this.handleOpenModal} className="img-fluid sm-border-black img-portfolio" src={im} /></div>}/></div>})
+    {this.state.ImgMap.map((im,i)=>{return <div key={i} className={'pt-2 pb-2 col-6 col-md-4 col-lg-3'}><AnimatedTeg  value={<div ><img onClick={()=>this.handleOpenModal(im)} className="img-fluid sm-border-black img-portfolio" src={im} /></div>}/></div>})
         }
 
 </div>
@@ -140,7 +144,7 @@ class Portfolio extends Component {
                                 contentLabel="onRequestClose Example"
                                 onRequestClose={this.handleCloseModal}
                             >
-                                <img src={Img1_1} className={'opened-image'}/>
+                                <img src={this.state.photoToShow} className={'opened-image'}/>
                             </ReactModal>
                         </div>
 
