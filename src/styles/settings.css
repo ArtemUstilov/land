@@ -90,4 +90,7 @@ button{
 .sm-border-black{
     border:1px solid black;
 }
+.ReactModal__Overlay{
+    z-index: 1000;
+}
 
