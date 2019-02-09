@@ -56,3 +56,10 @@
 .black-green:hover{
     font-weight: 600;
 }
+.close-btn{
+    font-size:13px;
+    width: 100px !important;
+    height: 30px !important;
+    padding:3px;
+    justify-self: flex-end;
+}

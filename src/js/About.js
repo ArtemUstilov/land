@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import logo from '../img/bg.jpg';
+import logo from '../img/about-bg.jpg';
 import item1 from '../img/footer/item1.png';
 import item2 from '../img/footer/item2.png';
 import item3 from '../img/footer/item3.png';

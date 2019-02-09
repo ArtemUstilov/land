@@ -3,8 +3,41 @@
 }
 
 .portfolio-slider div{
-    padding:0 1px;
+    padding:1px 1px;
 }
 .sm-border-black{
     border:1px solid black;
+}
+.img-portfolio:hover{
+    transform: scale(1.1);
+}
+.open-img-box{
+    postition:fixed;
+    width:100vw;
+    height:100vh;
+}
+@media screen and (max-width:620px){
+    .photo-modal{
+        width:300px !important;
+        height: 225px !important;
+    }
+    .photo-modal img{
+        width:300px !important;
+        height: 225px !important;
+    }
+}
+
+@media screen and (min-width:620px){
+    .photo-modal{
+        width:600px !important;
+        height: 450px !important;
+    }
+    .photo-modal img{
+        width:600px !important;
+        height: 450px !important;
+    }
+}
+
+.opened-image{
+    border:2px solid black;
 }
