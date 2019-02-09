@@ -212,8 +212,27 @@ class Footer extends Component {
                                                     contentLabel="onRequestClose Example"
                                                     onRequestClose={this.handleCloseModal}
                                                 >
-                                                    <p>Modal text!</p>
-                                                    <button onClick={this.handleCloseModal}>Close Modal</button>
+                                                    <form className={'modal-form text-center'}>
+                                                        <h5>ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</h5>
+                                                        <p className={'wait'}>Закажите консультацию и мы свяжемся с Вами через
+                                                            несколько минут</p>
+                                                        <br/>
+                                                        <input name={'name'}
+                                                               placeholder={'Ваше имя'}/>
+                                                        <br/>
+                                                    <br/>
+                                                        <div className={'row'}>
+                                                            <div className={'col-12'}>
+                                                                <input name={'phone'}  placeholder={'Ваш телефон'}/>
+                                                            </div>
+                                                            <br/>
+                                                            <br/>
+                                                        <br/>
+                                                            <div className={'col-12'}>
+                                                                <Button green="true" classes={'form-btn black-green'}value={'footer.consultation'}/>
+                                                            </div>
+                                                        </div>
+                                                    </form>
                                                 </ReactModal>
                                             </p>
                                         </div>

@@ -8,7 +8,7 @@ import design1 from '../img/design1.jpg'
 import design3 from '../img/design3.jpg'
 import design5 from '../img/design5.jpg'
 import team from '../img/team.jpg'
-
+import ReactModal from 'react-modal';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -214,9 +214,24 @@ class Design extends Component {
             options: {renderToStaticMarkup}
         });
         this.props.addTranslation(contactsTranslations);
-    }
+     this.state = {
+        showModal: false
+    };
 
-    render() {
+    this.handleOpenModal = this.handleOpenModal.bind(this);
+    this.handleCloseModal = this.handleCloseModal.bind(this);
+}
+
+handleOpenModal () {
+    this.setState({ showModal: true });
+}
+
+handleCloseModal () {
+    this.setState({ showModal: false });
+}
+
+
+render() {
         let no_pad = {
             padding: '5px'
         }
@@ -246,9 +261,38 @@ class Design extends Component {
                     <div id='wrapper'>
                         <p className='white-text' id='text'>Сделам Ваш интерьер стильным и уютным</p>
                     </div>
-                    <Button green={true} value={'des.btn-first'} classes={'title-btn'}/>
+                    <Button green={true} onclick={this.handleOpenModal} value={'des.btn-first'} classes={'title-btn'}/>
+                    <ReactModal
+                        isOpen={this.state.showModal}
+                        contentLabel="onRequestClose Example"
+                        onRequestClose={this.handleCloseModal}
+                    >
+                        <form className={'modal-form text-center'}>
+                            <h5>ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</h5>
+                            <p className={'wait'}>Закажите консультацию и мы свяжемся с Вами через
+                                несколько минут</p>
+                            <br/>
+                            <input name={'name'}
+                                   placeholder={'Ваше имя'}/>
+                            <br/>
+                            <br/>
+                            <div className={'row'}>
+                                <div className={'col-12'}>
+                                    <input name={'phone'}  placeholder={'Ваш телефон'}/>
+                                </div>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <div className={'col-12'}>
+                                    <Button green="true" classes={'form-btn black-green'}value={'footer.consultation'}/>
+                                </div>
+                            </div>
+                        </form>
+                    </ReactModal>
+
                 </div>
             </section>
+
             <section id={'section0'}>
                 <div className="container-fluid ">
                     <div className="row d-flex justify-content-center">
@@ -257,7 +301,7 @@ class Design extends Component {
 
                             <MiniPortfolio/>
                             <br/>
-                            <Button green={true} value={'des.btn-all'} classes='black-green'/>
+                            <Button green={true}  value={'des.btn-all'} classes='black-green'/>
 
                         </div>
                     </div>

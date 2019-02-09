@@ -90,7 +90,28 @@ button{
 .sm-border-black{
     border:1px solid black;
 }
-.ReactModal__Overlay{
+.ReactModal__Overlay, .ReactModal__Overlay--after-open{
+    display:flex !important;
+    justify-content: center !important;
+    align-items: center !important;
     z-index: 1000;
+    width:100%;
 }
+.ReactModal__Content {
+    height:400px !important;
+    width:380px;
+    left:calc(50% - 190px) !important;
+    background-color: white !important;
+}
+.modal-form input{
+    border:2px solid black;
+    color: black;
+    background-color: white;
+    outline: none !important;
+    padding:10px 20px
+}
+.modal-form input::placeholder{
+    color:black;
+}
+
 
