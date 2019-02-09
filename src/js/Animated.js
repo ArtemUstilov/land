@@ -10,7 +10,7 @@ class AnimatedTag extends Component {
     componentDidMount() {
         setTimeout(() => this.setState({
             animatedClass: 'animated'
-        }), 500);
+        }), 450);
     }
     render() {
         return <div className={`animated-tag ${this.state.animatedClass}`}>{this.props.value}</div>;
