@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/Button.css'
+import '../styles/MobileBtn.css'
 import classNames from 'classnames'
 import {Translate, withLocalize} from 'react-localize-redux'
 import contactsTranslations from '../translations/navbar.json'
@@ -12,13 +13,17 @@ class Button extends Component {
         this.props.addTranslation(mainTansl);
     }
     render() {
-        let classes = classNames({
+        let clas = this.props.classes.split(' ');
+        let obg = clas.reduce((ob,x)=>{ob[x] =  true; return ob;},{})
+        let classes ={
             'white': this.props.white,
             'black': this.props.black || (!this.props.green&&!this.props.white),
             'green': this.props.green,
             'button':true,
-            [this.props.classes]: true,
-        })
+        }
+        Object.assign(classes, obg);
+        console.log(classes)
+        classes = classNames(classes)
         let cb = ()=>this.props.onclick && this.props.onclick()
         return (
             <button id = {this.props.id} className={classes} onClick={cb} >

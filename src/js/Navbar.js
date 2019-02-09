@@ -13,9 +13,12 @@ import {LanguageToggle} from './LanguageToggle'
 import {renderToStaticMarkup} from "react-dom/server";
 import classNames from 'classnames'
 
-class MNavbar extends Component{
+class MNavbar extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            open: false,
+        }
         this.props.initialize({
             languages: [
                 {name: "Русский", code: "ru"},
@@ -24,28 +27,77 @@ class MNavbar extends Component{
             options: {renderToStaticMarkup}
         });
         this.props.addTranslation(contactsTranslations);
+        this.click = this.click.bind(this);
+    }
+
+    click() {
+        this.setState({open: !this.state.open});
+    }
+
+    componentDidMount() {
+        let toggle = document.getElementById("toggle-hamburger");
+        toggle.addEventListener("click", (e)=> {
+            e.preventDefault();
+            let element = document.getElementById('sss');
+            if (!this.state.open) {
+                element.classList.remove('run-animation');
+                void element.offsetHeight;
+                element.classList.add('run-animation');
+                element.classList.add('visible');
+            }else{
+                element.classList.remove('visible');
+            }
+            this.click();
+            toggle.classList.toggle("is-active")
+            // (toggles[0].classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+        });
     }
 
     render() {
-        return <section className='m-navbar'>
-                <div className='row  d-flex flex-column justify-content-center align-items-center'>
-                                    {[['nav.services', '/services'],
-                                        ['nav.portfolio', '/portfolio'],
-                                        ['nav.about', '/about'],
-                                        ['nav.contacts', '/contacts'],
-                                        ['nav.call', '/call']].map(x => {
-                                        return <div key={x[0]}
-                                                    className="col-12 d-flex justify-content-center align-items-center">
-                                            <Link to={x[1]}>
-                                                <Button white={false} value={x[0]}/>
-                                            </Link>
-                                        </div>
-                                    })}
-            </div>
-        </section>;
+        return <div id='top-menu'>
+            <ul>
+                <li>
+                    <ul id='sss'>
+                        {[['nav.services', '/services'],
+                            ['nav.portfolio', '/portfolio'],
+                            ['nav.about', '/about'],
+                            ['nav.contacts', '/contacts'],
+                            ['nav.call', '/call']].map(x => {
+                            return <li key={x[0]}>
+                                <Link to={x[1]}>
+                                    <Translate id={x[0]}/>
+                                </Link>
+                            </li>
+                            })}
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        //
+        //
+        //
+        //
+        // <section className='m-navbar'>
+        //         <div className='row  d-flex flex-column justify-content-center align-items-center'>
+        //                             {[['nav.services', '/services'],
+        //                                 ['nav.portfolio', '/portfolio'],
+        //                                 ['nav.about', '/about'],
+        //                                 ['nav.contacts', '/contacts'],
+        //                                 ['nav.call', '/call']].map(x => {
+        //                                 return <div key={x[0]}
+        //                                             className="col-12 d-flex justify-content-center align-items-center">
+        //                                     <Link to={x[1]}>
+        //                                         <Button white={false} value={x[0]}/>
+        //                                     </Link>
+        //                                 </div>
+        //                             })}
+        //     </div>
+        // </section>;
     }
 }
+
 MNavbar = withLocalize(MNavbar)
+
 class Navbar extends Component {
     constructor(props) {
         super(props);
@@ -66,33 +118,39 @@ class Navbar extends Component {
         this.updateBtnState = this.updateBtnState.bind(this);
         this.updateScroll = this.updateScroll.bind(this)
     }
-    updateScroll(){
+
+    updateScroll() {
         this.setState({
             scroll: window.pageYOffset > 100
         })
-        if(!this.state.scroll){
+        if (!this.state.scroll) {
             document.getElementById('toggle').classList.remove('white')
             document.getElementById('toggle').classList.add('black')
-        }else{
+        } else {
             document.getElementById('toggle').classList.remove('black')
             document.getElementById('toggle').classList.add('white')
         }
 
     }
+
     updateBtnState(value) {
         this.setState({btnClicked: value})
     }
-    btnFalse(){
+
+    btnFalse() {
         this.updateBtnState(false);
     }
+
     updateSizeState() {
         this.setState({mobile: window.innerWidth < 576})
     }
+
     componentDidMount() {
         window.addEventListener('resize', this.updateSizeState)
         window.addEventListener('mouseup', this.btnFalse.bind(this))
         window.addEventListener('scroll', this.updateScroll);
     }
+
     render() {
         let classesBigNav = classNames({
             header: true,
@@ -121,17 +179,19 @@ class Navbar extends Component {
                             </div>
                             <div className="col-sm-2 d-flex justify-content-center align-items-center">
                                 <Link to='/'>
-                                    <img alt='' src={this.state.scroll ? logoBlack : logo} className='img-fluid nav-text' style={{minWidth:'150px'}}/>
+                                    <img alt='' src={this.state.scroll ? logoBlack : logo}
+                                         className='img-fluid nav-text' style={{minWidth: '150px'}}/>
                                 </Link>
                             </div>
                             <div className="col-sm-5">
                                 <div className='row'>
-                                    <div className="col-sm-4 d-flex justify-content-center align-items-center">
+                                    <div className="col-sm-6 d-flex justify-content-center align-items-center">
                                         <Link to='/contacts'>
-                                            <Button white={this.state.scroll} classes='nav-text' value={'nav.contacts'}/>
+                                            <Button white={this.state.scroll} classes='nav-text'
+                                                    value={'nav.contacts'}/>
                                         </Link>
                                     </div>
-                                    <div className="col-sm-8 d-flex justify-content-center align-items-center">
+                                    <div className="col-sm-6 d-flex justify-content-center align-items-center">
                                         <Link to='/call'>
                                             <Button white={this.state.scroll} classes='nav-text' value={'nav.call'}/>
                                         </Link>
@@ -140,14 +200,15 @@ class Navbar extends Component {
                             </div>
                         </div>
                     </div>
-                <div className='col-sm-2 d-flex align-items-center justify-content-center'>
-                    <LanguageToggle scroll={this.state.scroll}/>
-                </div>
+                    <div className='col-sm-2 d-flex align-items-center justify-content-center'>
+                        <LanguageToggle scroll={this.state.scroll}/>
+                    </div>
                 </div>
             </div>
             {this.state.mobile && <MobileBtn btnClicked={this.updateBtnState.bind(this)}/>}
             <div style={{paddingBottom: !this.state.mobile ? '100px' : '50px'}}/>
-            {this.state.btnClicked && this.state.mobile && <MNavbar/>}
+            {/*{this.state.btnClicked && this.state.mobile && <MNavbar/>}*/}
+            <MNavbar/>
         </section>;
     }
 }

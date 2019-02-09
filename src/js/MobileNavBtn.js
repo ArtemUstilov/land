@@ -4,7 +4,7 @@ import Button from './Button.js'
 import classNames from 'classnames'
 import logo from '../img/logoWhite.png'
 import {Link} from 'react-router-dom'
-import {MLanguageToggle} from './LanguageToggle'
+import {LanguageToggle} from './LanguageToggle'
 
 class MButton extends Component {
     constructor() {
@@ -28,18 +28,17 @@ class MButton extends Component {
         return (
             <div className='header-m'>
                 <div className='row'>
-                    <div className='col-6 d-flex justify-content-center'>
-                        <Button onclick={this.updateBtnState} white={false} classes={classes} value='nav.mob_n'/>
-                    </div>
-                    <div className='col-3'>
-                        {/*<p className='lang'>Укр</p>*/}
-                        <MLanguageToggle/>
-                        {/*<p className='lang'>Рус</p>*/}
-                    </div>
-                    <div className='col-3'>
+                    <div className='col-4 d-flex justify-content-center'>
+                        <button id='toggle-hamburger' className="toggle-hamburger toggle-hamburger__animx">
+                            <span>menu toggle</span>
+                        </button>                    </div>
+                    <div className='col-4 d-flex align-items-center'>
                         <Link to='/'>
                             <img alt='' src={logo} className='img-fluid'/>
                         </Link>
+                    </div>
+                    <div className='col-4 d-flex align-items-center justify-content-end pr-5'>
+                        <LanguageToggle/>
                     </div>
                 </div>
             </div>
