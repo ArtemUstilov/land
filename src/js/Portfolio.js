@@ -48,29 +48,47 @@ class Portfolio extends Component {
     render() {
         const settings = {
             className:'portfolio-slider',
-            dots: true,
-            arrows:true,
-            infinite: true,
-            slidesToShow: 3,
-            autoplay:true,
-            autoplaySpeed:3000,
-            speed: 800,
-            rows: 2,
-            slidesToScroll: 3,
+            dots: false,
             adaptiveHeight:true,
+            arrows:false,
+            slidesToShow: 5,
+            autoplay:false,
+            rows: 4,
+
             responsive: [
                 {
                     breakpoint: 756,
                     settings: {
-                        arrows:false
+                        slidesToShow: 4,
+                        autoplay:false,
+                        rows: 5,
+
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 3,
+                        autoplay:false,
+                        rows: 7,
+
+                    }
+                },
+                {
+                    breakpoint: 456,
+                    settings: {
+                        slidesToShow: 2,
+                        autoplay:false,
+                        rows: 11,
 
                     }
                 }
+
             ]
         };
-        let images = [Img1_2, Img1_3, Img1_4, Img1_5, Img1_6, Img2_1, Img2_2, Img2_3, Img2_4,
+        let images = [Img1_1, Img1_2, Img1_3, Img1_4, Img1_5, Img1_6, Img2_1, Img2_2, Img2_3, Img2_4,
             Img2_5, Img2_6, Img3_1, Img3_2, Img3_3, Img3_4, Img3_5, Img3_6, Img4_1, Img4_2,
-            Img4_3, Img4_5, Img4_6];
+            Img4_3, Img4_4, Img4_5, Img4_6];
         return (
             <section id={'portfolio'}>
                 <div className="container-fluid ">
@@ -80,9 +98,10 @@ class Portfolio extends Component {
                            Портфолио
                         </h3>
                         </div>
-                        <div className="col-md-9 col-lg-8 col-xs-12">
+                        <div className="col-md-10 col-lg-12 col-xs-12">
                             <Slider  {...settings}>
-        {images.map(im=>{return <div ><img className="img-fluid" src={im} /></div>})}
+        {images.map((im,i)=>{return <div key={i}>{console.log({i})}<img className="img-fluid sm-border-black" src={im} /></div>})
+        }
                             </Slider>
                         </div>
 

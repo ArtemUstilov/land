@@ -19,7 +19,9 @@
     -o-background-size: cover;
     background-size: cover;
 }
-
+.portfolio-slider-mini{
+    width:100% !important;
+}
 .white-text{
     color:#fff;
 }
@@ -191,6 +193,10 @@
 }
 
 #section7{
+    padding-bottom: 40px;
+    width: 100%;
+}
+#section0{
     padding-bottom: 40px;
     width: 100%;
 }

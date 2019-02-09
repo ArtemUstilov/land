@@ -60,7 +60,12 @@
 }
 .gray-background{
     background-color: #E8E8E8;
+
 }
+button{
+    outline:none !important;
+}
+
 
 .no-padding{
     padding:0 !important;
@@ -71,3 +76,18 @@
 .invisible{
     display:none;
 }
+
+
+
+.form-btn{
+    width:250px !important;
+    height:50px !important;
+}
+
+.portfolio-slider-mini div{
+    padding:0 1px;
+}
+.sm-border-black{
+    border:1px solid black;
+}
+
