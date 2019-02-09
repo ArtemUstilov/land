@@ -21,6 +21,7 @@ import Img07 from '../img/footer/Insta/7.jpg';
 import Img08 from '../img/footer/Insta/8.jpg';
 import Img09 from '../img/footer/Insta/9.jpg';
 import {renderToStaticMarkup} from "react-dom/server";
+import ReactModal from 'react-modal';
 import contactsTranslations from '../translations/footer.json'
 
 
@@ -90,7 +91,22 @@ class Footer extends Component {
             ],
             options: {renderToStaticMarkup}
         });
+
         this.props.addTranslation(contactsTranslations);
+        this.state = {
+            showModal: false
+        };
+
+        this.handleOpenModal = this.handleOpenModal.bind(this);
+        this.handleCloseModal = this.handleCloseModal.bind(this);
+    }
+
+    handleOpenModal () {
+        this.setState({ showModal: true });
+    }
+
+    handleCloseModal () {
+        this.setState({ showModal: false });
     }
 
 
@@ -188,9 +204,17 @@ class Footer extends Component {
                                                 src={mail}/> okolitadesign@gmail.com</a></p>
                                         </div>
                                         <div className={'col-6 col-md-3 col-lg-3 text-center'}>
-                                            <p className={"footer-button-box"}><Button white={true}
+                                            <p className={"footer-button-box"}><Button onclick={this.handleOpenModal} white={true}
                                                                                        value={'footer.recall'}
                                                                                        classes='black-background footer-button '/>
+                                                <ReactModal
+                                                    isOpen={this.state.showModal}
+                                                    contentLabel="onRequestClose Example"
+                                                    onRequestClose={this.handleCloseModal}
+                                                >
+                                                    <p>Modal text!</p>
+                                                    <button onClick={this.handleCloseModal}>Close Modal</button>
+                                                </ReactModal>
                                             </p>
                                         </div>
                                     </div>

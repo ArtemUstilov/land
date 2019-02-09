@@ -1,4 +1,45 @@
 #preloader{
-    z-index:500;
-
+    position:relative;
 }
+#preloader:after {
+    content: "";
+    background: url('../img/logoGreen.png');
+    display: inline-block !important;
+    position: absolute;
+    background-size: 100% 100%;
+    width: 50% !important;
+    height: 13vw;
+    z-index: 10000;
+}
+@media screen and (max-width:548px){
+    #preloader:after{
+        content:"";
+        background:url('../img/logoGreen.png') ;
+        display: inline-block !important;
+        position:absolute;
+        background-size: 100% 100%;
+        width:  50%!important;
+        height: 13vw;
+        z-index: 10000;
+        top:30%;
+
+    }
+}
+
+@media screen and (min-width:548px) and (max-width:800px){
+    #preloader:after{
+        top:12%;
+
+    }
+}
+@media screen and (min-width:800px) {
+    #preloader:after{
+        top:7%;
+
+    }
+}
+
+
+
+
+

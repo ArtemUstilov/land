@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './styles/Preloader.css'
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.css';
 import * as serviceWorker from './serviceWorker';
@@ -20,7 +21,7 @@ import Contacts from './js/Contacts.js'
 import Services from './js/Services.js'
 import {renderToStaticMarkup} from "react-dom/server";
 import {withLocalize} from "react-localize-redux/lib/index";
-import {Cube} from 'react-preloaders';
+import {Dots} from "react-preloaders";
 class MyRouter extends Router {
     constructor(props) {
         super(props);
@@ -39,11 +40,13 @@ class MyRouter extends Router {
 MyRouter = withLocalize(MyRouter);
 ReactDOM.render(
     <React.Fragment>
-        <Cube
-            color={'white'} //Default #2D2D2D
+        <Dots
+            className={'preloader'}
+            id={'preloader'}
+            color={'#3c9253'} //Default #2D2D2D
             z-index={'1000'}
-            bgColor={'black'} //Default #F7F7F7
-            time={50} //Default #1300
+            bgColor={'white'} //Default #F7F7F7
+            time={1600} //Default #1300
         />
     <MyRouter>
         <LocalizeProvider>
