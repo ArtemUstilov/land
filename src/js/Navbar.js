@@ -68,7 +68,7 @@ class Navbar extends Component {
     }
     updateScroll(){
         this.setState({
-            scroll: window.pageYOffset > 50
+            scroll: window.pageYOffset > 100
         })
         if(!this.state.scroll){
             document.getElementById('toggle').classList.remove('white')
@@ -111,7 +111,7 @@ class Navbar extends Component {
                                         ['nav.portfolio', '/portfolio'],
                                         ['nav.about', '/about'],].map(x => {
                                         return <div key={x[0]}
-                                                    className="col-sm-4 d-flex justify-content-center align-items-center">
+                                                    className="col-sm-4 d-flex justify-content-center align-items-center no-padding">
                                             <Link to={x[1]}>
                                                 <Button white={this.state.scroll} classes='nav-text' value={x[0]}/>
                                             </Link>
@@ -121,7 +121,7 @@ class Navbar extends Component {
                             </div>
                             <div className="col-sm-2 d-flex justify-content-center align-items-center">
                                 <Link to='/'>
-                                    <img alt='' src={this.state.scroll ? logoBlack : logo} className='img-fluid nav-text'/>
+                                    <img alt='' src={this.state.scroll ? logoBlack : logo} className='img-fluid nav-text' style={{minWidth:'150px'}}/>
                                 </Link>
                             </div>
                             <div className="col-sm-5">

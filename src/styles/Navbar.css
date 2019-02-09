@@ -32,7 +32,7 @@
     margin: 0 5px 0 5px;
 }
 .nav-text{
-    font-size: 25px;
+    font-size: calc(10px + 0.5vw);
     cursor: pointer;
 }
 .nav-text:hover{
