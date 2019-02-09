@@ -113,5 +113,13 @@ button{
 .modal-form input::placeholder{
     color:black;
 }
+.animated-tag  {
+    opacity:0;
+    transition: opacity 3s ease;
+}
+
+.animated {
+    opacity: 1;
+}
 
 
