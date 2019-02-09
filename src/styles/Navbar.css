@@ -101,7 +101,7 @@
 
 #top-menu ul ul {
     visibility: hidden;
-    position: absolute;
+    position: fixed;
 }
 .visible{
     visibility: visible;
@@ -216,7 +216,9 @@
 /*opacity: 1;*/
 /*!*}*!*/
 #sss{
-    position: absolute;
+    position: fixed;
+    top: 50px!important;
+    left: 0!important;
 }
 @keyframes my-animation {
     from{
@@ -227,7 +229,7 @@
     }
 }
 .run-animation {
-    position: absolute !important;
+    position: fixed !important;
     animation: my-animation 1s ease;
 }
 
