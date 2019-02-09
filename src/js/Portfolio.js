@@ -31,7 +31,6 @@ import Img4_6 from '../img/portfolio/fourth/6.jpg';
 import {renderToStaticMarkup} from "react-dom/server";
 import contactsTranslations from '../translations/main.json'
 import {withLocalize} from 'react-localize-redux'
-import 'react-image-lightbox/style.css';
 import ReactModal from 'react-modal';
 
 class Portfolio extends Component {
