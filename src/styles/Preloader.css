@@ -1,10 +1,10 @@
-#preloader{
-    position:relative;
-}
+/*#preloader{*/
+    /*position:relative;*/
+/*}*/
 #preloader:after {
     content: "";
     background: url('../img/logoGreen.png');
-    display: inline-block !important;
+    display: inline-block;
     position: absolute;
     background-size: 100% 100%;
     width: 50% !important;
@@ -15,7 +15,7 @@
     #preloader:after{
         content:"";
         background:url('../img/logoGreen.png') ;
-        display: inline-block !important;
+        display: inline-block;
         position:absolute;
         background-size: 100% 100%;
         width:  50%!important;
@@ -38,7 +38,19 @@
 
     }
 }
-
+/*@keyframes animatePre {*/
+   /*from{*/
+       /*opacity: 1;*/
+   /*}*/
+    /*to{*/
+        /*opacity: 0;*/
+        /*display: none !important;*/
+        /*visibility: hidden !important;*/
+    /*}*/
+/*}*/
+/*.invisible{*/
+    /*animation: animatePre 1s ease !important;*/
+/*}*/
 
 
 

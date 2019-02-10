@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {Translate, withLocalize} from 'react-localize-redux'
-import me from '../img/download.jpg';
+import me from '../img/unicorn.jpg';
 import logo from '../img/logo.png';
 import Button from './Button'
 import phone from '../img/footer/phone.jpg';

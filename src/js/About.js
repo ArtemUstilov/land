@@ -12,6 +12,7 @@ import Button from './Button'
 import {renderToStaticMarkup} from "react-dom/server";
 import contactsTranslations from '../translations/about.json'
 import {withLocalize} from 'react-localize-redux'
+import ReactModal from 'react-modal';
 
 
 class About extends Component {
@@ -25,7 +26,22 @@ class About extends Component {
             options: {renderToStaticMarkup}
         });
         this.props.addTranslation(contactsTranslations);
+        this.state = {
+            showModal: false
+        };
+
+        this.handleOpenModal = this.handleOpenModal.bind(this);
+        this.handleCloseModal = this.handleCloseModal.bind(this);
     }
+
+    handleOpenModal () {
+        this.setState({ showModal: true });
+    }
+
+    handleCloseModal () {
+        this.setState({ showModal: false });
+    }
+
     render() {
 
         const opts = {
@@ -186,10 +202,36 @@ class About extends Component {
                             />
                         </div>
                         <div className="col-8 d-flex justify-content-center">
-                            <Button white={true} value="ЗАПИСАТЬСЯ СЕЙЧАС" classes='proj-btn'/>
+                            <Button white={true} value="about.btn" onclick={this.handleOpenModal} classes='proj-btn'/>
                         </div>
                     </div>
-
+                    <ReactModal
+                        isOpen={this.state.showModal}
+                        contentLabel="onRequestClose Example"
+                        onRequestClose={this.handleCloseModal}
+                    >
+                        <form className={'modal-form text-center'}>
+                            <h5>ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</h5>
+                            <p className={'wait'}>Закажите консультацию и мы свяжемся с Вами через
+                                несколько минут</p>
+                            <br/>
+                            <input name={'name'}
+                                   placeholder={'Ваше имя'}/>
+                            <br/>
+                            <br/>
+                            <div className={'row'}>
+                                <div className={'col-12'}>
+                                    <input name={'phone'}  placeholder={'Ваш телефон'}/>
+                                </div>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <div className={'col-12'}>
+                                    <Button green="true" classes={'form-btn black-green'}value={'footer.consultation'}/>
+                                </div>
+                            </div>
+                        </form>
+                    </ReactModal>
                 </div>
             </section>
         );

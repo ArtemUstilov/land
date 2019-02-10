@@ -102,7 +102,7 @@ class Services extends Component {
                     <h1 className='white-text title white-title' style={{padding: '10px'}}>С чего начать
                         дизайн?</h1>
                     <p className='white-text'>Запишитесь на консультацию дизайнера</p>
-                    <Button white={true} onclick={this.handleOpenModal} value={'services.sign'} classes='proj-btn'/>
+                    <Button green={true} onclick={this.handleOpenModal} value={'services.sign'} classes='proj-btn'/>
                     <ReactModal
                         isOpen={this.state.showModal}
                         contentLabel="onRequestClose Example"
@@ -125,7 +125,7 @@ class Services extends Component {
                                 <br/>
                                 <br/>
                                 <div className={'col-12'}>
-                                    <Button green="true" classes={'form-btn black-green'}value={'footer.consultation'}/>
+                                    <Button green={true} classes={'form-btn black-green'}value={'footer.consultation'}/>
                                 </div>
                             </div>
                         </form>

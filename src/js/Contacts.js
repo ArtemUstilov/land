@@ -39,12 +39,12 @@ class Contacts extends Component {
                                     </p>
                                 </div>
                                 <div className="col-md-4 icon-box">
-                                    <a href="mailto:okolita_design@gmail.com"
+                                    <a href="mailto:okolitadesign@gmail.com"
                                        rel='noopener noreferrer'
                                        target='_blank'><img src={Mail} alt="" className="icon-c"/></a>
-                                    <p style={{fontSize: "13px"}}><a href="mailto:okolita_design@gmail.com"
+                                    <p style={{fontSize: "13px"}}><a href="mailto:okolitadesign@gmail.com"
                                                                      rel='noopener noreferrer'
-                                                                     target='_blank'>okolita_design@gmail.com</a></p>
+                                                                     target='_blank'>okolitadesign@gmail.com</a></p>
                                 </div>
                             </div>
                             <p>Симон Болівар — найвідоміший політичний діяч Південної Америки. Його численні пам'ятники,

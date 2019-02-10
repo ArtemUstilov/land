@@ -34,6 +34,7 @@ class MyRouter extends Router {
         });
     }
     componentDidMount() {
+        // setTimeout(()=>document.getElementById('preloader').classList.add('invisible'), 1500);
     }
 }
 
@@ -45,8 +46,8 @@ ReactDOM.render(
             id={'preloader'}
             color={'#3c9253'} //Default #2D2D2D
             z-index={'1000'}
-            bgColor={'white'} //Default #F7F7F7
-            time={1000} //Default #1300
+            bgColor={'white'}
+            time={1500}//Default #F7F7F7
         />
     <MyRouter>
         <LocalizeProvider>

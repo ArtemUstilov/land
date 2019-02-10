@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import '../styles/mainPage.css'
 import '../styles/settings.css'
+import {Link} from 'react-router-dom'
 import Button from './Button'
 // import logo from '../img/bg.jpg'
 import contactsTranslations from '../translations/main.json'
@@ -133,7 +134,7 @@ class SliderFooter extends Component {
                                 <div className={'rev-text col-7'}>
                                     <h5 className={'rev-name'}>Борис Борисович</h5>
                                     <p className={'rev-date'}>18.03.2019</p>
-                                    <p>Комментарий комментарный комментарится комментарясь</p>
+                                    <p>Комментарий</p>
 
                                 </div>
                             </div>
@@ -146,7 +147,7 @@ class SliderFooter extends Component {
                                 <div className={'rev-text col-7'}>
                                     <h5 className={'rev-name'}>Борис Борисович</h5>
                                     <p className={'rev-date'}>18.03.2019</p>
-                                    <p>Комментарий комментарный комментарится комментарясь</p>
+                                    <p>Комментарий</p>
 
                                 </div>
                             </div>
@@ -163,7 +164,7 @@ class SliderFooter extends Component {
                                 <div className={'rev-text col-7'}>
                                     <h5 className={'rev-name'}>Борис Борисович</h5>
                                     <p className={'rev-date'}>18.03.2019</p>
-                                    <p>Комментарий комментарный комментарится комментарясь</p>
+                                    <p>Комментарий</p>
 
                                 </div>
                             </div>
@@ -176,7 +177,7 @@ class SliderFooter extends Component {
                                 <div className={'rev-text col-7'}>
                                     <h5 className={'rev-name'}>Борис Борисович</h5>
                                     <p className={'rev-date'}>18.03.2019</p>
-                                    <p>Комментарий комментарный комментарится комментарясь</p>
+                                    <p>Комментарий</p>
 
                                 </div>
                             </div>
@@ -301,8 +302,9 @@ render() {
 
                             <MiniPortfolio/>
                             <br/>
+                            <Link to='/portfolio'>
                             <Button green={true}  value={'des.btn-all'} classes='black-green'/>
-
+                            </Link>
                         </div>
                     </div>
                 </div>
