@@ -331,7 +331,7 @@ render() {
                 </div>
             </section>
             <section id={'section4'} className={'section'}>
-                <h1 className='title'>О студии</h1>
+                <h1 className='title' >О студии</h1>
                 <div className="row">
                     <div className="col-sm-2"/>
                     <div className="col-sm-4">
