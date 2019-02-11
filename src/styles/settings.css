@@ -98,10 +98,18 @@ button{
     width:100%;
 }
 .ReactModal__Content {
-    height:400px !important;
-    width:380px;
-    left:calc(50% - 190px) !important;
-    background-color: white !important;
+    height:400px ;
+    width:360px;
+    left:calc(50% - 180px) !important;
+    background-color: white ;
+}
+@media screen and (min-width: 1500px){
+    .ReactModal__Content {
+        height:500px ;
+        width:480px;
+        left:calc(50% - 240px) !important;
+        background-color: white ;
+    }
 }
 .modal-form input{
     border:2px solid black;
@@ -122,4 +130,11 @@ button{
     opacity: 1;
 }
 
-
+h3{
+    font-family: 'Oswald', sans-serif !important;
+}
+@media screen and (max-width: 576px){
+    .too-big{
+        font-size:27px !important;
+    }
+}
