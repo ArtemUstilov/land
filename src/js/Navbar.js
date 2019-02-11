@@ -33,24 +33,39 @@ class MNavbar extends Component {
     click() {
         this.setState({open: !this.state.open});
     }
-
+    openMenu(){
+        let element = document.getElementById('sss');
+        element.classList.remove('run-animation');
+        void element.offsetHeight;
+        element.classList.add('run-animation');
+        element.classList.add('visible');
+    }
+    closeMenu(){
+        let element = document.getElementById('sss');
+        element.classList.remove('visible');
+    }
     componentDidMount() {
         let toggle = document.getElementById("toggle-hamburger");
         toggle.addEventListener("click", (e) => {
             e.preventDefault();
             let element = document.getElementById('sss');
             if (!this.state.open) {
-                element.classList.remove('run-animation');
-                void element.offsetHeight;
-                element.classList.add('run-animation');
-                element.classList.add('visible');
+                this.openMenu();
             } else {
-                element.classList.remove('visible');
+                this.closeMenu();
             }
             this.click();
-            toggle.classList.toggle("is-active")
-            // (toggles[0].classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+            toggle.classList.toggle("is-active");
         });
+        document.addEventListener('click', (e)=>{
+            e.preventDefault();
+            let nav = document.getElementById('nav-menu');
+            if(e.target !== nav && e.target !== toggle &&  !nav.contains(e.target) && !toggle.contains(e.target)){
+                this.closeMenu();
+                this.click();
+                toggle.classList.remove("is-active");
+            }
+        })
     }
 
     render() {
@@ -58,7 +73,8 @@ class MNavbar extends Component {
             <ul>
                 <li>
                     <ul id='sss'>
-                        {[['nav.services', '/services'],
+                        {[['nav.main', '/'],
+                            ['nav.services', '/services'],
                             ['nav.portfolio', '/portfolio'],
                             ['nav.about', '/about'],
                             ['nav.contacts', '/contacts'],
@@ -126,6 +142,7 @@ class Navbar extends Component {
         if (!this.state.scroll) {
             document.getElementById('toggle').classList.remove('white')
             document.getElementById('toggle').classList.add('black')
+
         } else {
             document.getElementById('toggle').classList.remove('black')
             document.getElementById('toggle').classList.add('white')
@@ -157,17 +174,24 @@ class Navbar extends Component {
             'header-opac': this.state.scroll,
             invisible: this.state.mobile,
         })
+        let call_link = classNames({
+            'nav-text': true,
+            'call-link': !this.state.scroll,
+            'call-link-blck': this.state.scroll,
+        })
         return <section>
             <div className={classesBigNav}>
                 <div className='row  d-flex justify-content-center align-items-center'>
-                    <div className='col-sm-2'/>
-                    <div className="col-12 col-sm-8 d-flex ">
+
+                        <div className='col-sm-2 d-flex align-items-center justify-content-center'>
+                            <LanguageToggle scroll={this.state.scroll}/>
+                        </div>
+                    <div className="col-12 col-xs-10 col-sm-8 d-flex ">
                         <div className='row d-flex justify-content-around w-100'>
-                            <div className="col-sm-5 ">
-                                <div className='row'>
+                            <div className="col-sm-5 d-flex justify-content-end">
+                                {/*<div className='row'>*/}
                                     {[['nav.services', '/services'],
-                                        ['nav.portfolio', '/portfolio'],
-                                        ['nav.about', '/about'],].map(x => {
+                                        ['nav.portfolio', '/portfolio']].map(x => {
                                         return <div key={x[0]}
                                                     className="col-sm-4 d-flex justify-content-center align-items-center no-padding">
                                             <Link to={x[1]}>
@@ -175,35 +199,40 @@ class Navbar extends Component {
                                             </Link>
                                         </div>
                                     })}
-                                </div>
+                                {/*</div>*/}
                             </div>
                             <div className="col-sm-2 d-flex justify-content-center align-items-center">
                                 <Link to='/'>
-                                    <img alt='' src={this.state.scroll ? logoBlack : logo}
-                                         className='img-fluid nav-text' style={{minWidth: '150px'}}/>
+                                    <Button white={this.state.scroll} classes='nav-text' value={'nav.logo'}/>
+                                    <Button white={this.state.scroll} classes='nav-text' value={'nav.l_above'}/>
+                                    {/*<img alt='' src={this.state.scroll ? logoBlack : logo}*/}
+                                         {/*className='img-fluid nav-text' style={{minWidth: '150px'}}/>*/}
                                 </Link>
                             </div>
-                            <div className="col-sm-5">
-                                <div className='row'>
-                                    <div className="col-sm-6 d-flex justify-content-center align-items-center">
-                                        <Link to='/contacts'>
-                                            <Button white={this.state.scroll} classes='nav-text'
-                                                    value={'nav.contacts'}/>
-                                        </Link>
-                                    </div>
-                                    <div className="col-sm-6 d-flex justify-content-center align-items-center">
-                                        <Link to='/call'>
-                                            <Button white={this.state.scroll} classes='nav-text' value={'nav.call'}/>
-                                        </Link>
-                                    </div>
-                                </div>
+                            <div className="col-sm-5 d-flex justify-content-start">
+                                {/*<div className='row'>*/}
+                                    {[['nav.about', '/about'],
+                                        ['nav.contacts','/contacts']].map(x => {
+                                        return <div key={x[0]}
+                                                    className="col-sm-4 d-flex justify-content-center align-items-center no-padding">
+                                            <Link to={x[1]}>
+                                                <Button white={this.state.scroll} classes='nav-text' value={x[0]}/>
+                                            </Link>
+                                        </div>
+                                    })}
+                                {/*</div>*/}
                             </div>
                         </div>
                     </div>
-                    <div className='col-sm-2 d-flex align-items-center justify-content-center'>
-                        <LanguageToggle scroll={this.state.scroll}/>
+                <div className='col-sm-2'>
+                    <div className="col-12 d-flex justify-content-start align-items-center">
+                        <Link to='/call'>
+                            <Button white={this.state.scroll} classes={call_link} value={'nav.call'}/>
+                        </Link>
                     </div>
                 </div>
+                </div>
+
             </div>
             {this.state.mobile && <MobileBtn btnClicked={this.updateBtnState.bind(this)}/>}
             <div style={{paddingBottom: !this.state.mobile ? '100px' : '50px'}}/>

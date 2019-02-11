@@ -1,8 +1,11 @@
 {
   "nav": {
+    "logo": ["OKOLITA DESIGN","OKOLITA DESIGN"],
+    "l_above": ["interior studio","interior studio"],
+    "main": ["Главная","Головна"],
     "services": ["Услуги", "Послуги"],
     "portfolio": ["Портфолио", "Портфоліо"],
-    "about": ["Про нас", "Про нас"],
+    "about": ["О студии", "Про студію"],
     "contacts": ["Контакты", "Контакти"],
     "call": ["Заказать звонок", "Замовити дзвінок"],
     "mob_n":["Меню","Меню"],
