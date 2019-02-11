@@ -298,7 +298,7 @@ render() {
                 <div className="container-fluid ">
                     <div className="row d-flex justify-content-center">
                         <div className="col-md-9 col-12 d-flex flex-column justify-content-center align-items-center">
-                            <h1 className={'title'}>Наши работы</h1>
+                            <h3 className={'title'}>Наши работы</h3>
 
                             <MiniPortfolio/>
                             <br/>
@@ -331,7 +331,7 @@ render() {
                 </div>
             </section>
             <section id={'section4'} className={'section'}>
-                <h1 className='title'>О студии</h1>
+                <h1 className='title' >О студии</h1>
                 <div className="row">
                     <div className="col-sm-2"/>
                     <div className="col-sm-4">
