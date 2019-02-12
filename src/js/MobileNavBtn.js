@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import logo from '../img/logoWhite.png'
 import {Link} from 'react-router-dom'
 import {LanguageToggle} from './LanguageToggle'
-
+import Button from './Button.js'
 class MButton extends Component {
     constructor() {
         super();
@@ -28,8 +28,9 @@ class MButton extends Component {
                             <span>menu toggle</span>
                         </button>                    </div>
                     <div className='col-4 d-flex align-items-center'>
-                        <Link to='/'>
-                            <img alt='' src={logo} className='img-fluid'/>
+                        <Link to='/' className = 'd-flex flex-column justify-content-center'>
+                            <Button white={this.state.scroll} classes='nav-text no-border' value={'nav.logo'}/>
+                            <Button white={this.state.scroll} classes='nav-text no-border' value={'nav.l_above'}/>
                         </Link>
                     </div>
                     <div className='col-4 d-flex align-items-center justify-content-end pr-5'>

@@ -60,7 +60,7 @@ class MNavbar extends Component {
         document.addEventListener('click', (e)=>{
             e.preventDefault();
             let nav = document.getElementById('nav-menu');
-            if(e.target !== nav && e.target !== toggle &&  !nav.contains(e.target) && !toggle.contains(e.target)){
+            if(nav && e.target !== nav && e.target !== toggle &&  !nav.contains(e.target) && !toggle.contains(e.target)){
                 this.closeMenu();
                 this.click();
                 toggle.classList.remove("is-active");

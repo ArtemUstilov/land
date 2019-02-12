@@ -17,3 +17,9 @@
         transform: none;
     }
 }
+.col-4 a Button{
+    white-space: nowrap;
+}
+.col-4 a{
+    text-align: center;
+}
