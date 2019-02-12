@@ -98,7 +98,10 @@
 
 #top-menu > ul > li > ul > li{
     width: 100vw;
-    font-size: 35px;
+    font-weight: 600;
+    font-size: 25px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     background-color: #000;
     text-align: center;
     border: 1px solid white;
@@ -251,16 +254,28 @@
 @keyframes my-animation {
     from{
         opacity: 0.2;
+        left: -400%;
     }
     to{
         opacity: 1;
+        left: 0;
+    }
+}
+@keyframes my-animation-close {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
     }
 }
 .run-animation {
     position: fixed !important;
     animation: my-animation 1s ease;
 }
-
+.run-animation-close {
+    animation: my-animation-close 1s ease;
+}
 
 
 .toggle-hamburger.toggle-hamburger__animx span {
@@ -359,16 +374,20 @@
 }
 .toggle-hamburger.toggle-hamburger__animx.is-active span::before {
     top: 0;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
+    -webkit-transform: rotate(405deg);
+    transform: rotate(405deg);
 }
 .toggle-hamburger.toggle-hamburger__animx.is-active span::after {
     bottom: 0;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-405deg);
+    transform: rotate(-405deg);
 }
 
-
+#transpa{
+    padding: 1000px !important;
+    background-color: transparent !important;
+    border: none !important;
+}
 
 
 

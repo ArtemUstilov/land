@@ -35,6 +35,8 @@ class MNavbar extends Component {
     }
     openMenu(){
         let element = document.getElementById('sss');
+        element.classList.remove('run-animation-close');
+        element.classList.remove('invisible');
         element.classList.remove('run-animation');
         void element.offsetHeight;
         element.classList.add('run-animation');
@@ -42,7 +44,12 @@ class MNavbar extends Component {
     }
     closeMenu(){
         let element = document.getElementById('sss');
-        element.classList.remove('visible');
+        element.classList.remove('run-animation');
+        setTimeout(()=>element.classList.remove('visible'), 1000);
+        element.classList.remove('run-animation-close');
+        void element.offsetHeight;
+        element.classList.add('run-animation-close');
+        //element.classList.add('invisible');
     }
     componentDidMount() {
         let toggle = document.getElementById("toggle-hamburger");
@@ -52,7 +59,9 @@ class MNavbar extends Component {
             if (!this.state.open) {
                 this.openMenu();
             } else {
-                this.closeMenu();
+                setTimeout(()=>{
+                    this.closeMenu();
+                }, 100);
             }
             this.click();
             toggle.classList.toggle("is-active");
@@ -61,9 +70,11 @@ class MNavbar extends Component {
             e.preventDefault();
             let nav = document.getElementById('nav-menu');
             if(nav && e.target !== nav && e.target !== toggle &&  !nav.contains(e.target) && !toggle.contains(e.target)){
-                this.closeMenu();
-                this.click();
                 toggle.classList.remove("is-active");
+                this.click();
+                setTimeout(()=>{
+                    this.closeMenu();
+                }, 100);
             }
         })
     }
@@ -85,6 +96,7 @@ class MNavbar extends Component {
                                 </Link>
                             </li>
                         })}
+                        <li id='transpa'/>
                     </ul>
                 </li>
             </ul>
