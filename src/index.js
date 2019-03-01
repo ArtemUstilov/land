@@ -47,7 +47,7 @@ ReactDOM.render(
             color={'#3c9253'} //Default #2D2D2D
             z-index={'1000'}
             bgColor={'white'}
-            time={1500}//Default #F7F7F7
+            time={0}//Default #F7F7F7
         />
     <MyRouter>
         <LocalizeProvider>
