@@ -63,8 +63,9 @@ class MiniPortfolio extends Component {
     constructor(props) {
         super(props);
     }
-
-    render() {
+  componentDidMount() {
+    window.scrollTo({top: 0, behavior: "smooth"});
+  }    render() {
         const settings = {
             className: 'portfolio-slider-mini',
             dots: true,

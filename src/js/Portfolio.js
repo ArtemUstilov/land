@@ -160,7 +160,7 @@ import contactsTranslations from '../translations/main.json'
 import {withLocalize} from 'react-localize-redux'
 import ReactModal from 'react-modal';
 import ImageGallery from 'react-image-gallery';
-import "react-image-gallery/styles/css/image-gallery.css";
+import 'react-image-gallery/styles/css/image-gallery.css';
 
 
 ReactModal.setAppElement(document.getElementById("root"));
@@ -302,6 +302,7 @@ class Portfolio extends Component {
     }
 
     componentDidMount() {
+       window.scrollTo({top: 0, behavior: "smooth"});
         this.renderImages(this.images)
     }
 

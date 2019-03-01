@@ -12,7 +12,9 @@ class Contacts extends Component {
         super(props);
         this.props.addTranslation(contactsTranslations);
     }
-
+  componentDidMount() {
+    window.scrollTo({top: 0, behavior: "smooth"});
+  }
     render() {
         return (
             <section id='contacts'>

@@ -39,7 +39,9 @@ class Services extends Component {
         this.handleOpenModal = this.handleOpenModal.bind(this);
         this.handleCloseModal = this.handleCloseModal.bind(this);
     }
-
+  componentDidMount() {
+    window.scrollTo({top: 0, behavior: "smooth"});
+  }
     handleOpenModal () {
         this.setState({ showModal: true });
     }

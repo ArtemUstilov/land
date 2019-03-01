@@ -254,11 +254,11 @@
 @keyframes my-animation {
     from{
         opacity: 0.2;
-        left: -400%;
+        top: -400%;
     }
     to{
         opacity: 1;
-        left: 0;
+        top: 50px;
     }
 }
 @keyframes my-animation-close {
