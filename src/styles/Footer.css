@@ -15,7 +15,9 @@
         width:150px;
     }
 }
-
+.img-link{
+    height: 50px;
+}
 .footer-form{
 max-height:380px !important;
 }
@@ -105,5 +107,6 @@ max-height:380px !important;
     color:white;
     padding:5px;
 }
-
-
+.subscrb{
+    display:block;
+}
