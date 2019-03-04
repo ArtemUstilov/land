@@ -261,38 +261,40 @@ render() {
                 <div className="title-box ps-top-to-bottom">
                     <h1 className='white-text title1'>ДИЗАЙН ИНТЕРЬЕРА</h1>
                     <div id='wrapper'>
-                        <p className='white-text' id='text'>Сделам Ваш интерьер стильным и уютным</p>
+                        <p className='white-text' id='text'>Тут мечты обретают реальность</p>
                     </div>
-                    <Button green={true} onclick={this.handleOpenModal} value={'des.btn-first'} classes={'title-btn'}/>
-                    <ReactModal
-                        isOpen={this.state.showModal}
-                        contentLabel="onRequestClose Example"
-                        onRequestClose={this.handleCloseModal}
-                    >
-                        <form className={'modal-form text-center'}>
-                            <h5>ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</h5>
-                            <p className={'wait'}>Закажите консультацию и мы свяжемся с Вами через
-                                несколько минут</p>
-                            <br/>
-                            <input name={'name'}
-                                   placeholder={'Ваше имя'}/>
-                            <br/>
-                            <br/>
-                            <div className={'row'}>
-                                <div className={'col-12'}>
-                                    <input name={'phone'}  placeholder={'Ваш телефон'}/>
-                                </div>
-                                <br/>
-                                <br/>
-                                <br/>
-                                <div className={'col-12'}>
-                                    <Button green="true" classes={'form-btn black-green'}value={'footer.consultation'}/>
-                                </div>
-                            </div>
-                        </form>
-                    </ReactModal>
+
 
                 </div>
+              <div style={{marginTop: '50px', padding: '20px'}}/>
+              <Button green={true} onclick={this.handleOpenModal} value={'des.btn-first'} classes={'title-btn'}/>
+              <ReactModal
+                isOpen={this.state.showModal}
+                contentLabel="onRequestClose Example"
+                onRequestClose={this.handleCloseModal}
+              >
+                <form className={'modal-form text-center'}>
+                  <h5>ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</h5>
+                  <p className={'wait'}>Закажите консультацию и мы свяжемся с Вами через
+                    несколько минут</p>
+                  <br/>
+                  <input name={'name'}
+                         placeholder={'Ваше имя'}/>
+                  <br/>
+                  <br/>
+                  <div className={'row'}>
+                    <div className={'col-12'}>
+                      <input name={'phone'}  placeholder={'Ваш телефон'}/>
+                    </div>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <div className={'col-12'}>
+                      <Button green="true" classes={'form-btn black-green'}value={'footer.consultation'}/>
+                    </div>
+                  </div>
+                </form>
+              </ReactModal>
             </section>
 
             <section id={'section0'}>

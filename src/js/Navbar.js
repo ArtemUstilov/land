@@ -4,10 +4,7 @@ import '../styles/settings.css'
 import {Translate, withLocalize} from 'react-localize-redux'
 import contactsTranslations from '../translations/navbar.json'
 import Button from "./Button.js";
-import logo from '../img/logoWhite.png'
-import logoBlack from '../img/logo.png'
 import {Link} from 'react-router-dom'
-// import design2 from '../img/design2.jpg'
 import MobileBtn from './MobileNavBtn.js'
 import {LanguageToggle} from './LanguageToggle'
 import {renderToStaticMarkup} from "react-dom/server";
@@ -200,7 +197,7 @@ class Navbar extends Component {
                         </div>
                     <div className="col-12 col-xs-10 col-sm-8 d-flex ">
                         <div className='row d-flex justify-content-around w-100'>
-                            <div className="col-sm-5 d-flex justify-content-end">
+                            <div className="col-sm-5 d-flex justify-content-around">
                                 {/*<div className='row'>*/}
                                     {[['nav.services', '/services'],
                                         ['nav.portfolio', '/portfolio']].map(x => {
@@ -221,7 +218,7 @@ class Navbar extends Component {
                                          {/*className='img-fluid nav-text' style={{minWidth: '150px'}}/>*/}
                                 </Link>
                             </div>
-                            <div className="col-sm-5 d-flex justify-content-start">
+                            <div className="col-sm-5 d-flex justify-content-around">
                                 {/*<div className='row'>*/}
                                     {[['nav.about', '/about'],
                                         ['nav.contacts','/contacts']].map(x => {
