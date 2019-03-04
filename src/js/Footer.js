@@ -197,7 +197,7 @@ class Footer extends Component {
                                         </div>
                                         <div className={'col-6 col-md-3 col-lg-3 text-center'}>
                                             <p><a className={'phone'} href="tel:+380971234567"><img
-                                                className={'img-fluid'} src={phone}/> +38 (097) 12 34 567</ a></p>
+                                                className={'img-fluid'} src={phone}/> +38(097)904 30 38</ a></p>
                                         </div>
                                         <div className={'col-6 col-md-3 col-lg-3 text-center'}>
                                             <p><a className={'mail'} href="mailto:okolitadesign@gmail.com"><img
