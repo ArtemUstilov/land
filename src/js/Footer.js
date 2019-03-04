@@ -154,9 +154,8 @@ class Footer extends Component {
                   <div className={'col-md-1 col-sm-12'}></div>
                   <div className="form-footer-box col-md-4 col-sm-7 text-center">
                     <form className={'footer-form '}>
-                      <h5>ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</h5>
-                      <p className={'wait'}>Закажите консультацию и мы свяжемся с Вами через
-                        несколько минут</p>
+                      <h5>Оставьте свои данные и мы с вами свяжемся</h5>
+                      <p className={'wait'}></p>
                       <br/>
                       <input name={'name'}
                              placeholder={'Ваше имя'}/>
@@ -164,7 +163,7 @@ class Footer extends Component {
                       <br/>
                       <div className={'row'}>
                         <div className={'col-12'}>
-                          <input name={'phone'} placeholder={'Ваш телефон'}/>
+                          <input name={'phone'} placeholder={'Номер телефона'}/>
                         </div>
                         <br/>
                         <br/>
