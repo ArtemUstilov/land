@@ -58,8 +58,8 @@ max-height:380px !important;
 .footer-slider .slick-track{
     height:200px !important;
 }
-.footer-slider .slick-list{
-    height:calc(10vw + 170px) !important;
+.footer-slider, .slick-slider, .slick-list{
+    height:calc(10vw + 80px) !important;
 }
 .footer-slider div {
 
@@ -109,4 +109,8 @@ max-height:380px !important;
 }
 .subscrb{
     display:block;
+}
+.soc{
+    background-color: black;
+    color:white;
 }

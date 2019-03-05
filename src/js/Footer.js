@@ -9,6 +9,7 @@ import me from '../img/unicorn.jpg';
 import logo from '../img/logo.png';
 import Button from './Button'
 import phone from '../img/footer/phone.jpg';
+import 'bootstrap/dist/css/bootstrap.css';
 import mail from '../img/footer/mail.jpg';
 import Img00 from '../img/footer/Insta/0.jpg';
 import Img01 from '../img/footer/Insta/1.jpg';
@@ -179,11 +180,6 @@ class Footer extends Component {
               </div>
 
             </div>
-            <div className="d-flex justify-content-between align-items-center" style={{width:'60%',maxWidth: '700px', marginTop: '50px', marginBottom: '-50px'}}>
-              <h3>Подписывайтесь на нас в социальных сетях</h3>
-              <a href="//facebook.com" target="_blank"><img src={fb} alt="" className='img-link'/></a>
-              <a href="//instagram.com" target="_blank"><img src={inst} alt="" className='img-link'/></a>
-              </div>
           </div>
 
           <div className="row d-flex justify-content-center">
@@ -196,6 +192,19 @@ class Footer extends Component {
             </div>
             <div className={'col-12 no-padding'}>
               <SliderFooter/>
+            </div>
+            <div className="col-12 soc d-flex justify-content-center align-items-center" style={{width:'60%', padding: '15px 0 25px 0'}}>
+              <div className={'row d-flex justify-content-center'}>
+                <div className= "col-12 col-md-6">
+                  <h5 className={'text-center'}>Подписывайтесь на нас в социальных сетях</h5>
+                </div>
+                <div className= "col-3 col-md-2 d-flex justify-content-center">
+                  <a href="//facebook.com" target="_blank"><img src={fb} alt="" className='img-link'/></a>
+                </div>
+                <div className= "col-3 col-md-2 d-flex justify-content-center">
+                  <a href="//instagram.com" target="_blank"><img src={inst} alt="" className='img-link'/></a>
+                </div>
+              </div>
             </div>
             <div className={'footer-info col-12'}>
               <div className={'row d-flex  justify-content-center'}>

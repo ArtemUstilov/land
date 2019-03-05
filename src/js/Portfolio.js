@@ -10,6 +10,7 @@ import Img1_3 from '../img/portfolio/first/3.jpg';
 import Img1_4 from '../img/portfolio/first/4.jpg';
 import Img1_5 from '../img/portfolio/first/5.jpg';
 import Img1_6 from '../img/portfolio/first/6.jpg';
+import Img1_7 from '../img/portfolio/first/7.jpg';
 import Img2_1 from '../img/portfolio/second/1.jpg';
 import Img2_2 from '../img/portfolio/second/2.jpg';
 import Img2_3 from '../img/portfolio/second/3.jpg';
@@ -29,6 +30,8 @@ import Img2_16 from '../img/portfolio/second/16.jpg';
 import Img2_17 from '../img/portfolio/second/17.jpg';
 import Img2_18 from '../img/portfolio/second/18.jpg';
 import Img2_21 from '../img/portfolio/second/21.jpg';
+import Img2_22 from '../img/portfolio/second/22.jpg';
+import Img2_23 from '../img/portfolio/second/23.jpg';
 import Img3_1 from '../img/portfolio/third/1.jpg';
 import Img3_2 from '../img/portfolio/third/2.jpg';
 import Img3_3 from '../img/portfolio/third/3.jpg';
@@ -198,12 +201,16 @@ class Portfolio extends Component {
             {
                 original: Img1_6,
                 thumbnail: Img1_6
+            },
+            {
+                original: Img1_7,
+                thumbnail: Img1_7
             }
         ]
         this.imagesList2 = [];
         this.images2 = [Img2_2, Img2_3, Img2_4, Img2_5, Img2_6, Img2_7, Img2_8, Img2_9,
             Img2_10, Img2_11, Img2_12, Img2_13,
-            Img2_14, Img2_15, Img2_16, Img2_17, Img2_18, Img2_21];
+            Img2_14, Img2_15, Img2_16, Img2_17, Img2_18, Img2_21,Img2_22,Img2_23];
         this.images2.map((x, i) => this.imagesList2.push({
             original: this.images2[i],
             thumbnail: this.images2[i]
