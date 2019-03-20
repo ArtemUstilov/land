@@ -4,6 +4,7 @@ import '../styles/settings.css'
 import {Link} from 'react-router-dom'
 import Button from './Button'
 // import logo from '../img/bg.jpg'
+import {Translate, withLocalize} from 'react-localize-redux'
 import contactsTranslations from '../translations/main.json'
 // import design1 from '../img/design1.jpg'
 import design3 from '../img/design3.jpg'
@@ -13,7 +14,6 @@ import ReactModal from 'react-modal';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import {withLocalize} from 'react-localize-redux'
 // import item1 from '../img/footer/item1.png';
 // import item2 from '../img/footer/item2.png';
 // import item3 from '../img/footer/item3.png';
@@ -47,6 +47,8 @@ import Img4_6 from '../img/portfolio/fourth/6.jpg';
 import makaka from '../img/unicorn.jpg'
 
 import {renderToStaticMarkup} from "react-dom/server";
+import denis from '../img/denisTeam.jpg';
+import alena from '../img/alenaTeam.jpg';
 
 class Describe extends Component {
     render() {
@@ -195,10 +197,10 @@ class Member extends Component {
     render() {
         return (<div className='d-flex flex-column justify-content-start align-items-center'>
                 <div className='upper-block'/>
-                <img src={this.props.icon} alt="" className="img-fluid"/>
+                <img src={this.props.icon} alt="" style={{width:'100%', height: '100%', border: '4px solid white'}}/>
                 <div className='lower-block d-flex flex-column justify-content-center align-items-center'>
-                    <p className="mem-name">{this.props.name}</p>
-                    <p className='mem-position'>{this.props.position}</p>
+                    <p className="mem-name"><Translate id={this.props.name}/></p>
+                    <p className='mem-position'><Translate id={this.props.position}/></p>
                 </div>
             </div>
         )
@@ -320,9 +322,13 @@ render() {
                             <h1 className='white-text white-title title' style={{marginBottom: '20px'}}>Наша
                                 команда</h1>
                             <div className="row">
-                                {[1, 2, 3, 4].map(x =>
+                                {[{img:denis, name: 'denis.name', job: 'denis.job'},
+                                  {img:alena, name: 'alena.name', job: 'alena.job'},
+                                  3,
+                                  4].map(x =>
                                     <div key={x} className="col-6 col-md-3 team-memb">
-                                        <Member name="ИРИНА ОКОЛИТА" position="Главный дизайнер" icon={makaka}/>
+                                        <Member name={typeof x === 'number' ? 'XXX' : 'des.team.'+x.name}
+                                                position={typeof x === 'number' ? 'XXX' : 'des.team.'+x.job} icon={typeof x === 'number' ? makaka : x.img}/>
                                     </div>
                                 )}
                             </div>
