@@ -49,6 +49,8 @@ import makaka from '../img/unicorn.jpg'
 import {renderToStaticMarkup} from "react-dom/server";
 import denis from '../img/denisTeam.jpg';
 import alena from '../img/alenaTeam.jpg';
+import alex from '../img/alexTeam.jpg';
+import irina from '../img/irinaTeam.jpg';
 
 class Describe extends Component {
     render() {
@@ -322,13 +324,15 @@ render() {
                             <h1 className='white-text white-title title' style={{marginBottom: '20px'}}>Наша
                                 команда</h1>
                             <div className="row">
-                                {[{img:denis, name: 'denis.name', job: 'denis.job'},
+                                {[
+                                  {img:irina, name: 'irina.name', job: 'irina.job'},
+                                  {img:denis, name: 'denis.name', job: 'denis.job'},
                                   {img:alena, name: 'alena.name', job: 'alena.job'},
-                                  3,
-                                  4].map(x =>
-                                    <div key={x} className="col-6 col-md-3 team-memb">
-                                        <Member name={typeof x === 'number' ? 'XXX' : 'des.team.'+x.name}
-                                                position={typeof x === 'number' ? 'XXX' : 'des.team.'+x.job} icon={typeof x === 'number' ? makaka : x.img}/>
+                                  {img:alex, name: 'alex.name', job: 'alex.job'}
+                                  ].map(x =>
+                                    <div key={x.name} className="col-6 col-md-3 team-memb">
+                                        <Member name={'des.team.'+x.name}
+                                                position={'des.team.'+x.job} icon={x.img}/>
                                     </div>
                                 )}
                             </div>
