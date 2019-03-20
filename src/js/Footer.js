@@ -158,13 +158,15 @@ class Footer extends Component {
                       <h5>Оставьте свои данные и мы с вами свяжемся</h5>
                       <p className={'wait'}></p>
                       <br/>
-                      <input name={'name'}
-                             placeholder={'Ваше имя'}/>
-                      <br/>
+                      <Translate id={'footer.title-1'}>
+                        {({ translate }) => <input name="name" placeholder={translate('footer.modal-name')} />}
+                      </Translate>
                       <br/>
                       <div className={'row'}>
                         <div className={'col-12'}>
-                          <input name={'phone'} placeholder={'Номер телефона'}/>
+                          <Translate id={'footer.title-1'}>
+                            {({ translate }) => <input name="name" placeholder={translate('footer.modal-phone')} />}
+                          </Translate>
                         </div>
                         <br/>
                         <br/>
@@ -235,13 +237,17 @@ class Footer extends Component {
                             <p className={'wait'}>Закажите консультацию и мы свяжемся с Вами через
                               несколько минут</p>
                             <br/>
-                            <input name={'name'}
-                                   placeholder={'Ваше имя'}/>
+                            <br/>
+                            <Translate id={'footer.title-1'}>
+                              {({ translate }) => <input name="name" placeholder={translate('footer.modal-name')} />}
+                            </Translate>
                             <br/>
                             <br/>
                             <div className={'row'}>
                               <div className={'col-12'}>
-                                <input name={'phone'} placeholder={'Ваш телефон'}/>
+                                <Translate id={'footer.title-1'}>
+                                  {({ translate }) => <input name="name" placeholder={translate('footer.modal-phone')} />}
+                                </Translate>
                               </div>
                               <br/>
                               <br/>
