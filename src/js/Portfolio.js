@@ -159,8 +159,8 @@ import Img12_12 from '../img/portfolio/twelvth/12.jpg';
 
 
 import {renderToStaticMarkup} from "react-dom/server";
-import contactsTranslations from '../translations/main.json'
-import {withLocalize} from 'react-localize-redux'
+import contactsTranslations from '../translations/portfolio.json'
+import {Translate, withLocalize} from 'react-localize-redux'
 import ReactModal from 'react-modal';
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
@@ -383,7 +383,7 @@ class Portfolio extends Component {
                     <div className="row d-flex text-center justify-content-center">
                         <div className="col-md-8 col-xs-12">
                             <h3 className="text-center about-logo title">
-                                Портфолио
+                                <Translate id='portfolio.title'/>
                             </h3>
                         </div>
                         <div className="col-md-10 col-lg-12 col-xs-12">
