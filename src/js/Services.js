@@ -60,7 +60,7 @@ class Services extends Component {
                 <div className='serv-box'>
                 <h5 className="title" style={{textAlign: 'left', padding: '20px 8%'}}>OKOLITA DESIGN</h5>
                     <div>
-                    <h4>Пакет *Перепланировка*</h4>
+                    <h4>Пакет «Перепланировка»</h4>
                <ul>
                    <li>Выезд на объект и обмеры помещения</li>
                    <li>Фотофиксация объекта</li>
@@ -70,10 +70,10 @@ class Services extends Component {
                    <li>Схема монтажа	новых простенков</li>
                    <li>План размещения мебели/техники, сантехники</li>
                </ul>
-                    В результате на руки вы получаете папку формата А3 с проектом
                     </div>
+                    <br/>
                     <div>
-                        <h4>Пакет *Стандарт*</h4>
+                        <h4>Пакет «Стандарт»</h4>
                         <ul>
                             <li>Выезд на объект и обмеры помещения</li>
                             <li>Фотофиксация объекта</li>
@@ -95,10 +95,10 @@ class Services extends Component {
                             <li>4 выезда (на объект или в магазины для подбора или материалов)</li>
                             <li>Объяснение чертежей строителям и консультация по техническим вопросам</li>
                         </ul>
-                        В результате на руки вы получаете папку формата А3 с проектом
                     </div>
+                    <br/>
                     <div>
-                        <h4>Пакет *Премиум*</h4>
+                        <h4>Пакет «Премиум»</h4>
                         <ul>
                             <li>Выезд на объект и обмеры помещения</li>
                             <li>Фотофиксация объекта</li>
@@ -123,16 +123,17 @@ class Services extends Component {
                             <li>Комплектация: подбор отделочных материалов  (плитка, напольного покрытия, обои/краска/декоративная штукатурка и т.д.),
                                 корпусной мебели , мягкой мебели, светильников , сантехники, текстиля ,...)</li>
                         </ul>
-                        В результате на руки вы получаете папку формата А3 с проектом
+
                     </div>
+                    <br/>
+                    <h5>В результате на руки вы получаете папку формата А3 с проектом</h5>
                 </div>
                         </div></div></div>
 
             </section>
             <section id={'services-section3'}>
                 <div className="title-box ps-top-to-bottom no-padding">
-                    <h1 className='white-text title too-big white-title' style={{padding: '10px'}}>С чего начать
-                        дизайн?</h1>
+                    <h1 className='white-text title too-big white-title' style={{padding: '10px'}}><Translate id="services.from"/></h1>
                     <p className='white-text'>Запишитесь на консультацию дизайнера</p>
                     <Button green={true} onclick={this.handleOpenModal} value={'services.sign'} classes='proj-btn'/>
                     <ReactModal
