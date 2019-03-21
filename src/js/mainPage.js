@@ -199,7 +199,7 @@ class Member extends Component {
     render() {
         return (<div className='d-flex flex-column justify-content-start align-items-center'>
                 <div className='upper-block'/>
-                <img src={this.props.icon} alt="" style={{width:'100%', height: '100%', border: '4px solid white'}}/>
+                <img src={this.props.icon} alt="" style={{width:'100%', height: '100%', border: '4px solid #fff'}}/>
                 <div className='lower-block d-flex flex-column justify-content-center align-items-center'>
                     <p className="mem-name"><Translate id={this.props.name}/></p>
                     <p className='mem-position'><Translate id={this.props.position}/></p>
@@ -241,25 +241,6 @@ render() {
         let no_pad = {
             padding: '5px'
         }
-        // let wrapper = document.getElementById("wrapper");
-        // let text = document.getElementById('text')
-        // if(text) {
-        //     const textCont = text.textContent;
-        //     text.style.display = "none";
-        //
-        //     for (let i = 0; i < textCont.length; i++) {
-        //         (function (i) {
-        //             setTimeout(function () {
-        //                 const texts = document.createTextNode(textCont[i]);
-        //                 const span = document.createElement('span');
-        //                 span.appendChild(texts);
-        //                 span.classList.add("wave");
-        //                 wrapper.appendChild(span);
-        //
-        //             }, 30*i);
-        //         }(i));
-        //     }
-        // }
         return <div className="design">
             <section id={'section1'} className={'section'}>
                 <div className="title-box ps-top-to-bottom">
@@ -336,8 +317,31 @@ render() {
                                     </div>
                                 )}
                             </div>
-                            <div className="col-md-12 mt-5 mb-5">
-                                <img src={design3} alt="" className={'img-fluid'} style={{width: "100%"}}/>
+                            <div className="col-md-12 mt-5 mb-5" style={{color:'#fff', textAlign: 'center'}}>
+                                <p>
+                              <b>Ирина</b> :
+                              "Я работаю с людьми, а не с определенным стилем, поскольку считаю, что дом - это, в первую очередь, продолжение его хозяина.
+                              Поэтому очень важно работать именно с человеком, преобразовывая его характер и потребности в его личный стиль,
+                              в его собственный идеальный интерьер."
+                                </p>
+                              <br/>
+                            <p>
+                              <b>Алена</b> :
+                              "При создании  интерьера для меня важно создать максимально реалистичные визуализации,
+                              для того что б клиент мог окунуться в свой интерьер еще до начала ремонтных работ ."
+                            </p>
+                                <br/>
+                                <p>
+                                  <b>Денис</b>:
+                              "Я люблю свою работу . Потому что с помощью визуализации можно показать не только мебель, материалы и декор ,
+                              которыми будет обустроено помещение . А и передать атмосферу , которой будет наполненное жилище."
+                                </p>
+                                <br/>
+                                <p>
+                                  <b>Александр</b>:
+                              "Я люблю реализовывать самые смелые идеи дизайнеров ,
+                              это дает возможность творить и наслаждаться своей работой."
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -373,61 +377,7 @@ render() {
                     </div>
                 </div>
             </section>
-            {/*<section id={'section6'} className={'section'}>*/}
-            {/*<h1 className='title'>Ход работы</h1>*/}
-            {/*<div className="work-box float1">*/}
-            {/*<Describe num='1'*/}
-            {/*text='5 серпня 2004 року у Венесуелі відбувся референдум щодо можливої*/}
-            {/*дострокової відставки глави держави Уго Чавеса. 17 серпня стало відомо,*/}
-            {/*що США відмовилися визнавати результати референдуму й закликали розпочати'*/}
-            {/*icon={logo}/>*/}
-            {/*<img src={logo} alt='' className="box-behind"/>*/}
-            {/*</div>*/}
-            {/*<div className="work-box float0">*/}
-            {/*<Describe num='2'*/}
-            {/*text="2 березня 2006 року одностайним рішенням Національних зборів (парламенту)*/}
-            {/*Венесуели були ухвалені зміни в державній символіці, запропоновані президентом країни"*/}
-            {/*icon={logo}/>*/}
-            {/*<img src={logo} alt='' className="box-behind"/>*/}
-            {/*</div>*/}
-            {/*<div className="work-box float1">*/}
-            {/*<Describe num='3'*/}
-            {/*text="Президент Венесуели Уго Чавес, представляючи нову символіку, назвав своє нововведення*/}
-            {/*«зіркою Болівара»"*/}
-            {/*icon={logo}/>*/}
-            {/*<img src={logo} alt='' className="box-behind"/>*/}
-            {/*</div>*/}
-            {/*</section>*/}
 
-            {/*<section>*/}
-            {/*<div className="container-fluid ">*/}
-            {/*<div className="row d-flex justify-content-center">*/}
-            {/*<div className="col-md-8 col-12">*/}
-            {/*<h1 className='title'> Что мы еще предлагаем</h1>*/}
-            {/*<div className="row">*/}
-            {/*<div className="col-sm-6 no-padding">*/}
-            {/*<img src={design3} alt="" className='img-fluid mb-5'/>*/}
-            {/*</div>*/}
-            {/*<br/>*/}
-            {/*<div className="col-sm-6">*/}
-            {/*{[1, 3, 5].map(x => {*/}
-            {/*return <div key={x} className="row d-flex justify-content-around">*/}
-            {/*<div className="col-xs-6 d-flex flex-column align-items-center">*/}
-            {/*<img src={logo} alt="" className="about-icon img-fluid"/>*/}
-            {/*<p className="about-adv">ПРЕИМУЩЕСТВО {x}</p>*/}
-            {/*</div>*/}
-            {/*<div className="col-xs-6 d-flex flex-column align-items-center">*/}
-            {/*<img src={logo} alt="" className="about-icon img-fluid"/>*/}
-            {/*<p className="about-adv">ПРЕИМУЩЕСТВО {x + 1}</p>*/}
-            {/*</div>*/}
-            {/*</div>;*/}
-            {/*})}*/}
-            {/*</div>*/}
-            {/*</div>*/}
-            {/*</div>*/}
-            {/*</div>*/}
-            {/*</div>*/}
-            {/*</section>*/}
             <section id='section7'>
                 <div className="container-fluid ">
                     <div className="row d-flex justify-content-center">
@@ -439,31 +389,7 @@ render() {
                     </div>
                 </div>
             </section>
-            {/*<section id={'section6'} className={'section'}>*/}
-            {/*<h1 className='title'>Ход работы</h1>*/}
-            {/*<div className="work-box float1">*/}
-            {/*<Describe num='1'*/}
-            {/*text='5 серпня 2004 року у Венесуелі відбувся референдум щодо можливої*/}
-            {/*дострокової відставки глави держави Уго Чавеса. 17 серпня стало відомо,*/}
-            {/*що США відмовилися визнавати результати референдуму й закликали розпочати'*/}
-            {/*icon={logo}/>*/}
-            {/*<img src={logo} alt='' className="box-behind"/>*/}
-            {/*</div>*/}
-            {/*<div className="work-box float0">*/}
-            {/*<Describe num='2'*/}
-            {/*text="2 березня 2006 року одностайним рішенням Національних зборів (парламенту)*/}
-            {/*Венесуели були ухвалені зміни в державній символіці, запропоновані президентом країни"*/}
-            {/*icon={logo}/>*/}
-            {/*<img src={logo} alt='' className="box-behind"/>*/}
-            {/*</div>*/}
-            {/*<div className="work-box float1">*/}
-            {/*<Describe num='3'*/}
-            {/*text="Президент Венесуели Уго Чавес, представляючи нову символіку, назвав своє нововведення*/}
-            {/*«зіркою Болівара»"*/}
-            {/*icon={logo}/>*/}
-            {/*<img src={logo} alt='' className="box-behind"/>*/}
-            {/*</div>*/}
-            {/*</section>*/}
+
         </div>;
     }
 }

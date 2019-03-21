@@ -197,7 +197,7 @@ class Footer extends Component {
               <SliderFooter/>
             </div>
             <div className="col-12 soc d-flex justify-content-center align-items-center" style={{width:'60%', padding: '15px 0 25px 0'}}>
-              <div className={'row d-flex justify-content-center'}>
+              <div className={'row d-flex justify-content-center'} style={{margin:0}}>
                 <div className= "col-12 col-md-6">
                   <h5 className={'text-center'}><Translate id='footer.soc'/></h5>
                 </div>
