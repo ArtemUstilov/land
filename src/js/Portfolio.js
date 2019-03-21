@@ -160,7 +160,7 @@ import Img12_12 from '../img/portfolio/twelvth/12.jpg';
 
 import {renderToStaticMarkup} from "react-dom/server";
 import contactsTranslations from '../translations/main.json'
-import {withLocalize} from 'react-localize-redux'
+import {Translate, withLocalize} from 'react-localize-redux'
 import ReactModal from 'react-modal';
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
@@ -400,8 +400,8 @@ class Portfolio extends Component {
                                                     background: `url(${im}) center`,
                                                     backgroundSize: '100% 100%'
                                                 }} onClick={() => this.handleOpenModal(i)}>
-                                                    <div className={'portfolio-box-title'}><h5>{titles[i][0]}</h5>
-                                                        <h6>{titles[i][1]}</h6></div>
+                                                  <div className={'portfolio-box-title'}><h5><Translate id={`port.projNames.${i+1}`} /></h5>
+                                                        <h6><Translate id={`port.projPlaces.${i+1}`} /></h6></div>
                                                 </div>
                                             </div>}/>
                                     </div>
