@@ -199,13 +199,13 @@ class Footer extends Component {
             <div className="col-12 soc d-flex justify-content-center align-items-center" style={{width:'60%', padding: '15px 0 25px 0'}}>
               <div className={'row d-flex justify-content-center'}>
                 <div className= "col-12 col-md-6">
-                  <h5 className={'text-center'}>Подписывайтесь на нас в социальных сетях</h5>
+                  <h5 className={'text-center'}><Translate id='footer.soc'/></h5>
                 </div>
                 <div className= "col-3 col-md-2 d-flex justify-content-center">
-                  <a href="//facebook.com" target="_blank"><img src={fb} alt="" className='img-link'/></a>
+                  <a href="https://www.facebook.com/okolitadesign/" target="_blank"><img src={fb} alt="" className='img-link'/></a>
                 </div>
                 <div className= "col-3 col-md-2 d-flex justify-content-center">
-                  <a href="//instagram.com" target="_blank"><img src={inst} alt="" className='img-link'/></a>
+                  <a href="https://instagram.com/okolitadesign?utm_source=ig_profile_share&igshid=mcc8f8tafw8e" target="_blank"><img src={inst} alt="" className='img-link'/></a>
                 </div>
               </div>
             </div>

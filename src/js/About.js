@@ -11,7 +11,7 @@ import YouTube from 'react-youtube';
 import Button from './Button'
 import {renderToStaticMarkup} from "react-dom/server";
 import contactsTranslations from '../translations/about.json'
-import {withLocalize} from 'react-localize-redux'
+import {Translate, withLocalize} from 'react-localize-redux'
 import ReactModal from 'react-modal';
 
 
@@ -60,7 +60,7 @@ class About extends Component {
                     <div className="row d-flex justify-content-center">
                         <div className="col-md-8 col-xs-12">
                             <h3 className="text-center about-logo title">
-                                О студии
+                                <Translate id='about.studio'/>
                             </h3>
                             <div>
                                 <img className="img-fluid" src={logo}/>
@@ -70,32 +70,26 @@ class About extends Component {
                         <div className="col-md-8 col-xs-12">
                             <h6>OKOLITA DESIGN</h6>
                             <br/>
-                            <p>Добро пожаловать в студию дизайна интерьеров <b>Okolita Design!</b> <br/>
-                                Мы создаем не просто дизайн, а настроение и атмосферу Вашего интерьера. Для нас главное
-                                — это индивидуальный характер каждого проекта.</p>
-                            <p> Мы работаем для того, чтобы именно ваши мечты об идеальном интерьере воплотились в
-                                реальность, потому что… мы все разные. </p>
+                            <p><Translate id='about.aboutFirst1'/><b>Okolita Design!</b> <br/><Translate id='about.aboutFirst2'/></p>
+                            <p> <Translate id='about.aboutFirst3'/> </p>
                         </div>
 
                         <div className="col-md-8 col-xs-12">
-                            <p><b>Нас многое отличает друг от дуга:</b>
+                            <p><b><Translate id='about.diff'/></b>
                             </p>
                             <ul>
                                 <li>
-                                    привычки и образ жизни;
+                                    <Translate id='about.diff1'/>
                                 </li>
                                 <li>
-                                    дизайнерские вкусы и предпочтения;
+                                    <Translate id='about.diff2'/>
                                 </li>
                                 <li>
-                                    финансовые возможности…
+                                    <Translate id='about.diff3'/>
                                 </li>
                             </ul>
-                            <p>Но стремление к прекрасному, желание проводить время в красивых и функциональных
-                                помещениях — общее.
-                                При этом понимание красоты и функциональности тоже у каждого свое.
-                                Мы стараемся всегда быть в курсе последних тенденций в сфере
-                                дизайна интерьеров.
+                            <p>
+                                <Translate id='about.but'/>
                             </p>
 
 
@@ -103,7 +97,7 @@ class About extends Component {
 
                     </div>
             <br/>
-            <h5 className={'text-center'}>Так что же отличает нас от других?</h5>
+            <h5 className={'text-center'}><Translate id='about.so'/></h5>
             <br/>
                     <div className="d-flex justify-content-center advantages ">
                         <div className="col-md-10 col-sm-10">
@@ -114,7 +108,7 @@ class About extends Component {
                                         <img className="img-fluid adv-img" src={item1} alt=''/>
                                     </div>
                                     <div className="col-8 advantage">
-                                        <span className="advantage-text">Начало ремонта еще до полного окончания работы над дизайн-проектом</span>
+                                        <span className="advantage-text"><Translate id='about.adv1'/></span>
                                     </div>
                                 </div>
                             </div>
@@ -125,7 +119,7 @@ class About extends Component {
                                             <img className="img-fluid adv-img" src={item2} alt=''/>
                                         </div>
                                         <div className="col-8 advantage">
-                                            <span className="advantage-text">Подбор чистовых отделочных материалов, сантехники, светильников и мебели</span>
+                                            <span className="advantage-text"><Translate id='about.adv2'/></span>
                                         </div>
                                     </div>
                                 </div>
@@ -135,7 +129,7 @@ class About extends Component {
                                             <img className="img-fluid adv-img" src={item3} alt=''/>
                                         </div>
                                         <div className="col-8 advantage">
-                                            <span className="advantage-text">Применение лучших и реальных материалов, которые можно приобрести в магазинах</span>
+                                            <span className="advantage-text"><Translate id='about.adv3'/></span>
                                         </div>
                                     </div>
                                 </div>
@@ -146,7 +140,7 @@ class About extends Component {
                                             <img className="img-fluid adv-img" src={item4}/>
                                         </div>
                                         <div className="col-8 advantage">
-                                            <span className="advantage-text">Воплощение проекта, исходя из заданого бюджета</span>
+                                            <span className="advantage-text"><Translate id='about.adv4'/></span>
                                         </div>
                                     </div>
                                 </div>
@@ -156,7 +150,7 @@ class About extends Component {
                                             <img className="img-fluid adv-img" src={item5}/>
                                         </div>
                                         <div className="col-8 advantage">
-                                            <span className="advantage-text">Система гибкой оплаты по мере выполнения проекта</span>
+                                            <span className="advantage-text"><Translate id='about.adv5'/></span>
                                         </div>
                                     </div>
                                 </div>
@@ -167,7 +161,7 @@ class About extends Component {
                                             <img className="img-fluid adv-img" src={item6}/>
                                         </div>
                                         <div className="col-8 advantage">
-                                            <span className="advantage-text">Возможность работать удаленно - в онлайн режиме</span>
+                                            <span className="advantage-text"><Translate id='about.adv6'/></span>
                                         </div>
                                     </div>
                                 </div>
@@ -181,15 +175,14 @@ class About extends Component {
                     <div className="row d-flex justify-content-center">
                         <div className="col-md-8 col-xs-12">
                     <figure className="quote">
-                        <p className="curly-quotes">Какой бы красивый не был проект , он останется только
-                            визуализацией без качественной реализации
+                        <p className="curly-quotes"><Translate id='about.fraza'/>
                         </p>
                     </figure>
 
                         </div>
                     </div>
                     <br/>
-                    <div className="row title-white d-flex justify-content-center">
+                    {/*<div className="row title-white d-flex justify-content-center">
                         <div className="col-12">
                             <h3 className="text-center about-logo title title-white">
                                 Как мы работаем
@@ -206,7 +199,7 @@ class About extends Component {
                         <div className="col-8 d-flex justify-content-center">
                             <Button white={true} value="about.btn" onclick={this.handleOpenModal} classes='proj-btn'/>
                         </div>
-                    </div>
+                    </div>*/}
                     <ReactModal
                         isOpen={this.state.showModal}
                         contentLabel="onRequestClose Example"
