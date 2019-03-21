@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {Translate, withLocalize} from 'react-localize-redux'
-import me from '../img/unicorn.jpg';
+import me from '../img/irinaTeam.jpg';
 import logo from '../img/logo.png';
 import Button from './Button'
 import phone from '../img/footer/phone.jpg';
@@ -134,21 +134,20 @@ class Footer extends Component {
                 <div className={'row d-flex justify-content-center'}>
                   <div className="col-md-7 col-sm-12">
                     <img className={'me-photo'} src={me}/>
-                    <h5>Венесуела — країна гір, рівнин і лісів.</h5>
-                    <p>Венесуела — країна гір, рівнин і лісів. Основні природні райони: гірська
-                      область Анд,
-                      западина Маракайбо, Льянос і Гвіанське плоскогір'я.</p>
-
-                    <p>Гори Анди й озеро Маракайбо на
-                      північному-заході, рівнини в центрі, дельта річки Оріноко на сході, Гаянська
-                      височина на
-                      південному-сході.</p>
-
+                    <h5>Ирина Околита</h5>
+                    <br/>
+                    <p>
+                      Очень важно работать именно с человеком, преобразовывая его характер и потребности в его личный стиль,
+                      в его собственный идеальный интерьер.
+                    </p>
+                    <p>
+                      Понять и воплотить пожелания клиента самая главная часть нашей работы.
+                    </p>
+                    <br/>
                     <figure className="quote">
-                      <p className="curly-quotes">На півдні країни існує таке рідкісне явище, як
-                        біфуркація річок: від Оріноко у верхній
-                        течії відгалужується річка Касік'яре, що несе свої води в Ріу-Негру,
-                        притоку Амазонки
+                      <p className="curly-quotes">
+                        Я работаю с людьми, а не с определенным стилем, поскольку считаю, что дом - это, в первую очередь, продолжение его хозяина.
+
                       </p>
                     </figure>
                   </div>
