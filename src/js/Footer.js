@@ -155,7 +155,7 @@ class Footer extends Component {
                   <div className={'col-md-1 col-sm-12'}></div>
                   <div className="form-footer-box col-md-4 col-sm-7 text-center">
                     <form className={'footer-form '}>
-                      <h5>Оставьте свои данные и мы с вами свяжемся</h5>
+                      <h5><Translate id="footer.back-call"/></h5>
                       <p className={'wait'}></p>
                       <br/>
                       <Translate id={'footer.title-1'}>

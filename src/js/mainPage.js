@@ -347,9 +347,10 @@ render() {
                 <h1 className='title' >О студии</h1>
                 <div className="row">
                     <div className="col-sm-2"/>
-                    <div className="col-sm-4">
+                    <div className="col-sm-8">
                         <h5 className="title no-before" style={{textAlign: 'left', padding: '0 30px'}}>OKOLITA DESIGN</h5>
-                        <p className="about-text">
+                        <p className="">
+                            <img src={design5} alt=""className="img-fluid" style={{float: "right", width:"50%"}}/>
                             Добро пожаловать в студию дизайна интерьеров Okolita Design
                             Мы создаем не просто дизайн, а настроение и атмосферу Вашего интерьера. Для нас главное — это индивидуальный характер каждого проекта
                             Мы работаем для того, чтобы именно ваши мечты об идеальном интерьере воплотились в реальность, потому что… мы все разные.
@@ -364,13 +365,11 @@ render() {
                             Следим за новинками на рынке отделочных материалов и
                             мебели. Часто посещаем разнообразные тематические международные
                             выставки и мероприятия в Украине и Европе.
+
                         </p>
-                        <p className="about-text">
-                        </p>
+
                     </div>
-                    <div className="col-sm-6 no-img">
-                        <img src={design5} alt="" className={'img-fluid'}/>
-                    </div>
+                    <div className="col-sm-2"/>
                 </div>
             </section>
             {/*<section id={'section6'} className={'section'}>*/}
