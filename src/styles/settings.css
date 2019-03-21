@@ -81,7 +81,6 @@ button{
 
 
 .form-btn{
-    width:250px !important;
     height:50px !important;
 }
 
@@ -111,6 +110,9 @@ button{
         left:calc(50% - 240px) !important;
         background-color: white ;
     }
+}
+.modal-form{
+    height:100%;
 }
 .modal-form input{
     border:2px solid black;

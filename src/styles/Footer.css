@@ -46,7 +46,6 @@ max-height:380px !important;
 }
 .footer-slider{
     width:100% !important;
-    height: auto !important;
     background-color: black;
     height:calc(10vw + 170px) !important;
 }

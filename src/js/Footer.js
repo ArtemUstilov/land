@@ -162,6 +162,7 @@ class Footer extends Component {
                         {({ translate }) => <input name="name" placeholder={translate('footer.modal-name')} />}
                       </Translate>
                       <br/>
+                      <br/>
                       <div className={'row'}>
                         <div className={'col-12'}>
                           <Translate id={'footer.title-1'}>

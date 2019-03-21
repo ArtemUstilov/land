@@ -400,8 +400,8 @@ class Portfolio extends Component {
                                                     background: `url(${im}) center`,
                                                     backgroundSize: '100% 100%'
                                                 }} onClick={() => this.handleOpenModal(i)}>
-                                                    <div className={'portfolio-box-title'}><h5>{titles[i][0]}</h5>
-                                                        <h6>{titles[i][1]}</h6></div>
+                                                  <div className={'portfolio-box-title'}><h5><Translate id={`port.projNames.${i+1}`} /></h5>
+                                                        <h6><Translate id={`port.projPlaces.${i+1}`} /></h6></div>
                                                 </div>
                                             </div>}/>
                                     </div>
