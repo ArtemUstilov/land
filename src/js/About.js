@@ -18,13 +18,6 @@ import ReactModal from 'react-modal';
 class About extends Component {
     constructor(props) {
         super(props);
-        this.props.initialize({
-            languages: [
-                {name: "Русский", code: "ru"},
-                {name: "Українська", code: "ua"}
-            ],
-            options: {renderToStaticMarkup}
-        });
         this.props.addTranslation(contactsTranslations);
         this.state = {
             showModal: false

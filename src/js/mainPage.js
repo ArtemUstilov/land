@@ -254,13 +254,6 @@ class Member extends Component {
 class Design extends Component {
     constructor(props) {
         super(props);
-        this.props.initialize({
-            languages: [
-                {name: "Русский", code: "ru"},
-                {name: "Українська", code: "ua"}
-            ],
-            options: {renderToStaticMarkup}
-        });
         this.props.addTranslation(contactsTranslations);
         this.state = {
             showModal: false
@@ -394,7 +387,7 @@ class Design extends Component {
                         <h5 className="title no-before" style={{textAlign: 'left', padding: '0 30px'}}>OKOLITA
                             DESIGN</h5>
                         <br/>
-                        <p className="">
+                        <div className="">
                             <img src={design5} alt="" className="img-fluid" style={{float: "right", width: "50%"}}/>
 
                             <Translate id="des.welcome"/><br/>
@@ -411,7 +404,7 @@ class Design extends Component {
                             <Translate id="des.aboutEnd1"/>
                             <p><Translate id="des.aboutEnd2"/></p>
 
-                        </p>
+                        </div>
 
                     </div>
                     <div className="col-sm-1"/>

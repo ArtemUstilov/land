@@ -171,13 +171,7 @@ ReactModal.setAppElement(document.getElementById("root"));
 class Portfolio extends Component {
     constructor(props) {
         super(props);
-        this.props.initialize({
-            languages: [
-                {name: "Русский", code: "ru"},
-                {name: "Українська", code: "ua"}
-            ],
-            options: {renderToStaticMarkup}
-        });
+
         this.images = [Img1_1, Img2_1, Img3_1, Img4_1, Img5_1, Img6_1, Img7_1, Img8_1, Img9_1, Img10_3,
             Img11_1, Img12_1];
 
