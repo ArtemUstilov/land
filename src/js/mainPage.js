@@ -275,9 +275,9 @@ class Design extends Component {
     return <div className="design">
       <section id={'section1'} className={'section'}>
         <div className="title-box ps-top-to-bottom">
-          <h1 className='white-text title1'>ДИЗАЙН ИНТЕРЬЕРА</h1>
+          <h1 className='white-text title1'><Translate id="des.design" /></h1>
           <div id='wrapper'>
-            <p className='white-text' id='text'>Тут мечты обретают реальность</p>
+            <p className='white-text' id='text'><Translate id="des.here" /></p>
           </div>
 
 
@@ -318,8 +318,7 @@ class Design extends Component {
         <div className="container-fluid ">
           <div className="row d-flex justify-content-center">
             <div className="col-md-10 col-12">
-              <h1 className='title' style={{ marginBottom: '20px' }}>Наша
-                команда</h1>
+              <h1 className='title' style={{ marginBottom: '20px' }}>Наша команда</h1>
               <div className="row">
                 {[
                   {

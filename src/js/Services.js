@@ -140,7 +140,7 @@ class Services extends Component {
                 <div className="title-box ps-top-to-bottom no-padding">
                     <h1 className='white-text title too-big white-title' style={{padding: '10px'}}><Translate
                         id="services.from"/></h1>
-                    <p className='white-text'>Запишитесь на консультацию дизайнера</p>
+                    <p className='white-text'><Translate id ="services.doIt"/></p>
                     <Button green={true} onclick={this.handleOpenModal} value={'services.sign'} classes='proj-btn'/>
                     <ReactModal
                         isOpen={this.state.showModal}
