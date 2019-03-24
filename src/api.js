@@ -1,5 +1,5 @@
-export const postRequest = async (path, data) => { // aka { name: name, phone: phone }
-  return await fetch(path, {
+export const postRequest = async (data) => { // aka { name: name, phone: phone }
+  return await fetch('..send/send.php', {
     method: 'POST',
     headers: {
       'Accept': 'application/json',

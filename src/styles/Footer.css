@@ -47,7 +47,7 @@ max-height:380px !important;
 .footer-slider{
     width:100% !important;
     background-color: black;
-    height:calc(10vw + 170px) !important;
+    height:calc(10vw + 80px) !important;
 }
 .footer-slider img:hover{
     transform: scale(1.03);
@@ -57,9 +57,7 @@ max-height:380px !important;
 .footer-slider .slick-track{
     height:200px !important;
 }
-.footer-slider, .slick-slider, .slick-list{
-    height:calc(10vw + 80px) !important;
-}
+
 .footer-slider div {
 
 }
