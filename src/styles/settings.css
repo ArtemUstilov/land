@@ -1,5 +1,5 @@
 body, p, h2, h3, h1, h4{
-    font-family: 'Lobster', cursive !important;
+    font-family: 'Vollkorn', serif !important;
 
 }
 p, i, li, input, h5,button{
@@ -57,7 +57,6 @@ p, i, li, input, h5,button{
     padding-top:5px;
 }
 .curly-quotes{
-    font-family: 'Lobster', cursive !important;
     text-align: center;
     font-size:calc(15px + 0.5vw);
     font-weight: 700;
