@@ -131,13 +131,7 @@ class Navbar extends Component {
             mobile: window.innerWidth < 576,
             scroll: false
         }
-        this.props.initialize({
-            languages: [
-                {name: "Русский", code: "ru"},
-                {name: "Українська", code: "ua"}
-            ],
-            options: {renderToStaticMarkup}
-        });
+
         this.props.addTranslation(contactsTranslations);
         this.updateSizeState = this.updateSizeState.bind(this);
         this.updateBtnState = this.updateBtnState.bind(this);

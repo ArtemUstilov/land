@@ -1,3 +1,11 @@
+body, p, h2, h3, h1, h4{
+    font-family: 'Lobster', cursive !important;
+
+}
+p, i, li, input, h5,button{
+    font-family: 'Vollkorn', serif !important;
+}
+
 .title {
     overflow: hidden;
     position: relative;
@@ -49,6 +57,7 @@
     padding-top:5px;
 }
 .curly-quotes{
+    font-family: 'Lobster', cursive !important;
     text-align: center;
     font-size:calc(15px + 0.5vw);
     font-weight: 700;
@@ -134,7 +143,7 @@ button{
 }
 
 h3{
-    font-family: 'Oswald', sans-serif !important;
+    /*font-family: 'Oswald', sans-serif !important;*/
 }
 @media screen and (max-width: 576px){
     .too-big{

@@ -15,4 +15,4 @@ export const postRequest = async (data) => { // aka { name: name, phone: phone }
  postRequest('https://google.com/hyisosi', {name, phone})
  .then(res => ShowUser("Wait for a call"))
  .catch(error => ShowUser(error);
-  */
+ */

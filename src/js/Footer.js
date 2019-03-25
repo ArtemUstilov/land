@@ -161,7 +161,7 @@ class Footer extends Component {
                 <div className={'row d-flex justify-content-center'}>
                   <div className="col-md-7 col-sm-12">
                     <img className={'me-photo'} src={me}/>
-                    <h5>Ирина Околита</h5>
+                    <h5><Translate id='footer.nameD'/></h5>
                     <br/>
                     <p>
                       <Translate id="footer.fondTsutat1"/>
@@ -324,7 +324,7 @@ class Footer extends Component {
                 onRequestClose={this.handleCloseMsg}
               >
                 <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%'}}>
-                <p>В течении 5 минут вам позвонят</p>
+                <p><Translate id='footer.callBack'/></p>
               </div>
               </ReactModal>
             </div>

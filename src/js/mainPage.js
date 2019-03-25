@@ -52,7 +52,7 @@ import {renderToStaticMarkup} from "react-dom/server";
 import denis from '../img/denisTeam.jpg';
 import alena from '../img/alenaTeam.jpg';
 import alex from '../img/alexTeam.jpg';
-import irina from '../img/irina.JPG';
+import irina from '../img/irina.jpg';
 
 class Describe extends Component {
     render() {
@@ -258,6 +258,7 @@ class Design extends Component {
         this.state = {
             showModal: false
         };
+        // console.log(this.props.languages)
 
         this.handleOpenModal = this.handleOpenModal.bind(this);
         this.handleCloseModal = this.handleCloseModal.bind(this);

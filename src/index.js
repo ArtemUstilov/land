@@ -3,13 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import './styles/Preloader.css'
 import { HashRouter } from 'react-router-dom'
-import App from './App';
 import 'bootstrap/dist/css/bootstrap.css';
 import * as serviceWorker from './serviceWorker';
-import $ from 'jquery'
 import {LocalizeProvider} from "react-localize-redux";
 import {
-    BrowserRouter as Router,
     Route,
     Switch
 } from 'react-router-dom';
@@ -33,6 +30,10 @@ class MyRouter extends HashRouter {
             ],
             options: {renderToStaticMarkup}
         });
+    }
+    render(){
+      return super.render();
+
     }
 }
 
