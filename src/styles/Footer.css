@@ -82,7 +82,9 @@ max-height:380px !important;
         font-size:1em ;
     }
 }
-
+.phone{
+    font-family: serif;
+}
 .footer-info .phone:hover, .footer-info-cell .mail:hover{
     color:gray;
     text-decoration: none;

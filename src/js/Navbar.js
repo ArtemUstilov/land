@@ -9,6 +9,8 @@ import MobileBtn from './MobileNavBtn.js'
 import {LanguageToggle} from './LanguageToggle'
 import {renderToStaticMarkup} from "react-dom/server";
 import classNames from 'classnames'
+import logo from '../img/logoWhite.png'
+import logoBlack from '../img/logo.png'
 
 class MNavbar extends Component {
     constructor(props) {
@@ -206,10 +208,10 @@ class Navbar extends Component {
                             </div>
                             <div className="col-sm-2 d-flex justify-content-center align-items-center">
                                 <Link to='/'>
-                                    <Button white={this.state.scroll} classes='nav-text' value={'nav.logo'}/>
-                                    <Button white={this.state.scroll} classes='nav-text' value={'nav.l_above'}/>
-                                    {/*<img alt='' src={this.state.scroll ? logoBlack : logo}*/}
-                                         {/*className='img-fluid nav-text' style={{minWidth: '150px'}}/>*/}
+                                    {/*<Button white={this.state.scroll} classes='nav-text' value={'nav.logo'}/>*/}
+                                    {/*<Button white={this.state.scroll} classes='nav-text' value={'nav.l_above'}/>*/}
+                                    <img alt='' src={this.state.scroll ? logoBlack : logo}
+                                         className='img-fluid nav-text' style={{minWidth: '150px'}}/>
                                 </Link>
                             </div>
                             <div className="col-sm-5 d-flex justify-content-around">
