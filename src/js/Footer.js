@@ -208,9 +208,13 @@ class Footer extends Component {
                         <div className={'col-12'}>
                           <Button green="true" classes={'form-btn'}
                                   onclick={() => {
-                                    let name = document.getElementById('name-s').innerText;
-                                    let phone = document.getElementById('phone-s').innerText;
-                                    postRequest({ name, phone }).then(res => console.log(res));
+                                    let name = document.getElementById('name-s').value;
+                                    let phone = document.getElementById('phone-s').value;
+                                    if(name==' ' || phone ==' ' || name=='' || phone =='') return;
+                                    let formData = new FormData()
+                                    formData.append('name',name);
+                                    formData.append('phone',phone);
+                                    postRequest(formData).then(res => console.log(res));
                                     this.handleOpenMsg();
                                     setTimeout(this.handleCloseMsg, 1500);
                                   }} value={'footer.consultation'}/>
@@ -301,9 +305,13 @@ class Footer extends Component {
                               <div className={'col-12'}>
                                 <Button green="true" classes={'form-btn black-green'}
                                         value={'footer.consultation'} onclick={() => {
-                                  let name = document.getElementById('name-m').innerText;
-                                  let phone = document.getElementById('phone-m').innerText;
-                                  postRequest({ name, phone }).then(res => console.log(res));
+                                  let name = document.getElementById('name-m').value;
+                                  let phone = document.getElementById('phone-m').value;
+                                  if(name==' ' || phone ==' ' || name=='' || phone =='') return;
+                                  let formData = new FormData();
+                                  formData.append('name',name);
+                                  formData.append('phone',phone);
+                                  postRequest(formData).then(res => console.log(res));
                                   this.handleCloseModal();
                                   this.handleOpenMsg();
                                   setTimeout(this.handleCloseMsg, 1500);
@@ -319,11 +327,11 @@ class Footer extends Component {
               </div>
               <ReactModal
                 isOpen={this.state.showMsg}
-                style={{content: {top: '30%', width: '300px', height: '50px'}}}
+                style={{content: {top: '30%', width: '300px', height: '150px'}}}
                 contentLabel="onRequestClose Example"
                 onRequestClose={this.handleCloseMsg}
               >
-                <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%'}}>
+                <div style={{display: 'flex', fontWeight:'500', justifyContent: 'center', alignItems: 'center', height: '100%'}}>
                 <p><Translate id='footer.callBack'/></p>
               </div>
               </ReactModal>

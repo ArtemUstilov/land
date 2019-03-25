@@ -9,6 +9,10 @@ import design2 from '../img/design2.jpg'
 import {renderToStaticMarkup} from "react-dom/server";
 import ReactModal from 'react-modal';
 import Img1 from '../img/1.jpg';
+import s1 from '../img/step1.jpg';
+import s5 from '../img/step5.jpg';
+import s6 from '../img/step6.jpg';
+import s7 from '../img/step7.jpg';
 import Img2 from '../img/2.jpg';
 import Img3 from '../img/3.jpg';
 import Img4 from '../img/4.jpg';
@@ -21,8 +25,7 @@ class Describe extends Component {
 
     render() {
         return (<div className={`box box${this.props.num % 2}`}>
-                <img src={this.props.icon} alt="" className="box-icon"/>
-                <h5 className="box-title"><Translate id="services.stepTitle"/> {this.props.num}</h5>
+                <h5 className="box-title" style={{fontWeight:'800'}}><Translate id="services.stepTitle"/> {this.props.num}</h5>
                 <p className='box-text'>{this.props.text}</p>
             </div>
         )
@@ -180,43 +183,43 @@ class Services extends Component {
                             <div className="work-box float1">
                                 <Describe num='1'
                                           text={<Translate id ="services.step1"/>}
-                                          icon={Img1}/>
-                                <img src={Img1} alt='' className="box-behind"/>
+                                         />
+                                <img src={s1} alt='' className="box-behind"/>
                             </div>
                             <div className="work-box float0">
                                 <Describe num='2'
-                                          text={<Translate id ="services.step2"/>} icon={Img2}/>
+                                          text={<Translate id ="services.step2"/>}/>
                                 <img src={Img2} alt='' className="box-behind"/>
                             </div>
                             <div className="work-box float1">
                                 <Describe num='3'
                                           text={<Translate id ="services.step3"/>}
-                                          icon={Img3}/>
+                                          />
                                 <img src={Img3} alt='' className="box-behind"/>
                             </div>
                             <div className="work-box float0">
                                 <Describe num='4'
                                           text={<Translate id ="services.step4"/>}
-                                          icon={Img4}/>
+                                          />
                                 <img src={Img4} alt='' className="box-behind"/>
                             </div>
                             <div className="work-box float1">
                                 <Describe num='5'
                                           text={<Translate id ="services.step5"/>}
-                                          icon={Img5}/>
-                                <img src={Img5} alt='' className="box-behind"/>
+                                          />
+                                <img src={s5} alt='' className="box-behind"/>
                             </div>
                             <div className="work-box float2">
                                 <Describe num='6'
                                           text={<Translate id ="services.step6"/>}
-                                          icon={Img7}/>
-                                <img src={Img7} alt='' className="box-behind"/>
+                                          />
+                                <img src={s6} alt='' className="box-behind"/>
                             </div>
                             <div className="work-box float1">
                                 <Describe num='7'
                                           text={<Translate id ="services.step7"/>}
-                                          icon={Img6}/>
-                                <img src={Img6} alt='' className="box-behind"/>
+                                          />
+                                <img src={s7} alt='' className="box-behind"/>
                             </div>
                         </div>
                     </div>
