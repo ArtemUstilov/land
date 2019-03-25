@@ -157,7 +157,7 @@ import Img12_10 from '../img/portfolio/twelvth/10.jpg';
 import Img12_11 from '../img/portfolio/twelvth/11.jpg';
 import Img12_12 from '../img/portfolio/twelvth/12.jpg';
 
-
+import ScrollAnimation from 'react-animate-on-scroll';
 import {renderToStaticMarkup} from "react-dom/server";
 import contactsTranslations from '../translations/portfolio.json'
 import {Translate, withLocalize} from 'react-localize-redux'
@@ -376,9 +376,12 @@ class Portfolio extends Component {
                 <div className="container-fluid ">
                     <div className="row d-flex text-center justify-content-center">
                         <div className="col-md-8 col-xs-12">
+                            <ScrollAnimation animateIn='fadeIn'
+                                             animateOut='fadeOut'>
                             <h3 className="text-center about-logo title">
                                 <Translate id='portfolio.title'/>
                             </h3>
+                            </ScrollAnimation>
                         </div>
                         <div className="col-md-10 col-lg-12 col-xs-12">
                             <div className={'row'}>

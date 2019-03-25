@@ -17,6 +17,7 @@ import "slick-carousel/slick/slick-theme.css";
  import item1 from '../img/1.png';
 import item2 from '../img/2.png';
 import item3 from '../img/3.png';
+import ScrollAnimation from 'react-animate-on-scroll';
 // import item2 from '../img/footer/item2.png';
 // import item3 from '../img/footer/item3.png';
 // import item4 from '../img/footer/item4.png';
@@ -323,7 +324,12 @@ class Design extends Component {
                 <div className="container-fluid ">
                     <div className="row d-flex justify-content-center">
                         <div className="col-md-10 col-12">
+                            <ScrollAnimation animateIn='fadeIn'
+                                             animateOut='fadeOut'>
                             <h1 className='title' style={{marginBottom: '20px'}}>Наша команда</h1>
+                            </ScrollAnimation>
+                            <ScrollAnimation animateIn='fadeIn'
+                                             animateOut='fadeOut'>
                             <div className="row">
                                 {[
                                     {
@@ -361,6 +367,7 @@ class Design extends Component {
                                     </div>
                                 )}
                             </div>
+                            </ScrollAnimation>
                         </div>
                     </div>
                 </div>
@@ -369,41 +376,87 @@ class Design extends Component {
                 <div className="container-fluid ">
                     <div className="row d-flex justify-content-center">
                         <div className="col-md-9 col-12 d-flex flex-column justify-content-center align-items-center">
-                            <h3 className={'title'}>Наши работы</h3>
+                            <ScrollAnimation animateIn='fadeIn'
+                                             animateOut='fadeOut'>
+                            <h3 className={'title'}><Translate id="des.ourWorks"/></h3>
+                            </ScrollAnimation>
 
                             <MiniPortfolio/>
+
                             <br/>
+                            <ScrollAnimation animateIn='fadeIn'
+                                             animateOut='fadeOut'>
                             <Link to='/portfolio'>
                                 <Button green={true} value={'des.btn-all'} classes='white-green green'/>
                             </Link>
+                            </ScrollAnimation>
                         </div>
                     </div>
                 </div>
             </section>
             <section id={'section4'} className={'section'}>
-                <h1 className='title'>О студии</h1>
+                <ScrollAnimation animateIn='fadeIn'
+                                 animateOut='fadeOut'>
+                <h1 className='title'><Translate id="des.aboutStudio"/></h1>
+                </ScrollAnimation>
                 <div className="row">
                     <div className="col-sm-1"/>
                     <div className="col-sm-10">
+                        <ScrollAnimation animateIn='fadeIn'
+                                         animateOut='fadeOut'>
                         <h5 className="title no-before" style={{textAlign: 'left', padding: '0 30px'}}>OKOLITA
                             DESIGN</h5>
+                        </ScrollAnimation>
                         <br/>
                         <div className="">
+                            <ScrollAnimation animateIn='fadeIn'
+                                             animateOut='fadeOut'>
                             <img src={design5} alt="" className="img-fluid" style={{float: "right", width: "50%"}}/>
-
-                            <Translate id="des.welcome"/><br/>
+                            </ScrollAnimation>
+                            <ScrollAnimation animateIn='fadeIn'
+                                             animateOut='fadeOut'>
+                            <Translate id="des.welcome"/>
+                            </ScrollAnimation>
+                            <br/>
+                            <ScrollAnimation animateIn='fadeIn'
+                                             animateOut='fadeOut'>
                             <Translate id="des.aboutStart"/>
+                            </ScrollAnimation>
 
                             <br/>
                             <br/>
+                            <ScrollAnimation animateIn='fadeIn'
+                                             animateOut='fadeOut'>
                             <p><b><Translate id="des.liTitle"/></b></p>
+                            </ScrollAnimation>
                             <ul>
-                                <li><Translate id="des.aboutLi1"/></li>
-                                <li><Translate id="des.aboutLi2"/></li>
-                                <li><Translate id="des.aboutLi3"/></li>
+                                <li>
+                                    <ScrollAnimation animateIn='fadeIn'
+                                                     animateOut='fadeOut'>
+                                    <Translate id="des.aboutLi1"/>
+                                    </ScrollAnimation>
+                                </li>
+                                <li>
+                                    <ScrollAnimation animateIn='fadeIn'
+                                                     animateOut='fadeOut'>
+                                    <Translate id="des.aboutLi2"/>
+                                    </ScrollAnimation>
+                                </li>
+                                <li>
+                                    <ScrollAnimation animateIn='fadeIn'
+                                                     animateOut='fadeOut'>
+                                    <Translate id="des.aboutLi3"/>
+                                    </ScrollAnimation>
+                                </li>
                             </ul>
+                            <ScrollAnimation animateIn='fadeIn'
+                                             animateOut='fadeOut'>
                             <Translate id="des.aboutEnd1"/>
+                            </ScrollAnimation>
+                            <ScrollAnimation animateIn='fadeIn'
+                                             animateOut='fadeOut'>
                             <p><Translate id="des.aboutEnd2"/></p>
+                            </ScrollAnimation>
 
                         </div>
 
@@ -416,7 +469,10 @@ class Design extends Component {
                 <div className="container-fluid ">
                     <div className="row d-flex justify-content-center">
                         <div className="col-md-9 col-12 d-flex flex-column align-items-center">
+                            <ScrollAnimation animateIn='fadeIn'
+                                             animateOut='fadeOut'>
                             <h1 className='white-text white-title title'><Translate id="des.reviews"/></h1>
+                            </ScrollAnimation>
                             <SliderFooter/>
                             <br/>
                         </div>

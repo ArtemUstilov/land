@@ -8,6 +8,7 @@ import logo from '../img/bg.jpg'
 import design2 from '../img/design2.jpg'
 import {renderToStaticMarkup} from "react-dom/server";
 import ReactModal from 'react-modal';
+import ScrollAnimation from 'react-animate-on-scroll';
 import Img1 from '../img/1.jpg';
 import s1 from '../img/step1.jpg';
 import s5 from '../img/step5.jpg';
@@ -62,78 +63,331 @@ class Services extends Component {
                 <div className="container-fluid ">
                     <div className="row d-flex justify-content-center">
                         <div className="col-md-8 col-12 no-padding">
+                            <ScrollAnimation animateIn='fadeIn'
+                                             animateOut='fadeOut'>
                             <h1 className='title'><Translate id="services.title"/></h1>
+                            </ScrollAnimation>
                             <img src={design2} alt='' className="img-fluid"/>
                             <div className='serv-box'>
+                                <ScrollAnimation animateIn='fadeIn'
+                                                 animateOut='fadeOut'>
                                 <h5 className="title" style={{textAlign: 'left', padding: '20px 8%'}}>OKOLITA
                                     DESIGN</h5>
+                                </ScrollAnimation>
                                 <div>
+                                    <ScrollAnimation animateIn='fadeIn'
+                                                     animateOut='fadeOut'>
                                     <h4><Translate id="services.pack1Title"/></h4>
+                                    </ScrollAnimation>
                                     <ul>
-                                        <li><Translate id="services.li1"/></li>
-                                        <li><Translate id="services.li2"/></li>
-                                        <li><Translate id="services.li3"/></li>
-                                        <li><Translate id="services.li4"/></li>
-                                        <li><Translate id="services.li5"/></li>
-                                        <li><Translate id="services.li6"/></li>
-                                        <li><Translate id="services.li7"/></li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                            <Translate id="services.li1"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                            <Translate id="services.li2"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                            <Translate id="services.li3"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                            <Translate id="services.li4"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                            <Translate id="services.li5"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                            <Translate id="services.li6"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                            <Translate id="services.li7"/>
+                                            </ScrollAnimation>
+                                        </li>
                                     </ul>
                                 </div>
                                 <br/>
                                 <div>
+                                    <ScrollAnimation animateIn='fadeIn'
+                                                     animateOut='fadeOut'>
                                     <h4><Translate id="services.pack2Title"/></h4>
+                                    </ScrollAnimation>
                                     <ul>
-                                        <li><Translate id="services.li1"/></li>
-                                        <li><Translate id="services.li2"/></li>
-                                        <li><Translate id="services.li3"/></li>
-                                        <li><Translate id="services.li4"/></li>
-                                        <li><Translate id="services.li5"/></li>
-                                        <li><Translate id="services.li6"/></li>
-                                        <li><Translate id="services.li7"/></li>
-                                        <li><Translate id="services.li8"/></li>
-                                        <li><Translate id="services.li9"/></li>
-                                        <li><Translate id="services.li10"/></li>
-                                        <li><Translate id="services.li11"/></li>
-                                        <li><Translate id="services.li12"/></li>
-                                        <li><Translate id="services.li13"/></li>
-                                        <li><Translate id="services.li14"/></li>
-                                        <li><Translate id="services.li15"/></li>
-                                        <li><Translate id="services.li16"/></li>
-                                        <li><Translate id="services.li17"/></li>
-                                        <li><Translate id="services.li18"/></li>
-                                        <li><Translate id="services.li19"/></li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                            <Translate id="services.li1"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                            <Translate id="services.li2"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                            <Translate id="services.li3"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                            <Translate id="services.li4"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                            <Translate id="services.li5"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                            <Translate id="services.li6"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                            <Translate id="services.li7"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                            <Translate id="services.li8"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                            <Translate id="services.li9"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                            <Translate id="services.li10"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                            <Translate id="services.li11"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                            <Translate id="services.li12"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                            <Translate id="services.li13"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                            <Translate id="services.li14"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                            <Translate id="services.li15"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                            <Translate id="services.li16"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                            <Translate id="services.li17"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                            <Translate id="services.li18"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                            <Translate id="services.li19"/>
+                                            </ScrollAnimation>
+                                        </li>
                                     </ul>
                                 </div>
                                 <br/>
                                 <div>
-                                    <h4>Пакет «Премиум»</h4>
+                                    <ScrollAnimation animateIn='fadeIn'
+                                                     animateOut='fadeOut'>
+                                    <h4><Translate id="services.pack3Title"/></h4>
+                                    </ScrollAnimation>
                                     <ul>
-                                        <li><Translate id="services.li1"/></li>
-                                        <li><Translate id="services.li2"/></li>
-                                        <li><Translate id="services.li3"/></li>
-                                        <li><Translate id="services.li4"/></li>
-                                        <li><Translate id="services.li5"/></li>
-                                        <li><Translate id="services.li6"/></li>
-                                        <li><Translate id="services.li7"/></li>
-                                        <li><Translate id="services.li8"/></li>
-                                        <li><Translate id="services.li9"/></li>
-                                        <li><Translate id="services.li10"/></li>
-                                        <li><Translate id="services.li11"/></li>
-                                        <li><Translate id="services.li12"/></li>
-                                        <li><Translate id="services.li13"/></li>
-                                        <li><Translate id="services.li14"/></li>
-                                        <li><Translate id="services.li15"/></li>
-                                        <li><Translate id="services.li16"/></li>
-                                        <li><Translate id="services.li17"/></li>
-                                        <li><Translate id="services.li18"/></li>
-                                        <li><Translate id="services.li19"/></li>
-                                        <li><Translate id="services.li20"/></li>
-                                        <li><Translate id="services.li21"/></li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                                <Translate id="services.li1"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                                <Translate id="services.li2"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                                <Translate id="services.li3"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                                <Translate id="services.li4"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                                <Translate id="services.li5"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                                <Translate id="services.li6"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                                <Translate id="services.li7"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                                <Translate id="services.li8"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                                <Translate id="services.li9"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                                <Translate id="services.li10"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                                <Translate id="services.li11"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                                <Translate id="services.li12"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                                <Translate id="services.li13"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                                <Translate id="services.li14"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                                <Translate id="services.li15"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                                <Translate id="services.li16"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                                <Translate id="services.li17"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                                <Translate id="services.li18"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                                <Translate id="services.li19"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                            <Translate id="services.li20"/>
+                                            </ScrollAnimation>
+                                        </li>
+                                        <li>
+                                            <ScrollAnimation animateIn='fadeIn'
+                                                             animateOut='fadeOut'>
+                                            <Translate id="services.li21"/>
+                                            </ScrollAnimation>
+                                        </li>
                                     </ul>
 
                                 </div>
                                 <br/>
+                                <ScrollAnimation animateIn='fadeIn'
+                                                 animateOut='fadeOut'>
                                 <h5><Translate id="services.resultTitle"/></h5>
+                                </ScrollAnimation>
                             </div>
                         </div>
                     </div>
@@ -142,10 +396,19 @@ class Services extends Component {
             </section>
             <section id={'services-section3'}>
                 <div className="title-box ps-top-to-bottom no-padding">
+                    <ScrollAnimation animateIn='fadeIn'
+                                     animateOut='fadeOut'>
                     <h1 className='white-text title too-big white-title' style={{padding: '10px'}}><Translate
                         id="services.from"/></h1>
+                    </ScrollAnimation>
+                    <ScrollAnimation animateIn='fadeIn'
+                                     animateOut='fadeOut'>
                     <p className='white-text'><Translate id ="services.doIt"/></p>
+                    </ScrollAnimation>
+                    <ScrollAnimation animateIn='fadeIn'
+                                     animateOut='fadeOut'>
                     <Button green={true} onclick={this.handleOpenModal} value={'services.sign'} classes='proj-btn'/>
+                    </ScrollAnimation>
                     <ReactModal
                         isOpen={this.state.showModal}
                         contentLabel="onRequestClose Example"

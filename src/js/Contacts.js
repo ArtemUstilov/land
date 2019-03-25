@@ -6,6 +6,7 @@ import Map from '../img/map.PNG'
 import Mail from '../img/mail.PNG'
 import {Translate, withLocalize} from 'react-localize-redux'
 import contactsTranslations from '../translations/contacts.json'
+import ScrollAnimation from 'react-animate-on-scroll';
 
 class Contacts extends Component {
     constructor(props) {
@@ -21,7 +22,10 @@ class Contacts extends Component {
                 <div className="container-fluid ">
                     <div className="row d-flex justify-content-center">
                         <div className="col-md-8 col-12">
+                            <ScrollAnimation animateIn='fadeIn'
+                                             animateOut='fadeOut'>
                             <h1 className='title'><Translate id="contacts.title"/></h1>
+                            </ScrollAnimation>
                             <div className='map-responsive contacts-map'>
                                 <iframe title='111' width="1000" height="300"
                                         src="//maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=%D0%A5%D0%BC%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D0%BA%D0%B8%D0%B9%20%20%D0%A3%D0%BB.%20%D0%A1%D1%82%D0%B0%D1%80%D0%BE%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B8%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88%D0%BE%D1%81%D1%81%D0%B5%205+(%D0%9D%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed"

@@ -148,6 +148,7 @@ class Footer extends Component {
         <div className="container-fluid ">
           <div className="footer-form-section gray-background row d-flex justify-content-center">
             <div className="col-12">
+
               <h3 className="text-center about-logo title">
                 <Translate id={'footer.title-1'}/>
 
@@ -174,8 +175,8 @@ class Footer extends Component {
                     <br/>
                     <figure className="quote" style={{marginTop:"30px"}}>
                       <p className="curly-quotes">
-                        Я работаю с людьми, а не с определенным стилем, поскольку считаю, что
-                        дом - это, в первую очередь, продолжение его хозяина
+                        <Translate id="footer.fondTsutat3" />
+
 
                       </p>
                     </figure>

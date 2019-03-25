@@ -19,6 +19,7 @@ import Contacts from './js/Contacts.js'
 import Services from './js/Services.js'
 import {renderToStaticMarkup} from "react-dom/server";
 import {withLocalize} from "react-localize-redux/lib/index";
+import "animate.css/animate.min.css";
 import {Dots} from "react-preloaders";
 class MyRouter extends HashRouter {
     constructor(props) {
