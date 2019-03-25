@@ -172,8 +172,7 @@ class Footer extends Component {
 
                     </p>
                     <br/>
-                    <br/>
-                    <figure className="quote">
+                    <figure className="quote" style={{marginTop:"30px"}}>
                       <p className="curly-quotes">
                         Я работаю с людьми, а не с определенным стилем, поскольку считаю, что
                         дом - это, в первую очередь, продолжение его хозяина
@@ -202,11 +201,7 @@ class Footer extends Component {
                                                        placeholder={translate('footer.modal-phone')}/>}
                           </Translate>
                         </div>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <div className={'col-12'}>
+                        <div className={'col-12'} style={{marginTop:"40px"}}>
                           <Button green="true" classes={'form-btn'}
                                   onclick={() => {
                                     let name = document.getElementById('name-s').value;
