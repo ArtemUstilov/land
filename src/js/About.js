@@ -28,9 +28,9 @@ class About extends Component {
         this.handleOpenModal = this.handleOpenModal.bind(this);
         this.handleCloseModal = this.handleCloseModal.bind(this);
     }
-  componentDidMount() {
-    window.scrollTo({top: 0, behavior: "smooth"});
-  }
+    componentDidMount() {
+        window.scrollTo({top: 0, behavior: "smooth"});
+    }
     handleOpenModal () {
         this.setState({ showModal: true });
     }
@@ -51,187 +51,170 @@ class About extends Component {
 
             <section id="about">
 
-                <div className="container-fluid ">
-                    <div className="row d-flex justify-content-center">
+            <div className="container-fluid ">
+            <div className="row d-flex justify-content-center">
 
-                        <div className="col-md-8 col-xs-12">
-                            <ScrollAnimation animateIn='fadeIn'
-                                             animateOut='fadeOut'>
-                            <h3 className="text-center about-logo title">
+            <div className="col-md-8 col-xs-12">
+            <ScrollAnimation animateOnce={true} animateIn='fadeIn'>
+            <h3 className="text-center about-logo title">
 
-                                <Translate id='about.studio'/>
-                            </h3>
-                            </ScrollAnimation>
-                            <div>
-                                <img className="img-fluid" src={logo}/>
-                            </div>
-                            <br/>
-                        </div>
-                        <div className="col-md-8 col-xs-12">
-                            <ScrollAnimation animateIn='fadeIn'
-                                             animateOut='fadeOut'>
-                            <h6>OKOLITA DESIGN</h6>
-                            </ScrollAnimation>
-                            <br/>
-                            <ScrollAnimation animateIn='fadeIn'
-                                             animateOut='fadeOut'>
-                            <p><Translate id='about.aboutFirst1'/><b>Okolita Design!</b> <br/><Translate id='about.aboutFirst2'/></p>
-                            </ScrollAnimation>
-                            <ScrollAnimation animateIn='fadeIn'
-                                             animateOut='fadeOut'>
-                            <p> <Translate id='about.aboutFirst3'/> </p>
-                            </ScrollAnimation>
-                        </div>
+            <Translate id='about.studio'/>
+            </h3>
+            </ScrollAnimation>
+            <div>
+            <img className="img-fluid" src={logo}/>
+        </div>
+        <br/>
+        </div>
+        <div className="col-md-8 col-xs-12">
+            <ScrollAnimation animateOnce={true} animateIn='fadeIn'>
+            <h6>OKOLITA DESIGN</h6>
+        </ScrollAnimation>
+        <br/>
+        <ScrollAnimation animateOnce={true} animateIn='fadeIn'>
+            <p><Translate id='about.aboutFirst1'/><b>Okolita Design!</b> <br/><Translate id='about.aboutFirst2'/></p>
+            </ScrollAnimation>
+            <ScrollAnimation animateOnce={true} animateIn='fadeIn'>
+            <p> <Translate id='about.aboutFirst3'/> </p>
+            </ScrollAnimation>
+            </div>
 
-                        <div className="col-md-8 col-xs-12">
-                            <ScrollAnimation animateIn='fadeIn'
-                                             animateOut='fadeOut'>
-                            <p><b><Translate id='about.diff'/></b>
-                            </p>
-                            </ScrollAnimation>
-                            <ul>
-                                <li>
-                                    <ScrollAnimation animateIn='fadeIn'
-                                                     animateOut='fadeOut'>
-                                    <Translate id='about.diff1'/>
-                                    </ScrollAnimation>
-                                </li>
-                                <li>
-                                    <ScrollAnimation animateIn='fadeIn'
-                                                     animateOut='fadeOut'>
-                                    <Translate id='about.diff2'/>
-                                    </ScrollAnimation>
-                                </li>
-                                <li>
-                                    <ScrollAnimation animateIn='fadeIn'
-                                                     animateOut='fadeOut'>
-                                    <Translate id='about.diff3'/>
-                                    </ScrollAnimation>
-                                </li>
-                            </ul>
-                            <p>
-                                <ScrollAnimation animateIn='fadeIn'
-                                                 animateOut='fadeOut'>
-                                <Translate id='about.but'/>
-                                </ScrollAnimation>
-                            </p>
+            <div className="col-md-8 col-xs-12">
+            <ScrollAnimation animateOnce={true} animateIn='fadeIn'>
+            <p><b><Translate id='about.diff'/></b>
+            </p>
+            </ScrollAnimation>
+            <ul>
+            <li>
+            <ScrollAnimation animateOnce={true} animateIn='fadeIn'>
+            <Translate id='about.diff1'/>
+            </ScrollAnimation>
+            </li>
+            <li>
+            <ScrollAnimation animateOnce={true} animateIn='fadeIn'>
+            <Translate id='about.diff2'/>
+            </ScrollAnimation>
+            </li>
+            <li>
+            <ScrollAnimation animateOnce={true} animateIn='fadeIn'>
+            <Translate id='about.diff3'/>
+            </ScrollAnimation>
+            </li>
+            </ul>
+            <ScrollAnimation animateOnce={true} animateIn='fadeIn'>
+            <p>
+            <Translate id='about.but'/>
+            </p>
+            </ScrollAnimation>
 
 
-                        </div>
+            </div>
 
-                    </div>
+            </div>
             <br/>
             <h5 className={'text-center'}><Translate id='about.so'/></h5>
             <br/>
-                    <div className="d-flex justify-content-center advantages ">
-                        <div className="col-md-10 col-sm-10">
-                            <div className="row">
-                                <div className="col-md-6 col-sm-12 col-lg-4 adv-cell">
-                                    <ScrollAnimation animateIn='fadeIn'
-                                                     animateOut='fadeOut'>
-                                <div className="row">
-                                    <div className="col-4 adv-img-container">
-                                        <img className="img-fluid adv-img" src={item1} alt=''/>
-                                    </div>
-                                    <div className="col-8 advantage">
-                                        <span className="advantage-text"><Translate id='about.adv1'/></span>
-                                    </div>
-                                </div>
-                                    </ScrollAnimation>
-                            </div>
+            <div className="d-flex justify-content-center advantages ">
+            <div className="col-md-10 col-sm-10">
+            <div className="row">
+            <div className="col-md-6 col-sm-12 col-lg-4 adv-cell">
+            <ScrollAnimation animateOnce={true} animateIn='fadeIn'>
+            <div className="row">
+            <div className="col-4 adv-img-container">
+            <img className="img-fluid adv-img" src={item1} alt=''/>
+            </div>
+            <div className="col-8 advantage">
+            <span className="advantage-text"><Translate id='about.adv1'/></span>
+            </div>
+            </div>
+            </ScrollAnimation>
+            </div>
 
-                                <div className="col-md-6 col-sm-12 col-lg-4 adv-cell">
-                                    <ScrollAnimation animateIn='fadeIn'
-                                                     animateOut='fadeOut'>
-                                    <div className="row">
-                                        <div className="col-4 adv-img-container">
-                                            <img className="img-fluid adv-img" src={item2} alt=''/>
-                                        </div>
-                                        <div className="col-8 advantage">
-                                            <span className="advantage-text"><Translate id='about.adv2'/></span>
-                                        </div>
-                                    </div>
-                                    </ScrollAnimation>
-                                </div>
-                                <div className="col-md-6 col-sm-12 col-lg-4 adv-cell">
-                                    <ScrollAnimation animateIn='fadeIn'
-                                                     animateOut='fadeOut'>
-                                    <div className="row">
-                                        <div className="col-4 adv-img-container">
-                                            <img className="img-fluid adv-img" src={item3} alt=''/>
-                                        </div>
-                                        <div className="col-8 advantage">
-                                            <span className="advantage-text"><Translate id='about.adv3'/></span>
-                                        </div>
-                                    </div>
-                                    </ScrollAnimation>
-                                </div>
+            <div className="col-md-6 col-sm-12 col-lg-4 adv-cell">
+            <ScrollAnimation animateOnce={true} animateIn='fadeIn'>
+            <div className="row">
+            <div className="col-4 adv-img-container">
+            <img className="img-fluid adv-img" src={item2} alt=''/>
+            </div>
+            <div className="col-8 advantage">
+            <span className="advantage-text"><Translate id='about.adv2'/></span>
+            </div>
+            </div>
+            </ScrollAnimation>
+            </div>
+            <div className="col-md-6 col-sm-12 col-lg-4 adv-cell">
+            <ScrollAnimation animateOnce={true} animateIn='fadeIn'>
+            <div className="row">
+            <div className="col-4 adv-img-container">
+            <img className="img-fluid adv-img" src={item3} alt=''/>
+            </div>
+            <div className="col-8 advantage">
+            <span className="advantage-text"><Translate id='about.adv3'/></span>
+            </div>
+            </div>
+            </ScrollAnimation>
+            </div>
 
-                                <div className="col-md-6 col-sm-12 col-lg-4 adv-cell">
-                                    <ScrollAnimation animateIn='fadeIn'
-                                                     animateOut='fadeOut'>
-                                    <div className="row">
-                                        <div className="col-4 adv-img-container">
-                                            <img className="img-fluid adv-img" src={item4}/>
-                                        </div>
-                                        <div className="col-8 advantage">
-                                            <span className="advantage-text"><Translate id='about.adv4'/></span>
-                                        </div>
-                                    </div>
-                                    </ScrollAnimation>
-                                </div>
-                                <div className="col-md-6 col-sm-12 col-lg-4 adv-cell">
-                                    <ScrollAnimation animateIn='fadeIn'
-                                                     animateOut='fadeOut'>
-                                    <div className="row">
-                                        <div className="col-4 adv-img-container">
-                                            <img className="img-fluid adv-img" src={item5}/>
-                                        </div>
+            <div className="col-md-6 col-sm-12 col-lg-4 adv-cell">
+            <ScrollAnimation animateOnce={true} animateIn='fadeIn'>
+            <div className="row">
+            <div className="col-4 adv-img-container">
+            <img className="img-fluid adv-img" src={item4}/>
+        </div>
+        <div className="col-8 advantage">
+            <span className="advantage-text"><Translate id='about.adv4'/></span>
+            </div>
+            </div>
+            </ScrollAnimation>
+            </div>
+            <div className="col-md-6 col-sm-12 col-lg-4 adv-cell">
+            <ScrollAnimation animateOnce={true} animateIn='fadeIn'>
+            <div className="row">
+            <div className="col-4 adv-img-container">
+            <img className="img-fluid adv-img" src={item5}/>
+        </div>
 
-                                        <div className="col-8 advantage">
-                                            <ScrollAnimation animateIn='fadeIn'
-                                                             animateOut='fadeOut'>
-                                            <span className="advantage-text"><Translate id='about.adv5'/></span>
-                                            </ScrollAnimation>
-                                        </div>
+        <div className="col-8 advantage">
+            <ScrollAnimation animateOnce={true} animateIn='fadeIn'>
+            <span className="advantage-text"><Translate id='about.adv5'/></span>
+            </ScrollAnimation>
+            </div>
 
-                                    </div>
-                                    </ScrollAnimation>
-                                </div>
+            </div>
+            </ScrollAnimation>
+            </div>
 
-                                <div className="col-md-6 col-sm-12 col-lg-4 adv-cell">
-                                    <ScrollAnimation animateIn='fadeIn'
-                                                     animateOut='fadeOut'>
-                                    <div className="row">
-                                        <div className="col-4 adv-img-container">
-                                            <img className="img-fluid adv-img" src={item6}/>
-                                        </div>
-                                        <div className="col-8 advantage">
-                                            <span className="advantage-text"><Translate id='about.adv6'/></span>
-                                        </div>
-                                    </div>
-                                    </ScrollAnimation>
-                                </div>
+            <div className="col-md-6 col-sm-12 col-lg-4 adv-cell">
+            <ScrollAnimation animateOnce={true} animateIn='fadeIn'>
+            <div className="row">
+            <div className="col-4 adv-img-container">
+            <img className="img-fluid adv-img" src={item6}/>
+        </div>
+        <div className="col-8 advantage">
+            <span className="advantage-text"><Translate id='about.adv6'/></span>
+            </div>
+            </div>
+            </ScrollAnimation>
+            </div>
 
 
 
 
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row d-flex justify-content-center">
-                        <div className="col-md-8 col-xs-12">
-                            <ScrollAnimation animateIn='fadeIn'
-                                             animateOut='fadeOut'>
-                    <figure className="quote">
-                        <p className="curly-quotes"><Translate id='about.fraza'/>
-                        </p>
-                    </figure>
-                            </ScrollAnimation>
-                        </div>
-                    </div>
-                    <br/>
-                    {/*<div className="row title-white d-flex justify-content-center">
+            </div>
+            </div>
+            </div>
+            <div className="row d-flex justify-content-center">
+            <div className="col-md-8 col-xs-12">
+            <ScrollAnimation animateOnce={true} animateIn='fadeIn'>
+            <figure className="quote">
+            <p className="curly-quotes"><Translate id='about.fraza'/>
+            </p>
+            </figure>
+            </ScrollAnimation>
+            </div>
+            </div>
+            <br/>
+            {/*<div className="row title-white d-flex justify-content-center">
                         <div className="col-12">
                             <h3 className="text-center about-logo title title-white">
                                 Как мы работаем
@@ -249,36 +232,36 @@ class About extends Component {
                             <Button white={true} value="about.btn" onclick={this.handleOpenModal} classes='proj-btn'/>
                         </div>
                     </div>*/}
-                    <ReactModal
-                        isOpen={this.state.showModal}
-                        contentLabel="onRequestClose Example"
-                        onRequestClose={this.handleCloseModal}
-                    >
-                        <form className={'modal-form text-center'}>
-                            <h5>ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</h5>
-                            <p className={'wait'}>Закажите консультацию и мы свяжемся с Вами через
-                                несколько минут</p>
-                            <br/>
-                            <input name={'name'}
-                                   placeholder={'Ваше имя'}/>
-                            <br/>
-                            <br/>
-                            <div className={'row'}>
-                                <div className={'col-12'}>
-                                    <input name={'phone'}  placeholder={'Ваш телефон'}/>
-                                </div>
-                                <br/>
-                                <br/>
-                                <br/>
-                                <div className={'col-12'}>
-                                    <Button green="true" classes={'form-btn black-green'}value={'footer.consultation'}/>
-                                </div>
-                            </div>
-                        </form>
-                    </ReactModal>
-                </div>
-            </section>
-        );
+            <ReactModal
+        isOpen={this.state.showModal}
+        contentLabel="onRequestClose Example"
+        onRequestClose={this.handleCloseModal}
+            >
+            <form className={'modal-form text-center'}>
+            <h5>ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</h5>
+        <p className={'wait'}>Закажите консультацию и мы свяжемся с Вами через
+        несколько минут</p>
+        <br/>
+        <input name={'name'}
+        placeholder={'Ваше имя'}/>
+        <br/>
+        <br/>
+        <div className={'row'}>
+            <div className={'col-12'}>
+            <input name={'phone'}  placeholder={'Ваш телефон'}/>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <div className={'col-12'}>
+            <Button green="true" classes={'form-btn black-green'}value={'footer.consultation'}/>
+        </div>
+        </div>
+        </form>
+        </ReactModal>
+        </div>
+        </section>
+    );
     }
 }
 
