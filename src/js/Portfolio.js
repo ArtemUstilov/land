@@ -181,11 +181,11 @@ import Img14_9 from '../img/portfolio/14/9.jpg';
 import Img14_10 from '../img/portfolio/14/10.jpg';
 import Img14_11 from '../img/portfolio/14/11.jpg';
 import Img14_12 from '../img/portfolio/14/12.jpg';
-import Img14_13 from '../img/portfolio/14/11.jpg';
-import Img14_14 from '../img/portfolio/14/12.jpg';
-import Img14_15 from '../img/portfolio/14/12.jpg';
-import Img14_16 from '../img/portfolio/14/11.jpg';
-import Img14_17 from '../img/portfolio/14/12.jpg';
+import Img14_13 from '../img/portfolio/14/13.jpg';
+import Img14_14 from '../img/portfolio/14/14.jpg';
+import Img14_15 from '../img/portfolio/14/15.jpg';
+import Img14_16 from '../img/portfolio/14/16.jpg';
+import Img14_17 from '../img/portfolio/14/17.jpg';
 import Img15_1 from '../img/portfolio/15/1.jpg';
 import Img15_2 from '../img/portfolio/15/2.jpg';
 import Img15_3 from '../img/portfolio/15/3.jpg';
@@ -205,7 +205,22 @@ import Img17_5 from '../img/portfolio/17/5.jpg';
 import Img17_6 from '../img/portfolio/17/6.jpg';
 import Img17_7 from '../img/portfolio/17/7.jpg';
 import Img17_8 from '../img/portfolio/17/8.jpg';
-
+import Img18_1 from '../img/portfolio/18/1.jpg';
+import Img18_2 from '../img/portfolio/18/2.jpg';
+import Img18_3 from '../img/portfolio/18/3.jpg';
+import Img18_4 from '../img/portfolio/18/4.jpg';
+import Img18_5 from '../img/portfolio/18/5.jpg';
+import Img18_6 from '../img/portfolio/18/6.jpg';
+import Img18_7 from '../img/portfolio/18/7.jpg';
+import Img18_8 from '../img/portfolio/18/8.jpg';
+import Img18_9 from '../img/portfolio/18/9.jpg';
+import Img18_10 from '../img/portfolio/18/10.jpg';
+import Img18_11 from '../img/portfolio/18/11.jpg';
+import Img18_12 from '../img/portfolio/18/12.jpg';
+import Img18_13 from '../img/portfolio/18/13.jpg';
+import Img18_14 from '../img/portfolio/18/14.jpg';
+import Img18_15 from '../img/portfolio/18/15.jpg';
+import Img18_16 from '../img/portfolio/18/16.jpg';
 import ScrollAnimation from 'react-animate-on-scroll';
 import {renderToStaticMarkup} from "react-dom/server";
 import contactsTranslations from '../translations/portfolio.json'
@@ -222,7 +237,7 @@ class Portfolio extends Component {
         super(props);
 
         this.images = [Img1_1, Img2_1, Img3_1, Img4_1, Img5_1, Img6_1, Img7_1, Img8_1, Img9_1, Img10_3,
-            Img11_1, Img12_1, Img13_1, Img14_1, Img15_1, Img16_1, Img17_1];
+            Img11_1, Img12_1, Img13_1, Img14_1, Img15_1, Img16_1, Img17_1, Img18_1];
 
         this.imagesList1 = [
             {
@@ -342,10 +357,14 @@ class Portfolio extends Component {
         this.images17 = [Img17_2, Img17_3, Img17_4, Img17_5, Img17_6, Img17_7, Img17_8] ;
         this.imagesList17 = this.images17.map(img => ({original: img, thumbnail: img}))
 
+        this.images18 = [Img18_2, Img18_3, Img18_4, Img18_5, Img18_6, Img18_7, Img18_8, Img18_9, Img18_10,
+            Img18_11, Img18_12, Img18_13, Img18_14, Img18_15, Img18_16] ;
+        this.imagesList18 = this.images18.map(img => ({original: img, thumbnail: img}))
+
         this.imagesLists = [this.imagesList1, this.imagesList2, this.imagesList3, this.imagesList4,
             this.imagesList5, this.imagesList6, this.imagesList7, this.imagesList8, this.imagesList9,
             this.imagesList10, this.imagesList11, this.imagesList12, this.imagesList13, this.imagesList14,
-            this.imagesList15, this.imagesList16, this.imagesList17 ]
+            this.imagesList15, this.imagesList16, this.imagesList17, this.imagesList18 ]
         this.state = {
             ImgMap: [],
             showModal: false,
