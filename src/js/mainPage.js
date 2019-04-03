@@ -228,7 +228,7 @@ class Member extends Component {
         window.addEventListener('resize', () => {
             let t = document.getElementById(`comment${this.props.i}`);
             let msg = document.getElementById(`p${this.props.i}`);
-            msg.style.opacity = 0;
+            if(msg)msg.style.opacity = 0;
         })
     }
 
