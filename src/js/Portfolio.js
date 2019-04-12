@@ -149,6 +149,11 @@ import Img12_9 from '../img/portfolio/12/9.jpg';
 import Img12_10 from '../img/portfolio/12/10.jpg';
 import Img12_11 from '../img/portfolio/12/11.jpg';
 import Img12_12 from '../img/portfolio/12/12.jpg';
+import Img12_13 from '../img/portfolio/12/13.jpg';
+import Img12_14 from '../img/portfolio/12/14.jpg';
+import Img12_15 from '../img/portfolio/12/15.jpg';
+import Img12_16 from '../img/portfolio/12/16.jpg';
+import Img12_17 from '../img/portfolio/12/17.jpg';
 import Img13_1 from '../img/portfolio/13/1.jpg';
 import Img13_2 from '../img/portfolio/13/2.jpg';
 import Img13_3 from '../img/portfolio/13/3.jpg';
@@ -387,8 +392,8 @@ class Portfolio extends Component {
         this.imagesList11 = this.images11.map(img => ({original: img, thumbnail: img}))
 
         this.images12 = [Img12_2, Img12_3, Img12_4, Img12_5, Img12_6, Img12_7, Img12_8, Img12_9, Img12_10,
-            Img12_11, Img12_12];
-        this.imagesList12 = this.images12.map(img => ({original: img, thumbnail: img}))
+            Img12_11, Img12_12, Img12_13, Img12_14, Img12_15,Img12_16,Img12_17];
+        this.imagesList12 = this.images12.map(img => ({original:img, thumbnail: img}))
 
         this.images13 = [Img13_2, Img13_3, Img13_4, Img13_5, Img13_6, Img13_7, Img13_8, Img13_9, Img13_10,
             Img13_11, Img13_12, Img13_13];
