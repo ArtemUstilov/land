@@ -327,10 +327,6 @@ class Services extends Component {
                                     </ul>
 
                                 </div>
-                                <br/>
-                                <ScrollAnimation animateOnce={true} animateIn='fadeIn'>
-                                <h5><Translate id="services.resultTitle"/></h5>
-                                </ScrollAnimation>
                             </div>
                         </div>
                     </div>

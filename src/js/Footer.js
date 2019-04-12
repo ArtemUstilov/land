@@ -257,8 +257,8 @@ class Footer extends Component {
               <div className={'row d-flex  justify-content-center'}>
                 <div className={'col-12 col-md-10 col-lg-9'}>
                   <div className={'row d-flex  justify-content-between footer-info-cell'}>
-                    <div className={'col-6 col-md-3 col-lg-3 text-center'}>
-                      <p><img className=" footer-logo" src={logo}/></p>
+                    <div className={'col-6 col-md-3 col-lg-3 d-flex align-items-center justify-content-center'}>
+                      <img className=" footer-logo" src={logo}/>
                     </div>
                     <div className={'col-6 col-md-3 col-lg-3 text-center'}>
                       <p><a className={'phone'} href="tel:+380971234567"><img
