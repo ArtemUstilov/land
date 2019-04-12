@@ -33,42 +33,7 @@
 .img-portfolio-box:hover, .img-portfolio-box-rec:hover .img-portfolio-box {
     background-size: 120% 120% !important;
 }
-.img-portfolio-box-rec:before {
-    content: "";
-    width: 0;
-    height: 0;
-    display: block;
-    z-index: 2;
-    position: absolute;
-    background: rgba(60, 146, 83,0.3);
-    -webkit-transition-property: all;
-    -moz-transition-property: all;
-    -o-transition-property: all;
-    transition-property: all;
-    -webkit-transition-duration: 1000ms;
-    -moz-transition-duration: 1000ms;
-    -o-transition-duration: 1000ms;
-    transition-duration: 1000ms;
-}
-.img-portfolio-box-rec:after {
-    content: "";
-    width: 0;
-    height: 0;
-    display: block;
-    z-index: 2;
-    position: absolute;
-    bottom:9px;
-    right:14px;
-    background: rgba(60, 146, 83,0.3);
-    -webkit-transition-property: all;
-    -moz-transition-property: all;
-    -o-transition-property: all;
-    transition-property: all;
-    -webkit-transition-duration: 1000ms;
-    -moz-transition-duration: 1000ms;
-    -o-transition-duration: 1000ms;
-    transition-duration: 1000ms;
-}
+
 
 .img-portfolio-box:before {
     content: "";

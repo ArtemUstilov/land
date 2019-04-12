@@ -23,17 +23,17 @@ class MButton extends Component {
         return (
             <div className='header-m' id='nav-menu'>
                 <div className='row'>
-                    <div className='col-4 d-flex justify-content-center'>
+                    <div className='col-3 d-flex justify-content-center'>
                         <button id='toggle-hamburger' className="toggle-hamburger toggle-hamburger__animx">
                             <span>menu toggle</span>
                         </button>                    </div>
-                    <div className='col-4 d-flex align-items-center'>
+                    <div className='col-6 d-flex align-items-center'>
                         <Link to='/' className = 'd-flex flex-column justify-content-center'>
                             <img alt='' src={logo}
                                  className='img-fluid nav-text' style={{minWidth: '150px'}}/>
                         </Link>
                     </div>
-                    <div className='col-4 d-flex align-items-center justify-content-end pr-5'>
+                    <div className='col-3 d-flex align-items-center justify-content-end pr-5'>
                         <LanguageToggle/>
                     </div>
                 </div>
