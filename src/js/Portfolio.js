@@ -116,17 +116,22 @@ import Img9_10 from '../img/portfolio/9/10.jpg';
 import Img9_11 from '../img/portfolio/9/11.jpg';
 import Img9_12 from '../img/portfolio/9/12.jpg';
 import Img9_13 from '../img/portfolio/9/13.jpg';
-import Img10_1 from '../img/portfolio/10/01.jpg';
-import Img10_2 from '../img/portfolio/10/02.jpg';
-import Img10_3 from '../img/portfolio/10/03.jpg';
-import Img10_4 from '../img/portfolio/10/04.jpg';
-import Img10_5 from '../img/portfolio/10/05.jpg';
-import Img10_6 from '../img/portfolio/10/06.jpg';
-import Img10_7 from '../img/portfolio/10/07.jpg';
-import Img10_8 from '../img/portfolio/10/08.jpg';
-import Img10_9 from '../img/portfolio/10/09.jpg';
-import Img10_10 from '../img/portfolio/10/010.jpg';
-import Img10_11 from '../img/portfolio/10/011.jpg';
+import Img10_1 from '../img/portfolio/10/1.jpg';
+import Img10_2 from '../img/portfolio/10/2.jpg';
+import Img10_3 from '../img/portfolio/10/3.jpg';
+import Img10_4 from '../img/portfolio/10/4.jpg';
+import Img10_5 from '../img/portfolio/10/5.jpg';
+import Img10_6 from '../img/portfolio/10/6.jpg';
+import Img10_7 from '../img/portfolio/10/7.jpg';
+import Img10_8 from '../img/portfolio/10/8.jpg';
+import Img10_9 from '../img/portfolio/10/9.jpg';
+import Img10_10 from '../img/portfolio/10/10.jpg';
+import Img10_11 from '../img/portfolio/10/11.jpg';
+import Img10_12 from '../img/portfolio/10/12.jpg';
+import Img10_13 from '../img/portfolio/10/13.jpg';
+import Img10_14 from '../img/portfolio/10/14.jpg';
+import Img10_15 from '../img/portfolio/10/15.jpg';
+import Img10_16 from '../img/portfolio/10/16.jpg';
 import Img11_1 from '../img/portfolio/11/1.jpg';
 import Img11_2 from '../img/portfolio/11/2.jpg';
 import Img11_3 from '../img/portfolio/11/3.jpg';
@@ -321,22 +326,6 @@ import Img27_16 from '../img/portfolio/27/16.jpg';
 import Img27_17 from '../img/portfolio/27/17.jpg';
 import Img27_18 from '../img/portfolio/27/18.jpg';
 import Img27_19 from '../img/portfolio/27/19.jpg';
-import Img28_1 from '../img/portfolio/28/1.jpg';
-import Img28_2 from '../img/portfolio/28/2.jpg';
-import Img28_3 from '../img/portfolio/28/3.jpg';
-import Img28_4 from '../img/portfolio/28/4.jpg';
-import Img28_5 from '../img/portfolio/28/5.jpg';
-import Img28_6 from '../img/portfolio/28/6.jpg';
-import Img28_7 from '../img/portfolio/28/7.jpg';
-import Img28_8 from '../img/portfolio/28/8.jpg';
-import Img28_9 from '../img/portfolio/28/9.jpg';
-import Img28_10 from '../img/portfolio/28/10.jpg';
-import Img28_11 from '../img/portfolio/28/11.jpg';
-import Img28_12 from '../img/portfolio/28/12.jpg';
-import Img28_13 from '../img/portfolio/28/13.jpg';
-import Img28_14 from '../img/portfolio/28/14.jpg';
-import Img28_15 from '../img/portfolio/28/15.jpg';
-import Img28_16 from '../img/portfolio/28/16.jpg';
 import Img29_1 from '../img/portfolio/29/1.jpg';
 import Img29_2 from '../img/portfolio/29/2.jpg';
 import Img29_3 from '../img/portfolio/29/3.jpg';
@@ -392,7 +381,7 @@ class Portfolio extends Component {
 
         this.images = [Img1_1, Img2_1, Img3_1, Img4_1, Img5_1, Img6_1, Img7_1, Img8_1, Img9_1, Img10_3,
             Img11_1, Img12_1, Img13_1, Img14_1, Img15_1, Img16_1, Img17_1, Img18_1, Img19_1, Img20_1,
-            Img21_1, Img22_1, Img23_1,Img24_1, Img25_1, Img26_1, Img27_1, Img28_1, Img29_1, Img30_1];
+            Img21_1, Img22_1, Img23_1,Img24_1, Img25_1, Img26_1, Img27_1, Img29_1, Img30_1];
 
         this.imagesList1 = [
             {
@@ -483,7 +472,8 @@ class Portfolio extends Component {
             Img9_13];
         this.imagesList9 = this.images9.map(img => ({original: img, thumbnail: img}))
 
-        this.images10 = [Img10_1 ,Img10_2, Img10_4, Img10_5, Img10_6, Img10_7, Img10_8, Img10_9, Img10_10, Img10_11];
+        this.images10 = [Img10_1 ,Img10_2, Img10_4, Img10_5, Img10_6, Img10_7, Img10_8, Img10_9, Img10_10, Img10_11,
+            Img10_12,Img10_13,Img10_14,Img10_15, Img10_16];
         this.imagesList10 = this.images10.map(img => ({original: img, thumbnail: img}))
 
         this.images11 = [Img11_2, Img11_3, Img11_4, Img11_5, Img11_6, Img11_7, Img11_8, Img11_9, Img11_10,
@@ -549,9 +539,7 @@ class Portfolio extends Component {
             Img27_17, Img27_18, Img27_19] ;
         this.imagesList27 = this.images27.map(img => ({original: img, thumbnail: img}))
 
-        this.images28 = [Img28_2, Img28_3, Img28_4, Img28_5, Img28_6, Img28_7, Img28_8, Img28_9,
-            Img28_10, Img28_11, Img28_12, Img28_13, Img28_14, Img28_15, Img28_15, Img28_16] ;
-        this.imagesList28 = this.images28.map(img => ({original: img, thumbnail: img}))
+
 
         this.images29 = [Img29_2, Img29_3, Img29_4, Img29_5, Img29_6, Img29_7, Img29_8, Img29_9,
             Img29_10, Img29_11, Img29_12, Img29_13, Img29_14, Img29_15, Img29_15, Img29_16, Img29_17, Img29_18] ;
@@ -566,7 +554,7 @@ class Portfolio extends Component {
             this.imagesList10, this.imagesList11, this.imagesList12, this.imagesList13, this.imagesList14,
             this.imagesList15, this.imagesList16, this.imagesList17, this.imagesList18, this.imagesList19,
             this.imagesList20, this.imagesList21, this.imagesList22, this.imagesList23, this.imagesList24,
-            this.imagesList25, this.imagesList26, this.imagesList27, this.imagesList28, this.imagesList29,
+            this.imagesList25, this.imagesList26, this.imagesList27, this.imagesList29,
             this.imagesList30]
         this.state = {
             ImgMap: [],
