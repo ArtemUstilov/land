@@ -116,6 +116,7 @@ import Img9_10 from '../img/portfolio/9/10.jpg';
 import Img9_11 from '../img/portfolio/9/11.jpg';
 import Img9_12 from '../img/portfolio/9/12.jpg';
 import Img9_13 from '../img/portfolio/9/13.jpg';
+import Img10_1 from '../img/portfolio/10/1.jpg';
 import Img10_2 from '../img/portfolio/10/2.jpg';
 import Img10_3 from '../img/portfolio/10/3.jpg';
 import Img10_4 from '../img/portfolio/10/4.jpg';
@@ -125,35 +126,43 @@ import Img10_7 from '../img/portfolio/10/7.jpg';
 import Img10_8 from '../img/portfolio/10/8.jpg';
 import Img10_9 from '../img/portfolio/10/9.jpg';
 import Img10_10 from '../img/portfolio/10/10.jpg';
+import Img10_11 from '../img/portfolio/10/11.jpg';
+import Img10_12 from '../img/portfolio/10/12.jpg';
+import Img10_13 from '../img/portfolio/10/13.jpg';
+import Img10_14 from '../img/portfolio/10/14.jpg';
+import Img10_15 from '../img/portfolio/10/15.jpg';
+import Img10_16 from '../img/portfolio/10/16.jpg';
 import Img11_1 from '../img/portfolio/11/1.jpg';
 import Img11_2 from '../img/portfolio/11/2.jpg';
 import Img11_3 from '../img/portfolio/11/3.jpg';
 import Img11_4 from '../img/portfolio/11/4.jpg';
 import Img11_5 from '../img/portfolio/11/5.jpg';
-import Img11_6 from '../img/portfolio/11/6.jpg';
-import Img11_7 from '../img/portfolio/11/7.jpg';
-import Img11_8 from '../img/portfolio/11/8.jpg';
-import Img11_9 from '../img/portfolio/11/9.jpg';
-import Img11_10 from '../img/portfolio/11/10.jpg';
-import Img11_11 from '../img/portfolio/11/11.jpg';
-import Img11_12 from '../img/portfolio/11/12.jpg';
+import Img11_6 from '../img/portfolio/11/8.jpg';
+import Img11_7 from '../img/portfolio/11/9.jpg';
+import Img11_8 from '../img/portfolio/11/12.jpg';
+import Img11_9 from '../img/portfolio/11/13.jpg';
+import Img11_10 from '../img/portfolio/11/14.jpg';
+import Img11_11 from '../img/portfolio/11/17.jpg';
+import Img11_12 from '../img/portfolio/11/18.jpg';
+import Img11_13 from '../img/portfolio/11/19.jpg';
+import Img11_14 from '../img/portfolio/11/20.jpg';
 import Img12_1 from '../img/portfolio/12/1.jpg';
-import Img12_2 from '../img/portfolio/12/2.jpg';
-import Img12_3 from '../img/portfolio/12/3.jpg';
-import Img12_4 from '../img/portfolio/12/4.jpg';
-import Img12_5 from '../img/portfolio/12/5.jpg';
-import Img12_6 from '../img/portfolio/12/6.jpg';
-import Img12_7 from '../img/portfolio/12/7.jpg';
-import Img12_8 from '../img/portfolio/12/8.jpg';
-import Img12_9 from '../img/portfolio/12/9.jpg';
-import Img12_10 from '../img/portfolio/12/10.jpg';
-import Img12_11 from '../img/portfolio/12/11.jpg';
-import Img12_12 from '../img/portfolio/12/12.jpg';
-import Img12_13 from '../img/portfolio/12/13.jpg';
-import Img12_14 from '../img/portfolio/12/14.jpg';
-import Img12_15 from '../img/portfolio/12/15.jpg';
-import Img12_16 from '../img/portfolio/12/16.jpg';
-import Img12_17 from '../img/portfolio/12/17.jpg';
+import Img12_2 from '../img/portfolio/12/3.jpg';
+import Img12_3 from '../img/portfolio/12/4.jpg';
+import Img12_4 from '../img/portfolio/12/5.jpg';
+import Img12_5 from '../img/portfolio/12/6.jpg';
+import Img12_6 from '../img/portfolio/12/7.jpg';
+import Img12_7 from '../img/portfolio/12/9.jpg';
+import Img12_8 from '../img/portfolio/12/10.jpg';
+import Img12_9 from '../img/portfolio/12/11.jpg';
+import Img12_10 from '../img/portfolio/12/12.jpg';
+import Img12_11 from '../img/portfolio/12/13.jpg';
+import Img12_12 from '../img/portfolio/12/14.jpg';
+import Img12_13 from '../img/portfolio/12/15.jpg';
+import Img12_14 from '../img/portfolio/12/16.jpg';
+import Img12_15 from '../img/portfolio/12/17.jpg';
+import Img12_16 from '../img/portfolio/12/18.jpg';
+import Img12_17 from '../img/portfolio/12/20.jpg';
 import Img13_1 from '../img/portfolio/13/1.jpg';
 import Img13_2 from '../img/portfolio/13/2.jpg';
 import Img13_3 from '../img/portfolio/13/3.jpg';
@@ -231,24 +240,22 @@ import Img20_1 from '../img/portfolio/20/1.jpg';
 import Img20_2 from '../img/portfolio/20/2.jpg';
 import Img20_3 from '../img/portfolio/20/3.jpg';
 import Img20_4 from '../img/portfolio/20/4.jpg';
-import Img21_1 from '../img/portfolio/21/1.jpg';
-import Img21_2 from '../img/portfolio/21/2.jpg';
-import Img21_3 from '../img/portfolio/21/3.jpg';
-import Img21_4 from '../img/portfolio/21/4.jpg';
-import Img21_5 from '../img/portfolio/21/5.jpg';
-import Img21_6 from '../img/portfolio/21/6.jpg';
-import Img21_7 from '../img/portfolio/21/7.jpg';
-import Img21_8 from '../img/portfolio/21/8.jpg';
-import Img21_9 from '../img/portfolio/21/9.jpg';
-import Img21_10 from '../img/portfolio/21/10.jpg';
-import Img21_11 from '../img/portfolio/21/11.jpg';
-import Img21_12 from '../img/portfolio/21/12.jpg';
-import Img21_13 from '../img/portfolio/21/13.jpg';
-import Img21_14 from '../img/portfolio/21/14.jpg';
-import Img21_15 from '../img/portfolio/21/15.jpg';
-import Img21_16 from '../img/portfolio/21/16.jpg';
-import Img21_17 from '../img/portfolio/21/15.jpg';
-import Img21_18 from '../img/portfolio/21/16.jpg';
+import Img21_1 from '../img/portfolio/21/02.jpg';
+import Img21_2 from '../img/portfolio/21/03.jpg';
+import Img21_3 from '../img/portfolio/21/05.jpg';
+import Img21_4 from '../img/portfolio/21/013.jpg';
+import Img21_5 from '../img/portfolio/21/015.jpg';
+import Img21_6 from '../img/portfolio/21/016.jpg';
+import Img21_7 from '../img/portfolio/21/021.jpg';
+import Img21_8 from '../img/portfolio/21/024.jpg';
+import Img21_9 from '../img/portfolio/21/027.jpg';
+import Img21_10 from '../img/portfolio/21/028.jpg';
+import Img21_11 from '../img/portfolio/21/029.jpg';
+import Img21_12 from '../img/portfolio/21/030.jpg';
+import Img21_13 from '../img/portfolio/21/031.jpg';
+import Img21_14 from '../img/portfolio/21/032.jpg';
+import Img21_15 from '../img/portfolio/21/033.jpg';
+import Img21_16 from '../img/portfolio/21/036.jpg';
 import Img22_1 from '../img/portfolio/22/1.jpg';
 import Img22_2 from '../img/portfolio/22/2.jpg';
 import Img22_3 from '../img/portfolio/22/3.jpg';
@@ -276,6 +283,87 @@ import Img24_8 from '../img/portfolio/24/8.jpg';
 import Img24_9 from '../img/portfolio/24/9.jpg';
 import Img24_10 from '../img/portfolio/24/10.jpg';
 import Img24_11 from '../img/portfolio/24/11.jpg';
+import Img25_1 from '../img/portfolio/25/1.jpg';
+import Img25_2 from '../img/portfolio/25/2.jpg';
+import Img25_3 from '../img/portfolio/25/3.jpg';
+import Img25_4 from '../img/portfolio/25/4.jpg';
+import Img25_5 from '../img/portfolio/25/5.jpg';
+import Img25_6 from '../img/portfolio/25/6.jpg';
+import Img25_7 from '../img/portfolio/25/7.jpg';
+import Img25_8 from '../img/portfolio/25/8.jpg';
+import Img25_9 from '../img/portfolio/25/9.jpg';
+import Img25_10 from '../img/portfolio/25/10.jpg';
+import Img25_11 from '../img/portfolio/25/11.jpg';
+import Img25_12 from '../img/portfolio/25/12.jpg';
+import Img25_13 from '../img/portfolio/25/13.jpg';
+import Img26_1 from '../img/portfolio/26/1.jpg';
+import Img26_2 from '../img/portfolio/26/3.jpg';
+import Img26_3 from '../img/portfolio/26/4.jpg';
+import Img26_4 from '../img/portfolio/26/5.jpg';
+import Img26_5 from '../img/portfolio/26/6.jpg';
+import Img26_6 from '../img/portfolio/26/7.jpg';
+import Img26_7 from '../img/portfolio/26/8.jpg';
+import Img26_8 from '../img/portfolio/26/9.jpg';
+import Img26_9 from '../img/portfolio/26/10.jpg';
+import Img26_10 from '../img/portfolio/26/12.jpg';
+import Img26_11 from '../img/portfolio/26/13.jpg';
+import Img27_1 from '../img/portfolio/27/1.jpg';
+import Img27_2 from '../img/portfolio/27/2.jpg';
+import Img27_3 from '../img/portfolio/27/3.jpg';
+import Img27_4 from '../img/portfolio/27/4.jpg';
+import Img27_5 from '../img/portfolio/27/5.jpg';
+import Img27_6 from '../img/portfolio/27/6.jpg';
+import Img27_7 from '../img/portfolio/27/7.jpg';
+import Img27_8 from '../img/portfolio/27/8.jpg';
+import Img27_9 from '../img/portfolio/27/9.jpg';
+import Img27_10 from '../img/portfolio/27/10.jpg';
+import Img27_11 from '../img/portfolio/27/11.jpg';
+import Img27_12 from '../img/portfolio/27/12.jpg';
+import Img27_13 from '../img/portfolio/27/13.jpg';
+import Img27_14 from '../img/portfolio/27/14.jpg';
+import Img27_15 from '../img/portfolio/27/15.jpg';
+import Img27_16 from '../img/portfolio/27/16.jpg';
+import Img27_17 from '../img/portfolio/27/17.jpg';
+import Img27_18 from '../img/portfolio/27/18.jpg';
+import Img27_19 from '../img/portfolio/27/19.jpg';
+import Img29_1 from '../img/portfolio/29/1.jpg';
+import Img29_2 from '../img/portfolio/29/2.jpg';
+import Img29_3 from '../img/portfolio/29/3.jpg';
+import Img29_4 from '../img/portfolio/29/4.jpg';
+import Img29_5 from '../img/portfolio/29/5.jpg';
+import Img29_6 from '../img/portfolio/29/6.jpg';
+import Img29_7 from '../img/portfolio/29/7.jpg';
+import Img29_8 from '../img/portfolio/29/8.jpg';
+import Img29_9 from '../img/portfolio/29/9.jpg';
+import Img29_10 from '../img/portfolio/29/10.jpg';
+import Img29_11 from '../img/portfolio/29/11.jpg';
+import Img29_12 from '../img/portfolio/29/12.jpg';
+import Img29_13 from '../img/portfolio/29/13.jpg';
+import Img29_14 from '../img/portfolio/29/14.jpg';
+import Img29_15 from '../img/portfolio/29/15.jpg';
+import Img29_16 from '../img/portfolio/29/16.jpg';
+import Img29_17 from '../img/portfolio/29/17.jpg';
+import Img29_18 from '../img/portfolio/29/18.jpg';
+import Img30_1 from '../img/portfolio/30/1.jpg';
+import Img30_2 from '../img/portfolio/30/2.jpg';
+import Img30_3 from '../img/portfolio/30/3.jpg';
+import Img30_4 from '../img/portfolio/30/4.jpg';
+import Img30_5 from '../img/portfolio/30/5.jpg';
+import Img30_6 from '../img/portfolio/30/6.jpg';
+import Img30_7 from '../img/portfolio/30/7.jpg';
+import Img30_8 from '../img/portfolio/30/8.jpg';
+import Img30_9 from '../img/portfolio/30/9.jpg';
+import Img30_10 from '../img/portfolio/30/10.jpg';
+import Img30_11 from '../img/portfolio/30/11.jpg';
+import Img30_12 from '../img/portfolio/30/12.jpg';
+import Img30_13 from '../img/portfolio/30/13.jpg';
+import Img30_14 from '../img/portfolio/30/15 (1).jpg';
+import Img30_15 from '../img/portfolio/30/15 (2).jpg';
+import Img30_16 from '../img/portfolio/30/15 (3).jpg';
+import Img31_1 from '../img/portfolio/31/1.jpg';
+import Img31_2 from '../img/portfolio/31/2.jpg';
+import Img31_3 from '../img/portfolio/31/3.jpg';
+import Img31_4 from '../img/portfolio/31/4.jpg';
 import ScrollAnimation from 'react-animate-on-scroll';
 import {renderToStaticMarkup} from "react-dom/server";
 import contactsTranslations from '../translations/portfolio.json'
@@ -293,7 +381,7 @@ class Portfolio extends Component {
 
         this.images = [Img1_1, Img2_1, Img3_1, Img4_1, Img5_1, Img6_1, Img7_1, Img8_1, Img9_1, Img10_3,
             Img11_1, Img12_1, Img13_1, Img14_1, Img15_1, Img16_1, Img17_1, Img18_1, Img19_1, Img20_1,
-            Img21_1, Img22_1, Img23_1,Img24_1];
+            Img21_1, Img22_1, Img23_1,Img24_1, Img25_1, Img26_1, Img27_1, Img29_1, Img30_1, Img31_1];
 
         this.imagesList1 = [
             {
@@ -384,11 +472,12 @@ class Portfolio extends Component {
             Img9_13];
         this.imagesList9 = this.images9.map(img => ({original: img, thumbnail: img}))
 
-        this.images10 = [Img10_2, Img10_4, Img10_5, Img10_6, Img10_7, Img10_8, Img10_9, Img10_10];
+        this.images10 = [Img10_1 ,Img10_2, Img10_4, Img10_5, Img10_6, Img10_7, Img10_8, Img10_9, Img10_10, Img10_11,
+            Img10_12,Img10_13,Img10_14,Img10_15, Img10_16];
         this.imagesList10 = this.images10.map(img => ({original: img, thumbnail: img}))
 
         this.images11 = [Img11_2, Img11_3, Img11_4, Img11_5, Img11_6, Img11_7, Img11_8, Img11_9, Img11_10,
-            Img11_11, Img11_12];
+            Img11_11, Img11_12, Img11_13, Img11_14];
         this.imagesList11 = this.images11.map(img => ({original: img, thumbnail: img}))
 
         this.images12 = [Img12_2, Img12_3, Img12_4, Img12_5, Img12_6, Img12_7, Img12_8, Img12_9, Img12_10,
@@ -423,7 +512,7 @@ class Portfolio extends Component {
         this.imagesList20 = this.images20.map(img => ({original: img, thumbnail: img}))
 
         this.images21 = [Img21_2, Img21_3, Img21_4, Img21_5, Img21_6, Img21_7, Img21_8, Img21_9, Img21_10,
-            Img21_11, Img21_12, Img21_13, Img21_14, Img21_15, Img21_16, Img21_17, Img21_18 ] ;
+            Img21_11, Img21_12, Img21_13, Img21_14, Img21_15, Img21_16] ;
         this.imagesList21 = this.images21.map(img => ({original: img, thumbnail: img}))
 
         this.images22 = [Img22_2, Img22_3, Img22_4] ;
@@ -437,11 +526,38 @@ class Portfolio extends Component {
             Img24_11] ;
         this.imagesList24 = this.images24.map(img => ({original: img, thumbnail: img}))
 
+        this.images25 = [Img25_2, Img25_3, Img25_4, Img25_5, Img25_6, Img25_7, Img25_8, Img25_9,
+            Img25_10, Img25_11, Img25_12, Img25_13] ;
+        this.imagesList25 = this.images25.map(img => ({original: img, thumbnail: img}))
+
+        this.images26 = [Img26_2, Img26_3, Img26_4, Img26_5, Img26_6, Img26_7, Img26_8, Img26_9,
+            Img26_10, Img26_11] ;
+        this.imagesList26 = this.images26.map(img => ({original: img, thumbnail: img}))
+
+        this.images27 = [Img27_2, Img27_3, Img27_4, Img27_5, Img27_6, Img27_7, Img27_8, Img27_9,
+            Img27_10, Img27_11, Img27_12, Img27_13, Img27_14, Img27_15, Img27_15, Img27_16,
+            Img27_17, Img27_18, Img27_19] ;
+        this.imagesList27 = this.images27.map(img => ({original: img, thumbnail: img}))
+
+
+
+        this.images29 = [Img29_2, Img29_3, Img29_4, Img29_5, Img29_6, Img29_7, Img29_8, Img29_9,
+            Img29_10, Img29_11, Img29_12, Img29_13, Img29_14, Img29_15, Img29_15, Img29_16, Img29_17, Img29_18] ;
+        this.imagesList29 = this.images29.map(img => ({original: img, thumbnail: img}))
+
+        this.images30 = [Img30_2, Img30_3, Img30_4, Img30_5, Img30_6, Img30_7, Img30_8,Img30_9,
+            Img30_10, Img30_11, Img30_12, Img30_13, Img30_14, Img30_15, Img30_15, Img30_16] ;
+        this.imagesList30 = this.images30.map(img => ({original: img, thumbnail: img}))
+
+        this.images31 = [Img31_2, Img31_3, Img31_4] ;
+        this.imagesList31 = this.images31.map(img => ({original: img, thumbnail: img}))
         this.imagesLists = [this.imagesList1, this.imagesList2, this.imagesList3, this.imagesList4,
             this.imagesList5, this.imagesList6, this.imagesList7, this.imagesList8, this.imagesList9,
             this.imagesList10, this.imagesList11, this.imagesList12, this.imagesList13, this.imagesList14,
             this.imagesList15, this.imagesList16, this.imagesList17, this.imagesList18, this.imagesList19,
-            this.imagesList20, this.imagesList21, this.imagesList22, this.imagesList23, this.imagesList24]
+            this.imagesList20, this.imagesList21, this.imagesList22, this.imagesList23, this.imagesList24,
+            this.imagesList25, this.imagesList26, this.imagesList27, this.imagesList29,
+            this.imagesList30, this.imagesList31]
         this.state = {
             ImgMap: [],
             showModal: false,
