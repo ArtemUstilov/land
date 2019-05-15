@@ -19,7 +19,7 @@
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover ;
+    background-size: cover;
     background-position: center center;
     background-attachment: fixed;
 
@@ -460,5 +460,11 @@
 @keyframes color {
     50% {
         color: green;
+    }
+}
+
+@media screen and (min-width: 1256px) {
+    .footer-slider .slick-list {
+        height: 350px !important;
     }
 }
