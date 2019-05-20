@@ -33,7 +33,7 @@ class MButton extends Component {
                                  className='img-fluid nav-text' style={{minWidth: '150px'}}/>
                         </Link>
                     </div>
-                    <div className='col-3 d-flex align-items-center justify-content-end pr-5'>
+                    <div className='col-3 d-flex align-items-center justify-content-end pr-3'>
                         <LanguageToggle/>
                     </div>
                 </div>

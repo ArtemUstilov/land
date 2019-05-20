@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+﻿import React, {Component} from 'react';
 import '../styles/Footer.css'
 import '../styles/settings.css'
 import Slider from "react-slick";
@@ -243,13 +243,14 @@ class Footer extends Component {
                   <h5 className={'text-center'}><Translate id='footer.soc'/></h5>
                 </div>
                 <div className="col-3 col-md-2 d-flex justify-content-center">
-                  <a href="https://www.facebook.com/okolitadesign/" target="_blank"><img src={fb}
-                                                                                         alt=""
-                                                                                         className='img-link'/></a>
+<button  style={{background: "transparent",
+    outline: "none",
+    border: "none", }}  onClick={() =>window.location.href="https://www.facebook.com/okolitadesign/"}><img src={fb} alt="" className='img-link'/></button>
                 </div>
                 <div className="col-3 col-md-2 d-flex justify-content-center">
-                  <a href="https://instagram.com/okolitadesign?utm_source=ig_profile_share&igshid=mcc8f8tafw8e"
-                     target="_blank"><img src={inst} alt="" className='img-link'/></a>
+                  <button   style={{background: "transparent",
+    outline: "none",
+    border: "none", }}  onClick={() =>window.location.href="https://instagram.com/okolitadesign?utm_source=ig_profile_share&igshid=mcc8f8tafw8e"}><img src={inst} alt="" className='img-link'/></button>
                 </div>
               </div>
             </div>
