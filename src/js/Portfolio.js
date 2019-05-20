@@ -364,6 +364,19 @@ import Img31_1 from '../img/portfolio/31/1.jpg';
 import Img31_2 from '../img/portfolio/31/2.jpg';
 import Img31_3 from '../img/portfolio/31/3.jpg';
 import Img31_4 from '../img/portfolio/31/4.jpg';
+import Img32_1 from '../img/portfolio/32/01.jpg';
+import Img32_2 from '../img/portfolio/32/02.jpg';
+import Img32_3 from '../img/portfolio/32/03.jpg';
+import Img32_4 from '../img/portfolio/32/04.jpg';
+import Img32_5 from '../img/portfolio/32/05.jpg';
+import Img32_6 from '../img/portfolio/32/06.jpg';
+import Img32_7 from '../img/portfolio/32/07.jpg';
+import Img32_8 from '../img/portfolio/32/08.jpg';
+import Img32_9 from '../img/portfolio/32/09.jpg';
+import Img32_10 from '../img/portfolio/32/010.jpg';
+import Img32_11 from '../img/portfolio/32/011.jpg';
+
+
 import ScrollAnimation from 'react-animate-on-scroll';
 import {renderToStaticMarkup} from "react-dom/server";
 import contactsTranslations from '../translations/portfolio.json'
@@ -381,7 +394,7 @@ class Portfolio extends Component {
 
         this.images = [Img1_1, Img2_1, Img3_1, Img4_1, Img5_1, Img6_1, Img7_1, Img8_1, Img9_1, Img10_3,
             Img11_1, Img12_1, Img13_1, Img14_1, Img15_1, Img16_1, Img17_1, Img18_1, Img19_1, Img20_1,
-            Img21_1, Img22_1, Img23_1,Img24_1, Img25_1, Img26_1, Img27_1, Img29_1, Img30_1, Img31_1];
+            Img21_1, Img22_1, Img23_1,Img24_1, Img25_1, Img26_1, Img27_1, Img29_1, Img30_1, Img31_1, Img32_1];
 
         this.imagesList1 = [
             {
@@ -551,13 +564,18 @@ class Portfolio extends Component {
 
         this.images31 = [Img31_2, Img31_3, Img31_4] ;
         this.imagesList31 = this.images31.map(img => ({original: img, thumbnail: img}))
+
+        this.images32 = [Img32_2, Img32_3, Img32_4, Img32_5, Img32_6, Img32_7, Img32_8,Img32_9,
+            Img32_10, Img32_11] ;
+        this.imagesList32 = this.images32.map(img => ({original: img, thumbnail: img}))
+
         this.imagesLists = [this.imagesList1, this.imagesList2, this.imagesList3, this.imagesList4,
             this.imagesList5, this.imagesList6, this.imagesList7, this.imagesList8, this.imagesList9,
             this.imagesList10, this.imagesList11, this.imagesList12, this.imagesList13, this.imagesList14,
             this.imagesList15, this.imagesList16, this.imagesList17, this.imagesList18, this.imagesList19,
             this.imagesList20, this.imagesList21, this.imagesList22, this.imagesList23, this.imagesList24,
             this.imagesList25, this.imagesList26, this.imagesList27, this.imagesList29,
-            this.imagesList30, this.imagesList31]
+            this.imagesList30, this.imagesList31, this.imagesList32]
         this.state = {
             ImgMap: [],
             showModal: false,
