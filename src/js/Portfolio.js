@@ -158,10 +158,10 @@ import Img12_14 from '../img/portfolio/12/16.jpg';
 import Img12_15 from '../img/portfolio/12/17.jpg';
 import Img12_16 from '../img/portfolio/12/18.jpg';
 import Img12_17 from '../img/portfolio/12/20.jpg';
-import Img13_1 from '../img/portfolio/13/1.jpg';
+import Img13_1 from '../img/portfolio/13/4.jpg';
 import Img13_2 from '../img/portfolio/13/2.jpg';
 import Img13_3 from '../img/portfolio/13/3.jpg';
-import Img13_4 from '../img/portfolio/13/4.jpg';
+import Img13_4 from '../img/portfolio/13/1.jpg';
 import Img13_5 from '../img/portfolio/13/5.jpg';
 import Img13_6 from '../img/portfolio/13/6.jpg';
 import Img13_7 from '../img/portfolio/13/7.jpg';
@@ -375,9 +375,9 @@ class Portfolio extends Component {
     constructor(props) {
         super(props);
 
-        this.images = [Img1_1, Img2_1, Img3_1, Img4_1, Img5_1, Img6_1, Img7_1, Img8_1, Img9_1, Img10_3,
-            Img11_1, Img12_1, Img13_1, Img14_1, Img15_1, Img16_1, Img17_1, Img18_1, Img19_1, Img20_1,
-            Img21_1, Img22_1, Img23_1,Img24_1, Img25_1, Img26_1, Img27_1, Img29_1, Img30_1, Img31_1];
+        this.images = [Img25_1, Img26_1, Img27_1, Img29_1, Img6_1, Img8_1, Img2_1, Img3_1, Img13_1, Img12_1,
+            Img14_1, Img10_3, Img9_1, Img11_1, Img15_1, Img16_1, Img17_1, Img18_1, Img19_1, Img20_1,
+            Img21_1, Img22_1, Img23_1,Img24_1, Img1_1, Img7_1, Img5_1, Img4_1, Img30_1, Img31_1];
 
         this.imagesList1 = [
             {
@@ -547,12 +547,12 @@ class Portfolio extends Component {
         this.images31 = [Img31_2, Img31_3, Img31_4] ;
         this.imagesList31 = this.images31.map(img => ({original: img, thumbnail: img}))
 
-        this.imagesLists = [this.imagesList1, this.imagesList2, this.imagesList3, this.imagesList4,
-            this.imagesList5, this.imagesList6, this.imagesList7, this.imagesList8, this.imagesList9,
-            this.imagesList10, this.imagesList11, this.imagesList12, this.imagesList13, this.imagesList14,
+        this.imagesLists = [this.imagesList25, this.imagesList26, this.imagesList27, this.imagesList29,
+            this.imagesList6, this.imagesList8, this.imagesList2, this.imagesList5, this.imagesList13,
+            this.imagesList12, this.imagesList14, this.imagesList10, this.imagesList9, this.imagesList11,
             this.imagesList15, this.imagesList16, this.imagesList17, this.imagesList18, this.imagesList19,
             this.imagesList20, this.imagesList21, this.imagesList22, this.imagesList23, this.imagesList24,
-            this.imagesList25, this.imagesList26, this.imagesList27, this.imagesList29,
+            this.imagesList21, this.imagesList7, this.imagesList3, this.imagesList4,
             this.imagesList30, this.imagesList31]
         this.state = {
             ImgMap: [],
