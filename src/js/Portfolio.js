@@ -548,12 +548,13 @@ class Portfolio extends Component {
         this.imagesList31 = this.images31.map(img => ({original: img, thumbnail: img}))
 
         this.imagesLists = [this.imagesList25, this.imagesList26, this.imagesList27, this.imagesList29,
-            this.imagesList6, this.imagesList8, this.imagesList2, this.imagesList5, this.imagesList13,
+            this.imagesList6, this.imagesList8, this.imagesList2, this.imagesList3, this.imagesList13,
             this.imagesList12, this.imagesList14, this.imagesList10, this.imagesList9, this.imagesList11,
             this.imagesList15, this.imagesList16, this.imagesList17, this.imagesList18, this.imagesList19,
             this.imagesList20, this.imagesList21, this.imagesList22, this.imagesList23, this.imagesList24,
-            this.imagesList21, this.imagesList7, this.imagesList3, this.imagesList4,
+            this.imagesList1, this.imagesList7, this.imagesList5, this.imagesList4,
             this.imagesList30, this.imagesList31]
+        
         this.state = {
             ImgMap: [],
             showModal: false,
